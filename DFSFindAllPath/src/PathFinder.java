@@ -63,6 +63,7 @@ public class PathFinder {
     	return paths;
     }
     
+    //search all path
     private static void dfs(List<String> paths, Map<String, List<String>> map, String end, StringBuilder path, Set<String> set){
     	//get current node
     	String cur = String.valueOf(path.charAt(path.length() - 1));
@@ -72,7 +73,7 @@ public class PathFinder {
     		return;
     	}
     	
-    	//reach leaf node of graph, prevent map.get(cur) returns null;
+    	//reach leaf node of graph, prevent map.get(cur) returns null pointer exception.
     	if(!map.containsKey(cur)) return;
     	
     	for(String neighbor:map.get(cur)){
