@@ -46,3 +46,10 @@ public class Solution {
         
     }
 }
+public class Solution {
+    public int arrangeCoins(int n) {
+        /* (1+x)*x/2 <n*/
+        /* x^2 + x -2n<0*/
+        return (int) Math.floor((Math.sqrt(1 + ((double) n * 8)) - 1) / 2);
+    }
+}
