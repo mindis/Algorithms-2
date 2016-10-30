@@ -1,4 +1,4 @@
-unt Your Progressions
+Count Your Progressions locked
 by saikiran9194
 Problem
 Submissions
@@ -56,99 +56,50 @@ public class Solution {
             2, 4
             2, 2
             4, 2*/
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-
-
-        /*
+                /*
         *
 2  [0][diff]
 4 [1][diff]
 6  [2][diff]
 8 [3] [diff]
+
+
+2
+
+
 */
-        //ArrayList< Map<diff, count>>
-        List<Map<Integer,Integer>> listM = new ArrayList<Map<Integer,Integer>>();
-        List<Integer> list = new ArrayList<Integer>();
-        int count = 1;
-        for(int i = 0; i < n; i++){
-            int cur = scan.nextInt();
-            
-            Map<Integer,Integer> newMap = new HashMap<Integer,Integer>();
-            for(int j = 0; j<list.size();j++){
-                int diff = cur - list.get(j);
-                if(listM.get(j).containsKey(diff)){
-                    int newCount = listM.get(j).get(diff);
-                    count += newCount;
-                    if(newMap.containsKey(diff)){
-                        newMap.put(diff,newMap.get(diff)+ newCount);
-                    }else{
-                        newMap.put(diff, newCount);
-                    }
-                }
-                //always add length 2s
-                if(newMap.containsKey(diff)){
-                    newMap.put(diff,newMap.get(diff)+ 1);
-                }else{
-                    newMap.put(diff, 1);
-                }
-                count++;
-             }
-            list.add(cur);
-            count++;
-            count%=1000000009;
-            listM.add(newMap);
-         }
-        System.out.println(count);
-    }
-}
-
-
-
-import java.io.*;
-import java.util.*;
-
-
-public class Solution {
-
-
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-      /*  []
-            2
-            4
-            2
-            2, 4
-            2, 2
-            4, 2*/
+        int mod = 1000000009;
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-
-
-        /*
-        *
-2  [0][diff]
-4 [1][diff]
-6  [2][diff]
-8 [3] [diff]
-*/
-        //ArrayList< Map<diff, count>>
-        List<int[]> listM = new ArrayList<int[]>();
-        List<Integer> list = new ArrayList<Integer>();
+        // (prev, diff) -> count
+        // (cur) -> only single element #count
+        int[][] pd = new int[101][199];
+        int[] s = new int[101];
+        int[] list = new int[n];
         int count = 1;
+        
+       // for(int i = 0; i < n; i++){
+         //   list[i] = scan.nextInt();
+        //}
+        
         for(int i = 0; i < n; i++){
             int cur = scan.nextInt();
-            int[] newMap = new int[199];
-            for(int j = 0; j<list.size();j++){
-                int diff = cur - list.get(j);
-                int newCount = listM.get(j)[diff+99];
-                count += newCount+1;
-                newMap[diff+99] += (newCount+1);
+            for(int diff = -99; diff<= 99;diff++){
+                int pre = cur - diff;
+                if(pre < 1 || pre > 100) continue;
+                int diffT = diff+ 99;
+                //update (pre->cur) diff, //update s ->cur
+                int addon = pd[pre][diffT]+ s[pre];
+                while(addon>=mod) addon = addon % mod;
+                pd[cur][diffT] = pd[cur][diffT] + addon;
+                while(pd[cur][diffT]>=mod) pd[cur][diffT] = pd[cur][diffT]% mod;
+                count = count + addon;
+                while(count>=mod) count = count % mod;
             }
-            list.add(cur);
+            s[cur]++;
+            while(s[cur]>=mod) s[cur] = s[cur]%  mod;
             count++;
-            count%=1000000009;
-            listM.add(newMap);
+            while(count>=mod) count = count%  mod;
          }
         System.out.println(count);
     }
