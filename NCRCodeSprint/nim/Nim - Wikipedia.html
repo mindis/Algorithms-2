@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://en.wikipedia.org/wiki/Nim -->
+<html class="client-js ve-not-available" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Nim - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Nim","wgTitle":"Nim","wgCurRevisionId":747346060,"wgRevisionId":747346060,"wgArticleId":21885,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Commons category with page title same as on Wikidata","Pages containing links to subscription-only content","Mathematical games","Combinatorial game theory","Recreational mathematics","Articles containing proofs","Articles with example Python code"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Nim","wgRelevantArticleId":21885,"wgRequestId":"WB5UzQpAADgAAVdhcoUAAAAF","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q724409","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="./Nim - Wikipedia_files/load.php">
+<script async="" src="./Nim - Wikipedia_files/load(1).php"></script>
+<style>
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba( 255,255,255,0.5 );border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB9ElEQVR4AZWRA3AYURQArxrVHtW2bdu2bdu2zdi2bdu2bWxs7zeehZaw4f70kbs+zI3e/nWK+RWx3aOFlrL56Sy5SxrruG69hlv6OyK+mz+8KDSXdXembj0ispT7tjs4ZTIbpYBvxGSGKzZTeFrb7W/meN002swFs0U8ttpHTkF2BvCqWQrW35929bTsKm5Zb+SEwWwcY8wAngB9m7Z+d+rIPZ/npdy12M5p47n8dXsCYAf0qPy06eGMdktuDu9Qf+JmKl3SWM91qzVcN9tAbEYkwMaq0tyb1m/To5kP170el/BK8/qa6sJr70ydf+T/Uu5ab+Oo/lS0AkUBpIFWlZ9WPhxpse/PHO7YbOOczjL0vZV2lNxPPtG73dYXM+xvm2znrOl83tidoqCwMBgYXsPFB0on5S6pr+eK5TKuW67lgvaKvF8mL1dtfTL32FHxRdyx3cQpg7m4x9sCXKkTIzA4LDH44zWdzaUf71hv5rTG4uyzcusybxSX7aThbMQ8XgCYAp3rzTTQOiIh9PNlzY3FSuZxrzjme1Y7uGS6kjsWO4jPjM4FVjRZsvD4kO9XtTZzQn82NyzWc0B7AmZh6gA/hOYSGhfw9YbOVnarj+S7800AL2BIsxUAbWNToj7bhBuQmZcOsFdoKUC74rGheCwXmqAIQTc9jQcrADIAAAAASUVORK5CYII=);background-image:url(/w/resources/src/mediawiki.action/images/green-checkmark.png?d94f1)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:#000;text-shadow:0 0.0625em 0 #fff;text-decoration:none;opacity:0.2;filter:alpha( opacity=20 )}.postedit-close:hover{color:#000;text-decoration:none;opacity:0.4;filter:alpha( opacity=40 )}
+.uls-menu{border-radius:4px; font-size:medium}.uls-search,.uls-language-settings-close-block{border-top-right-radius:4px;border-top-left-radius:4px}.uls-language-list{border-bottom-right-radius:4px;border-bottom-left-radius:4px}.uls-menu.callout .caret-before,.uls-menu.callout .caret-after{border-top:10px solid transparent;border-right:10px solid #c9c9c9;border-bottom:10px solid transparent;display:inline-block;left:-11px; top:17px;position:absolute}.uls-menu.callout .caret-after{border-right:10px solid #fcfcfc;display:inline-block;left:-10px}.uls-menu.callout--languageselection .caret-after{border-right:10px solid #fff}.uls-ui-languages button{margin:5px 15px 5px 0;white-space:nowrap;overflow:hidden}.uls-search-wrapper-wrapper{position:relative;padding-left:40px;margin-top:5px;margin-bottom:5px}.uls-icon-back{background:transparent url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.png?90e9b) no-repeat scroll center center;background-image:-webkit-linear-gradient( transparent,transparent ),url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?ae714);background-image:linear-gradient( transparent,transparent ),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20id%3D%22Layer_1%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M7%2013.1l8.9%208.9c.8-.8.8-2%200-2.8l-6.1-6.1%206-6.1c.8-.8.8-2%200-2.8L7%2013.1z%22%20id%3D%22path3%22%20fill%3D%22%23555%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-image:linear-gradient( transparent,transparent ),url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?ae714)!ie;background-size:28px;background-position:center center;height:32px;width:40px;display:block;position:absolute;left:0;border-right:1px solid #c9c9c9;opacity:0.8}.uls-icon-back:hover{opacity:1;cursor:pointer}
+.ext-quick-survey-panel,.ext-qs-loader-bar{width:auto;background-color:#eeeeee} .ext-qs-loader-bar{display:block;height:100px;margin-left:1.4em;clear:right;float:right;background-color:#eeeeee}.ext-qs-loader-bar.mw-ajax-loader{top:0}@media all and (min-width:720px){.ext-qs-loader-bar,.ext-quick-survey-panel{margin-left:1.4em;width:300px;clear:right;float:right}}
+.cite-accessibility-label{ top:-99999px;clip:rect( 1px 1px 1px 1px ); clip:rect( 1px,1px,1px,1px ); position:absolute !important;padding:0 !important;border:0 !important;height:1px !important;width:1px !important; overflow:hidden}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	#toc.tochidden,.toctoggle{display:none}}
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:solid 1px #aaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:solid 1px #aaa;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4c59a6;color:#fff}.suggestions-special .special-label{color:#808080;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c0c0c0}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:24px;width:24px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gear_icon.svg/24px-Gear_icon.svg.png);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/7/77/Gear_icon.svg);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-ms-transition:opacity 0.15s;-o-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+.skin-vector li.GA,.skin-monobook li.GA,.skin-modern li.GA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/4/42/Monobook-bullet-ga.png)} .skin-vector li.FA,.skin-monobook li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png)}.skin-modern li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Modern-bullet-star.svg/9px-Modern-bullet-star.svg.png)}
+.mw-ui-button{font-family:inherit;font-size:1em;display:inline-block;min-width:4em;max-width:28.75em;padding:.5em 1em;margin:0;border-radius:2px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;*display:inline;zoom:1;vertical-align:middle;background-color:#f8f9fa;color:#222222;border:1px solid #9aa0a7;text-align:center;font-weight:bold;cursor:pointer}.mw-ui-button:visited{color:#222222}.mw-ui-button:hover{background-color:#ffffff;color:#444444;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#222222;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button:active,.mw-ui-button.is-on,.mw-ui-button.mw-ui-checked{background-color:#d9d9d9;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#fff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:focus{outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:not( :disabled ){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;-moz-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button:disabled{text-shadow:none;cursor:default}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}.mw-ui-button.mw-ui-progressive,.mw-ui-button.mw-ui-constructive{background-color:#3366cc;color:#fff;border:1px solid #3366cc;text-shadow:0 1px rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-progressive:hover,.mw-ui-button.mw-ui-constructive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus,.mw-ui-button.mw-ui-constructive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-constructive:active,.mw-ui-button.mw-ui-progressive.is-on,.mw-ui-button.mw-ui-constructive.is-on,.mw-ui-button.mw-ui-progressive.mw-ui-checked,.mw-ui-button.mw-ui-constructive.mw-ui-checked{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-constructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-constructive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-constructive:disabled:active,.mw-ui-button.mw-ui-progressive:disabled.mw-ui-checked,.mw-ui-button.mw-ui-constructive:disabled.mw-ui-checked{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet,.mw-ui-button.mw-ui-constructive.mw-ui-quiet{color:#222222}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-progressive.mw-ui-quiet.mw-ui-checked,.mw-ui-button.mw-ui-constructive.mw-ui-quiet.mw-ui-checked{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-destructive{background-color:#cc3333;color:#fff;border:1px solid #cc3333;text-shadow:0 1px rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-destructive:hover{background-color:#e53939;border-color:#e53939}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #cc3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on,.mw-ui-button.mw-ui-destructive.mw-ui-checked{background-color:#873636;border-color:#873636;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active,.mw-ui-button.mw-ui-destructive:disabled.mw-ui-checked{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#222222}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#e53939}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-destructive.mw-ui-quiet.mw-ui-checked{color:#873636}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#cc3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-quiet{background:transparent;border:0;text-shadow:none;color:#222222}.mw-ui-button.mw-ui-quiet:hover{background-color:transparent;color:#444444}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-checked{color:#000000}.mw-ui-button.mw-ui-quiet:focus{background-color:transparent;color:#222222}.mw-ui-button.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet:disabled{background:transparent}a.mw-ui-button{text-decoration:none;line-height:normal}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not( :first-child ){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.mw-ui-icon{position:relative;line-height:1.5em;min-height:1.5em;min-width:1.5em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;background-repeat:no-repeat;background-size:100% auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}.mw-ui-icon.mw-ui-icon-small:before{background-size:66.67% auto}
+@media print{#centralNotice{display:none}}.cn-closeButton{display:inline-block;zoom:1;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAACeklEQVR4Aa1UM3jkcRBN6qS//tTFttPHqmI359VZ5dm2L1zFtr02YlRx5sX2ft/7ed7O/w1M5ufnt8NZQjCBQXhG+IYZe5zjfju7xcHc3NzEzMwM6xOEqNnZ2ZeVlZW827dv1ycmJnbGx8d3Yr5582Z9eXk5D/d4h/empqYm+K0nw3yKcF4sFmdzOJzGgIAAhb29vc7Ozk6/Atrr/fz8lCwWq6m3tzcb72G3nmzFo/NNTU354eHhIltbW72Tk5M2IyND9P79+8ZPnz7VvXnzpoHBYPS4uLhobGxsDMHBwaLa2tp82MF+PVmUUqnMioiI6LOysjLQLCcPS2ZmZn7Ozc39oPtFYG80GgWpqakSS0tLY1hYmEgikWTBfoXsLD16BT3gUWhoqEKtVheREZ+Qu0IEjI+PZ2k0GqFer+cnJSWJra2tDWw2u2FqauoVeEAW3NzcnBcYGCh3dHTUtba2ltNjLvRJSEiQEQEPRENDQzkMBqPXwsKiXyqVFsFDNzc3LWmoqKmp4YIHZIyHDx9WOzg46GJiYmTk5e/h4eHstLQ0CX2ykXST4JPJ8y7sSVM5/QGMf9y4caMHf3r//v1a8IDsGRm04/D58+dtpNFPPNRqtflXrlzpI8G15IEGc2xsrFSlUglwD+Tk5NRBmuTk5A7wgOxbXFxcF8iysrIa1mskEolKvL29Ne7u7mpXV1dNaWlp9fr7X79+VYMMeQieY/dsv5p1r2g2Nja2vWZ7RXNiYuIA0dwlzwYGBjbkGXmURXeLeUa1ul2ebV8BEH+7CiAiASTYvgJ2qc3MzMzF2vz8+XPd27dvG5hMZg+CsV1tHmfXOP5+dqyddgHOI7v1srTdcwAAAABJRU5ErkJggg==);background:url(/w/extensions/CentralNotice/resources/subscribing/CloseWindow19x19.png?7596b)!ie;width:19px;height:19px;text-indent:19px;white-space:nowrap;overflow:hidden}</style><style>
+.ve-activated #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators,.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-deactivating .ve-ui-surface,.ve-active .ve-init-mw-desktopArticleTarget-editableContent{display:none} .ve-activating .ve-ui-surface{height:0;padding:0 !important; overflow:hidden} .ve-loading #content > :not( .ve-init-mw-desktopArticleTarget-loading-overlay ), .ve-activated .ve-init-mw-desktopArticleTarget-uneditableContent{  pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none; opacity:0.5}.ve-activated .catlinks{cursor:pointer}.ve-activated .catlinks a{opacity:1} .ve-activated #content{position:relative} .ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-progress{height:1em;overflow:hidden;margin:0 25%}.ve-init-mw-desktopArticleTarget-progress-bar{height:1em;width:0} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .ve-init-mw-desktopArticleTarget-progress{height:0.75em;border:1px solid #36c;background:#fff;border-radius:2px;box-shadow:0 0.1em 0 0 rgba( 0,0,0,0.15 )}.ve-init-mw-desktopArticleTarget-progress-bar{height:0.75em;background:#36c}
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+.mw-mmv-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto;  }body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block;line-height:inherit}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23777%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M851.2%2071.6L690.7%20232.1l-40.1-40.3-9.6%20164.8%20164.8-9.3-40.3-40.4L926%20146.4l58.5%2058.5L997.6%200%20792.7%2013.1%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M769.6%2089.3H611.9l70.9%2070.8%207.9%207.5m-47.1%20234.6l-51.2%203%203-51.2%209.4-164.4%205.8-100.3H26.4V768h883.1V387l-100.9%205.8-165%209.4zM813.9%20678H113.6l207.2-270.2%2031.5-12.9L548%20599.8l105.9-63.2%20159.8%20140.8.2.6zm95.6-291.9V228l-79.1%2078.9%207.8%207.9%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A);background-image:url(/w/extensions/MultimediaViewer/resources/mmv/img/expand.svg?b714e)!ie}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M897%20454.6V313.4L810.4%20299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4%2050.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427%2085.6c-23.3%206.4-45.7%2016-65.8%2027.3l-71.4-50.5-100.3%2099.5%2050.5%2071.4c-11.2%2020.9-20.9%2042.5-27.3%2066.6L127%20313.4v141.2l85.8%2014.4c6.4%2023.3%2016%2045.7%2027.3%2066.6L189.6%20607l99.5%2099.5%2071.4-50.5c20.9%2011.2%2042.5%2020.9%2066.6%2027.3l14.4%2085.8h141.2l14.4-86.6c23.3-6.4%2045.7-16%2065.8-27.3l71.4%2050.5%2099.5-99.5-50.5-71.4c11.2-20.9%2020.9-42.5%2027.3-66.6l86.4-13.6zm-385%2077c-81.8%200-147.6-66.6-147.6-147.6%200-81.8%2066.6-147.6%20147.6-147.6S659.6%20302.2%20659.6%20384%20593.8%20531.6%20512%20531.6z%22%20fill%3D%22%23777%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-image:url(/w/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?330ae)!ie;opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Nim - Wikipedia_files/load(2).php">
+<meta name="generator" content="MediaWiki 1.29.0-wmf.1">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Nim">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit">
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit">
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Nim">
+<link rel="dns-prefetch" href="https://login.wikimedia.org/">
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/">
+<script src="./Nim - Wikipedia_files/load(3).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Nim rootpage-Nim skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="centralNotice"></div><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Nim</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="https://en.wikipedia.org/wiki/Nim#mw-head">navigation</a>, 					<a href="https://en.wikipedia.org/wiki/Nim#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For other uses, see <a href="https://en.wikipedia.org/wiki/Nim_(disambiguation)" class="mw-disambig" title="Nim (disambiguation)">Nim (disambiguation)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="https://en.wikipedia.org/wiki/File:Nim_qc.jpg" class="image"><img alt="" src="./Nim - Wikipedia_files/220px-Nim_qc.jpg" width="220" height="147" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nim_qc.jpg/330px-Nim_qc.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/6/68/Nim_qc.jpg 2x" data-file-width="400" data-file-height="267"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Nim_qc.jpg" class="internal" title="Enlarge"></a></div>
+Mine A rack used to play nim with heaps of size three, five, and seven.</div>
+</div>
+</div>
+<p><b>Nim</b> is a <a href="https://en.wikipedia.org/wiki/Mathematical_game" title="Mathematical game">mathematical</a> <a href="https://en.wikipedia.org/wiki/Game_of_strategy" class="mw-redirect" title="Game of strategy">game of strategy</a> in which two players take turns removing objects from distinct heaps. On each turn, a player must remove at least one object, and may remove any number of objects provided they all come from the same heap. The goal of the game is to be the player to remove the last object.</p>
+<p>Variants of Nim have been played since ancient times.<sup id="cite_ref-1" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-1">[1]</a></sup> The game is said to have originated in <a href="https://en.wikipedia.org/wiki/China" title="China">China</a>—it closely resembles the Chinese game of "Tsyan-shizi", or "picking stones"<sup id="cite_ref-2" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-2">[2]</a></sup>—but the origin is uncertain; the earliest European references to Nim are from the beginning of the 16th century. Its current name was coined by <a href="https://en.wikipedia.org/wiki/Charles_L._Bouton" title="Charles L. Bouton">Charles L. Bouton</a> of <a href="https://en.wikipedia.org/wiki/Harvard_University" title="Harvard University">Harvard University</a>, who also developed the complete theory of the game in 1901,<sup id="cite_ref-3" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-3">[3]</a></sup> but the origins of the name were never fully explained. The name is probably derived from <a href="https://en.wikipedia.org/wiki/German_language" title="German language">German</a> <i>nimm</i> meaning "take [imperative]", or the obsolete English verb <i>nim</i> of the same meaning.<sup id="cite_ref-4" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-4">[4]</a></sup></p>
+<p>Nim can be played as a <i><a href="https://en.wikipedia.org/wiki/Mis%C3%A8re" title="Misère">misère</a></i> game, in which the player to take the last object loses. Nim can also be played as a <i>normal play</i> game, which means that the person who makes the last move (i.e., who takes the last object) wins. This is called normal play because most games follow this convention, even though Nim usually does not.</p>
+<p>Normal play Nim (or more precisely the system of <a href="https://en.wikipedia.org/wiki/Nimber" title="Nimber">nimbers</a>) is fundamental to the <a href="https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem" title="Sprague–Grundy theorem">Sprague–Grundy theorem</a>, which essentially says that in normal play every <a href="https://en.wikipedia.org/wiki/Impartial_game" title="Impartial game">impartial game</a> is equivalent to a Nim heap that yields the same outcome when played in parallel with other normal play impartial games (see <a href="https://en.wikipedia.org/wiki/Disjunctive_sum" title="Disjunctive sum">disjunctive sum</a>).</p>
+<p>While all normal play impartial games can be assigned a Nim value, that is not the case under the misère convention. Only <a href="https://en.wikipedia.org/wiki/Genus_theory#Tame" title="Genus theory">tame games</a> can be played using the same strategy as misère nim.</p>
+<p>Nim is a special case of a <a href="https://en.wikipedia.org/wiki/Poset_game" title="Poset game">poset game</a> where the <a href="https://en.wikipedia.org/wiki/Poset" class="mw-redirect" title="Poset">poset</a> consists of disjoint <a href="https://en.wikipedia.org/wiki/Total_order" title="Total order">chains</a> (the heaps).</p>
+<p>At the <a href="https://en.wikipedia.org/wiki/1939_New_York_World%27s_Fair" title="1939 New York World&#39;s Fair">1940 New York World's Fair</a> <a href="https://en.wikipedia.org/wiki/Westinghouse_Electric_(1886)" class="mw-redirect" title="Westinghouse Electric (1886)">Westinghouse</a> displayed a machine, the Nimatron, that played Nim.<sup id="cite_ref-5" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-5">[5]</a></sup> It was also one of the first ever electronic computerized games. <a href="https://en.wikipedia.org/wiki/Ferranti" title="Ferranti">Ferranti</a> built a <a href="https://en.wikipedia.org/wiki/Nimrod_(computing)" title="Nimrod (computing)">Nim playing computer</a> which was displayed at the <a href="https://en.wikipedia.org/wiki/Festival_of_Britain" title="Festival of Britain">Festival of Britain</a> in 1951. In 1952 Herbert Koppel, Eugene Grant and Howard Bailer, engineers from the W. L. Maxon Corporation, developed a machine weighing 50 pounds which played Nim against a human opponent and regularly won.<sup id="cite_ref-6" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-6">[6]</a></sup> A Nim Playing Machine has been described made from <a href="https://en.wikipedia.org/wiki/Tinkertoy" title="Tinkertoy">TinkerToy</a>.<sup id="cite_ref-7" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-7">[7]</a></sup></p>
+<p>The game of Nim was the subject of Martin Gardner's February 1958 <a href="https://en.wikipedia.org/wiki/Mathematical_Games_column" class="mw-redirect" title="Mathematical Games column">Mathematical Games column</a> in Scientific American. A version of Nim is played—and has symbolic importance—in the <a href="https://en.wikipedia.org/wiki/French_New_Wave" title="French New Wave">French New Wave</a> film <i><a href="https://en.wikipedia.org/wiki/Last_Year_at_Marienbad" title="Last Year at Marienbad">Last Year at Marienbad</a></i> (1961).<sup id="cite_ref-8" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-8">[8]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+<span class="toctoggle">&nbsp;[<a role="button" tabindex="0" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://en.wikipedia.org/wiki/Nim#Game_play_and_illustration"><span class="tocnumber">1</span> <span class="toctext">Game play and illustration</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://en.wikipedia.org/wiki/Nim#Winning_positions"><span class="tocnumber">2</span> <span class="toctext">Winning positions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="https://en.wikipedia.org/wiki/Nim#Mathematical_theory"><span class="tocnumber">3</span> <span class="toctext">Mathematical theory</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="https://en.wikipedia.org/wiki/Nim#Proof_of_the_winning_formula"><span class="tocnumber">4</span> <span class="toctext">Proof of the winning formula</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="https://en.wikipedia.org/wiki/Nim#Variations"><span class="tocnumber">5</span> <span class="toctext">Variations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="https://en.wikipedia.org/wiki/Nim#Dividing_natural_number"><span class="tocnumber">5.1</span> <span class="toctext">Dividing natural number</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="https://en.wikipedia.org/wiki/Nim#The_subtraction_game_S.281.2C_2.2C_._._..2C_k.29"><span class="tocnumber">5.2</span> <span class="toctext">The subtraction game <i>S</i>(1, 2, . . ., <i>k</i>)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="https://en.wikipedia.org/wiki/Nim#The_21_game"><span class="tocnumber">5.3</span> <span class="toctext">The 21 game</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="https://en.wikipedia.org/wiki/Nim#The_100_game"><span class="tocnumber">5.4</span> <span class="toctext">The 100 game</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="https://en.wikipedia.org/wiki/Nim#A_multiple-heap_rule"><span class="tocnumber">5.5</span> <span class="toctext">A multiple-heap rule</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="https://en.wikipedia.org/wiki/Nim#Circular_Nim"><span class="tocnumber">5.6</span> <span class="toctext">Circular Nim</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="https://en.wikipedia.org/wiki/Nim#Grundy.27s_game"><span class="tocnumber">5.7</span> <span class="toctext">Grundy's game</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="https://en.wikipedia.org/wiki/Nim#Greedy_Nim"><span class="tocnumber">5.8</span> <span class="toctext">Greedy Nim</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="https://en.wikipedia.org/wiki/Nim#Index-k_Nim"><span class="tocnumber">5.9</span> <span class="toctext">Index-<i>k</i> Nim</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="https://en.wikipedia.org/wiki/Nim#Building_Nim"><span class="tocnumber">5.10</span> <span class="toctext">Building Nim</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="https://en.wikipedia.org/wiki/Nim#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="https://en.wikipedia.org/wiki/Nim#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="https://en.wikipedia.org/wiki/Nim#Additional_reading"><span class="tocnumber">8</span> <span class="toctext">Additional reading</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="https://en.wikipedia.org/wiki/Nim#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Game_play_and_illustration">Game play and illustration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=1" title="Edit section: Game play and illustration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The normal game is between two players and played with three heaps of any number of objects. The two players alternate taking any number of objects from any single one of the heaps. The goal is to be the last to take an object. In misère play, the goal is instead to ensure that the opponent is forced to take the last remaining object.</p>
+<p>The following example game is played between fictional players <a href="https://en.wikipedia.org/wiki/Bob_and_Alice" class="mw-redirect" title="Bob and Alice">Bob and Alice</a> who start with heaps of three, four and five objects.</p>
+<pre>Sizes of heaps  Moves
+A B C
+ 
+3 4 5           Bob   takes 2 from A
+1 4 5           Alice takes 3 from C
+1 4 2           Bob   takes 1 from B
+1 3 2           Alice takes 1 from B
+1 2 2           Bob   takes entire A heap, leaving two 2s.
+0 2 2           Alice takes 1 from B
+0 1 2           Bob   takes 1 from C leaving two 1s. (<i>In misère play he would take 2 from C leaving (0, 1, 0).</i>)
+0 1 1           Alice takes 1 from B
+0 0 1           Bob   takes entire C heap and wins.
+</pre>
+<h2><span class="mw-headline" id="Winning_positions">Winning positions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=2" title="Edit section: Winning positions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The practical strategy to win at the game of <i>Nim</i> is for a player to get the other into one of the following positions, and every successive turn afterwards they should be able to make one of the lower positions. Only the last move changes between misere and normal play.</p>
+<table class="wikitable">
+<tbody><tr>
+<th>2 Heaps</th>
+<th>3 Heaps</th>
+<th>4 Heaps</th>
+</tr>
+<tr>
+<td>1 1 *</td>
+<td>1 1 1 **</td>
+<td>1 1 1 1 *</td>
+</tr>
+<tr>
+<td>2 2</td>
+<td>1 2 3</td>
+<td>1 1 n n</td>
+</tr>
+<tr>
+<td>3 3</td>
+<td>1 4 5</td>
+<td>1 2 4 7</td>
+</tr>
+<tr>
+<td>4 4</td>
+<td>1 6 7</td>
+<td>1 2 5 6</td>
+</tr>
+<tr>
+<td>5 5</td>
+<td>1 8 9</td>
+<td>1 3 4 6</td>
+</tr>
+<tr>
+<td>6 6</td>
+<td>2 4 6</td>
+<td>1 3 5 7</td>
+</tr>
+<tr>
+<td>7 7</td>
+<td>2 5 7</td>
+<td>2 3 4 5</td>
+</tr>
+<tr>
+<td>8 8</td>
+<td>3 4 7</td>
+<td>2 3 6 7</td>
+</tr>
+<tr>
+<td>9 9</td>
+<td>3 5 6</td>
+<td>2 3 8 9</td>
+</tr>
+<tr>
+<td>(n n)</td>
+<td>4 8 12</td>
+<td>4 5 6 7</td>
+</tr>
+<tr>
+<td></td>
+<td>4 9 13</td>
+<td>4 5 8 9</td>
+</tr>
+<tr>
+<td></td>
+<td>5 8 13</td>
+<td>n n m m</td>
+</tr>
+<tr>
+<td></td>
+<td>5 9 12</td>
+<td>n n n n</td>
+</tr>
+</tbody></table>
+<p>* Only valid for normal play, ** Only valid for misere. For the generalisations, <i>n</i> and <i>m</i> can be any value &gt; 0, and they may be the same.</p>
+<h2><span class="mw-headline" id="Mathematical_theory">Mathematical theory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=3" title="Edit section: Mathematical theory">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Nim has been mathematically <a href="https://en.wikipedia.org/wiki/Solved_game" title="Solved game">solved</a> for any number of initial heaps and objects, and there is an easily calculated way to determine which player will win and what winning moves are open to that player. In a game that starts with heaps of three, four, and five, the first player will win with optimal play, whether the misère or normal play convention is followed.</p>
+<p>The key to the theory of the game is the <a href="https://en.wikipedia.org/wiki/Binary_numeral_system" class="mw-redirect" title="Binary numeral system">binary</a> <a href="https://en.wikipedia.org/wiki/Digital_sum_in_base_b" title="Digital sum in base b">digital sum</a> of the heap sizes, that is, the sum (in binary) neglecting all carries from one digit to another. This operation is also known as "<a href="https://en.wikipedia.org/wiki/Exclusive_or" title="Exclusive or">exclusive or</a>" (xor) or "vector addition over <a href="https://en.wikipedia.org/wiki/Finite_field" title="Finite field"><b>GF</b>(2)</a>". Within <a href="https://en.wikipedia.org/wiki/Combinatorial_game_theory" title="Combinatorial game theory">combinatorial game theory</a> it is usually called the <b>nim-sum</b>, as it will be called here. The nim-sum of <i>x</i> and <i>y</i> is written <i>x</i>&nbsp;⊕&nbsp;<i>y</i> to distinguish it from the ordinary sum, <i>x</i>&nbsp;+&nbsp;<i>y</i>. An example of the calculation with heaps of size 3, 4, and 5 is as follows:</p>
+<pre><a href="https://en.wikipedia.org/wiki/Binary_numeral_system" class="mw-redirect" title="Binary numeral system">Binary</a>  <a href="https://en.wikipedia.org/wiki/Decimal" title="Decimal">Decimal</a>
+ 
+  011<sub>2</sub>    3<sub>10</sub>    Heap A
+  100<sub>2</sub>    4<sub>10</sub>    Heap B
+  101<sub>2</sub>    5<sub>10</sub>    Heap C
+  ---
+  010<sub>2</sub>    2<sub>10</sub>    The nim-sum of heaps A, B, and C, 3 ⊕ 4 ⊕ 5 = 2
+</pre>
+<p>An equivalent procedure, which is often easier to perform mentally, is to express the heap sizes as sums of distinct <a href="https://en.wikipedia.org/wiki/Exponentiation" title="Exponentiation">powers</a> of 2, cancel pairs of equal powers, and then add what's left:</p>
+<pre>3 = 0 + 2 + 1 =     2   1      Heap A
+4 = 4 + 0 + 0 = 4              Heap B
+5 = 4 + 0 + 1 = 4       1      Heap C
+---
+2 =                 2          What's left after canceling 1s and 4s
+</pre>
+<p>In normal play, the winning strategy is to finish every move with a nim-sum of 0. This is always possible if the nim-sum is not zero before the move. If the nim-sum is zero, then the next player will lose if the other player does not make a mistake. To find out which move to make, let X be the nim-sum of all the heap sizes. Find a heap where the nim-sum of X and heap-size is less than the heap-size - the winning strategy is to play in such a heap, reducing that heap to the nim-sum of its original size with X. In the example above, taking the nim-sum of the sizes is X&nbsp;=&nbsp;3&nbsp;⊕&nbsp;4&nbsp;⊕&nbsp;5&nbsp;=&nbsp;2. The nim-sums of the heap sizes A=3, B=4, and C=5 with X=2 are</p>
+<dl>
+<dd>A ⊕ X = 3 ⊕ 2 = 1 [Since (011) ⊕ (010) = 001 ]</dd>
+<dd>B ⊕ X = 4 ⊕ 2 = 6</dd>
+<dd>C ⊕ X = 5 ⊕ 2 = 7</dd>
+</dl>
+<p>The only heap that is reduced is heap A, so the winning move is to reduce the size of heap A to 1 (by removing two objects).</p>
+<p>As a particular simple case, if there are only two heaps left, the strategy is to reduce the number of objects in the bigger heap to make the heaps equal. After that, no matter what move your opponent makes, you can make the same move on the other heap, guaranteeing that you take the last object.</p>
+<p>When played as a misère game, Nim strategy is different only when the normal play move would leave no heap of size two or larger. In that case, the correct move is to leave an odd number of heaps of size one (in normal play, the correct move would be to leave an even number of such heaps).</p>
+<p>In a misère game with heaps of sizes three, four and five, the strategy would be applied like this:</p>
+<pre>A B C nim-sum 
+ 
+3 4 5 010<sub>2</sub>=2<sub>10</sub>   I take 2 from A, leaving a sum of 000, so I will win.
+1 4 5 000<sub>2</sub>=0<sub>10</sub>   You take 2 from C
+1 4 3 110<sub>2</sub>=6<sub>10</sub>   I take 2 from B
+1 2 3 000<sub>2</sub>=0<sub>10</sub>   You take 1 from C
+1 2 2 001<sub>2</sub>=1<sub>10</sub>   I take 1 from A
+0 2 2 000<sub>2</sub>=0<sub>10</sub>   You take 1 from C
+0 2 1 011<sub>2</sub>=3<sub>10</sub>   The normal play strategy would be to take 1 from B, leaving an even number (2)
+                 heaps of size 1.  For misère play, I take the entire B heap, to leave an odd
+                 number (1) of heaps of size 1.
+0 0 1 001<sub>2</sub>=1<sub>10</sub>   You take 1 from C, and lose.
+</pre>
+<p>The previous strategy for a misère game can be easily implemented (for example in <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, below).</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre><span class="k">def</span> <span class="nf">nim</span><span class="p">(</span><span class="n">heaps</span><span class="p">,</span> <span class="n">misere</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="sd">"""Computes next move for Nim in a normal or misère (default) game, returns tuple (chosen_heap, nb_remove)"""</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">x</span><span class="o">^</span><span class="n">y</span><span class="p">,</span> <span class="n">heaps</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">X</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Will lose unless all non-empty heaps have size one</span>
+        <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="n">heaps</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s2">"You will lose :("</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">heap</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">heaps</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">heap</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Empty any (non-empty) heap</span>
+                <span class="n">chosen_heap</span><span class="p">,</span> <span class="n">nb_remove</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">heap</span>
+                <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sums</span> <span class="o">=</span> <span class="p">[</span><span class="n">t</span><span class="o">^</span><span class="n">X</span> <span class="o">&lt;</span> <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">heaps</span><span class="p">]</span>
+        <span class="n">chosen_heap</span> <span class="o">=</span> <span class="n">sums</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">nb_remove</span> <span class="o">=</span> <span class="n">heaps</span><span class="p">[</span><span class="n">chosen_heap</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">heaps</span><span class="p">[</span><span class="n">chosen_heap</span><span class="p">]</span><span class="o">^</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">heaps_twomore</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">heap</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">heaps</span><span class="p">):</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">heap</span><span class="o">-</span><span class="n">nb_remove</span> <span class="k">if</span> <span class="n">chosen_heap</span> <span class="o">==</span> <span class="n">i</span> <span class="k">else</span> <span class="n">heap</span>
+            <span class="k">if</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span> <span class="n">heaps_twomore</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># If move leaves no heap of size 2 or larger, leave an odd (misère) or even (normal) number of heaps of size 1</span>
+        <span class="k">if</span> <span class="n">heaps_twomore</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">chosen_heap</span> <span class="o">=</span> <span class="n">heaps</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">heaps</span><span class="p">))</span>
+            <span class="n">heaps_one</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">t</span><span class="o">==</span><span class="mi">1</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">heaps</span><span class="p">)</span>
+            <span class="c1"># Misère (resp. normal) strategy: if it is even (resp. odd) make it odd (resp. even), else do not change</span>
+            <span class="n">nb_remove</span> <span class="o">=</span> <span class="n">heaps</span><span class="p">[</span><span class="n">chosen_heap</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">heaps_one</span><span class="o">%</span><span class="mi">2</span><span class="o">!=</span><span class="n">misere</span> <span class="k">else</span> <span class="n">heaps</span><span class="p">[</span><span class="n">chosen_heap</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">chosen_heap</span><span class="p">,</span> <span class="n">nb_remove</span>
+</pre></div>
+<h2><span class="mw-headline" id="Proof_of_the_winning_formula">Proof of the winning formula</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=4" title="Edit section: Proof of the winning formula">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The soundness of the optimal strategy described above was demonstrated by C. Bouton.</p>
+<p><b>Theorem</b>. In a normal Nim game, the player making the first move has a winning strategy if and only if the nim-sum of the sizes of the heaps is nonzero. Otherwise, the second player has a winning strategy.</p>
+<p><i>Proof:</i> Notice that the nim-sum (⊕) obeys the usual <a href="https://en.wikipedia.org/wiki/Associativity" class="mw-redirect" title="Associativity">associative</a> and <a href="https://en.wikipedia.org/wiki/Commutativity" class="mw-redirect" title="Commutativity">commutative</a> laws of addition (+) and also satisfies an additional property, <i>x</i>&nbsp;⊕&nbsp;<i>x</i>&nbsp;=&nbsp;0 (technically speaking, that the nonnegative integers under ⊕ form an <a href="https://en.wikipedia.org/wiki/Abelian_group" title="Abelian group">Abelian group</a> of <a href="https://en.wikipedia.org/wiki/Exponent_of_a_group" class="mw-redirect" title="Exponent of a group">exponent</a> 2).</p>
+<p>Let <i>x</i><sub>1</sub>,&nbsp;...,&nbsp;<i>x<sub>n</sub></i> be the sizes of the heaps before a move, and <i>y</i><sub>1</sub>,&nbsp;...,&nbsp;<i>y<sub>n</sub></i> the corresponding sizes after a move. Let <i>s</i>&nbsp;=&nbsp;<i>x</i><sub>1</sub>&nbsp;⊕&nbsp;...&nbsp;⊕&nbsp;<i>x<sub>n</sub></i> and <i>t</i>&nbsp;=&nbsp;<i>y</i><sub>1</sub>&nbsp;⊕&nbsp;...&nbsp;⊕&nbsp;<i>y<sub>n</sub></i>. If the move was in heap <i>k</i>, we have <i>x<sub>i</sub></i>&nbsp;=&nbsp;<i>y<sub>i</sub></i> for all <i>i</i>&nbsp;≠&nbsp;<i>k</i>, and <i>x<sub>k</sub></i>&nbsp;&gt;&nbsp;<i>y<sub>k</sub></i>. By the properties of ⊕ mentioned above, we have</p>
+<pre>    <i>t</i> = 0 ⊕ <i>t</i>
+      = <i>s</i> ⊕ <i>s</i> ⊕ <i>t</i>
+      = <i>s</i> ⊕ (<i>x</i><sub>1</sub> ⊕ ... ⊕ <i>x<sub>n</sub></i>) ⊕ (<i>y</i><sub>1</sub> ⊕ ... ⊕ <i>y<sub>n</sub></i>)
+      = <i>s</i> ⊕ (<i>x</i><sub>1</sub> ⊕ <i>y</i><sub>1</sub>) ⊕ ... ⊕ (<i>x<sub>n</sub></i> ⊕ <i>y<sub>n</sub></i>)
+      = <i>s</i> ⊕ 0 ⊕ ... ⊕ 0 ⊕ (<i>x<sub>k</sub></i> ⊕ <i>y<sub>k</sub></i>) ⊕ 0 ⊕ ... ⊕ 0
+      = <i>s</i> ⊕ <i>x<sub>k</sub></i> ⊕ <i>y<sub>k</sub></i>
+ 
+(*) <i>t</i> = <i>s</i> ⊕ <i>x<sub>k</sub></i> ⊕ <i>y<sub>k</sub></i>.
+</pre>
+<p>The theorem follows by induction on the length of the game from these two lemmas.</p>
+<p><b>Lemma 1</b>. If <i>s</i> = 0, then <i>t</i> ≠ 0 no matter what move is made.</p>
+<p><i>Proof:</i> If there is no possible move, then the lemma is <a href="https://en.wikipedia.org/wiki/Vacuous_truth" title="Vacuous truth">vacuously true</a> (and the first player loses the normal play game by definition). Otherwise, any move in heap <i>k</i> will produce <i>t</i>&nbsp;=&nbsp;<i>x<sub>k</sub></i>&nbsp;⊕&nbsp;<i>y<sub>k</sub></i> from (*). This number is nonzero, since <i>x<sub>k</sub></i>&nbsp;≠&nbsp;<i>y<sub>k</sub></i>.</p>
+<p><b>Lemma 2</b>. If <i>s</i> ≠ 0, it is possible to make a move so that <i>t</i> = 0.</p>
+<p><i>Proof:</i> Let <i>d</i> be the position of the leftmost (most significant) nonzero bit in the binary representation of <i>s</i>, and choose <i>k</i> such that the <i>d</i>th bit of <i>x<sub>k</sub></i> is also nonzero. (Such a <i>k</i> must exist, since otherwise the <i>d</i>th bit of <i>s</i> would be 0.) Then letting <i>y<sub>k</sub></i>&nbsp;=&nbsp;<i>s</i>&nbsp;⊕&nbsp;<i>x<sub>k</sub></i>, we claim that <i>y<sub>k</sub></i>&nbsp;&lt;&nbsp;<i>x<sub>k</sub></i>: all bits to the left of <i>d</i> are the same in <i>x<sub>k</sub></i> and <i>y<sub>k</sub></i>, bit <i>d</i> decreases from 1 to 0 (decreasing the value by 2<sup><i>d</i></sup>), and any change in the remaining bits will amount to at most 2<sup><i>d</i></sup>−1. The first player can thus make a move by taking <i>x<sub>k</sub></i>&nbsp;−&nbsp;<i>y<sub>k</sub></i> objects from heap <i>k</i>, then</p>
+<pre><i>t</i> = <i>s</i> ⊕ <i>x<sub>k</sub></i> ⊕ <i>y<sub>k</sub></i>           (by (*))
+  = <i>s</i> ⊕ <i>x<sub>k</sub></i> ⊕ (<i>s</i> ⊕ <i>x<sub>k</sub></i>)
+  = 0.
+</pre>
+<p>The modification for misère play is demonstrated by noting that the modification first arises in a position that has only one heap of size 2 or more. Notice that in such a position <i>s</i> ≠ 0, therefore this situation has to arise when it is the turn of the player following the winning strategy. The normal play strategy is for the player to reduce this to size 0 or 1, leaving an even number of heaps with size 1, and the misère strategy is to do the opposite. From that point on, all moves are forced.</p>
+<h2><span class="mw-headline" id="Variations">Variations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=5" title="Edit section: Variations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Dividing_natural_number">Dividing natural number</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=6" title="Edit section: Dividing natural number">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Give any natural number <i>n</i>, the two people can divide <i>n</i> by a <a href="https://en.wikipedia.org/wiki/Prime_power" title="Prime power">prime power</a> (<span class="nowrap"><a href="https://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="OEIS"><img alt="OEIS" src="./Nim - Wikipedia_files/11px-OEISicon_light.svg.png" width="11" height="15" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/17px-OEISicon_light.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/22px-OEISicon_light.svg.png 2x" data-file-width="409" data-file-height="556"></a> <a href="https://oeis.org/A000961" class="extiw" title="oeis:A000961">A000961</a></span>) which is a factor of <i>n</i> (except 1), the person who gets 1 wins (or loses).</p>
+<p>If <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>4</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>⋯<!-- ⋯ --></mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=2^{a_{1}}3^{a_{2}}5^{a_{3}}7^{a_{4}}\cdots p_{k}^{a_{k}}}</annotation>
+  </semantics>
+</math></span><img src="./Nim - Wikipedia_files/c13b0231447f36c908259cc65aab5663af3ab939" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:23.656ex; height:3.176ex;" alt="n=2^{{a_{1}}}3^{{a_{2}}}5^{{a_{3}}}7^{{a_{4}}}\cdots p_{k}^{{a_{k}}}"></span>, where <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{k}}</annotation>
+  </semantics>
+</math></span><img src="./Nim - Wikipedia_files/01084a31964201514f3e6bd0136989e11ea6e58a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.079ex; width:2.355ex; height:2.009ex;" alt="p_{k}"></span> is the <i>k</i>-th prime, then it is a Nim game with <i>k</i> groups of stones, and the <i>r</i>-th groups has <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{r}}</annotation>
+  </semantics>
+</math></span><img src="./Nim - Wikipedia_files/e315f1fc37a1d5b4da31f47d4e052c4a810d0f74" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.221ex; height:2.009ex;" alt="a_r"></span> stones.</p>
+<p>If the divisor changes to "a power of squarefree numbers" (<span class="nowrap"><a href="https://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="OEIS"><img alt="OEIS" src="./Nim - Wikipedia_files/11px-OEISicon_light.svg.png" width="11" height="15" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/17px-OEISicon_light.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/22px-OEISicon_light.svg.png 2x" data-file-width="409" data-file-height="556"></a> <a href="https://oeis.org/A072774" class="extiw" title="oeis:A072774">A072774</a></span>) except 1, it is <a href="https://en.wikipedia.org/wiki/Wythoff%27s_game" title="Wythoff&#39;s game">Wythoff's game</a>.</p>
+<p>The divisor can also change to "a divisor of <i>m</i>" for fixed <i>m</i>, where <i>m</i> is a divisor of <i>n</i>. (<i>m</i> should be divisible by all of the <a href="https://en.wikipedia.org/wiki/Prime_factor" title="Prime factor">prime factors</a> of <i>n</i> and should be less than <i>n</i>)</p>
+<p>Of course, you can choose a set of allowed divisors. For example, {2, 3, 4, 12, 15, 20, 24, 25, 30, 32, 36}.</p>
+<h3><span class="mw-headline" id="The_subtraction_game_S.281.2C_2.2C_._._..2C_k.29">The subtraction game <i>S</i>(1, 2, . . ., <i>k</i>)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=7" title="Edit section: The subtraction game S(1, 2, . . ., k)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<div class="noresize"><a href="http://upload.wikimedia.org/wikipedia/commons/4/4d/Subtraction_game_SMIL.svg" class="plainlinks" rel="nofollow" title="http://upload.wikimedia.org/wikipedia/commons/4/4d/Subtraction_game_SMIL.svg"><img alt="" src="./Nim - Wikipedia_files/220px-Subtraction_game_SMIL.svg.png" width="220" height="110" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Subtraction_game_SMIL.svg/330px-Subtraction_game_SMIL.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Subtraction_game_SMIL.svg/440px-Subtraction_game_SMIL.svg.png 2x" data-file-width="512" data-file-height="256"></a></div>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Subtraction_game_SMIL.svg" class="internal" title="Enlarge"></a></div>
+Interactive subtraction game: Players take turns removing 1, 2 or 3 objects from an initial pool of 21 objects. The player taking the last object wins.</div>
+</div>
+</div>
+<p>In another game which is commonly known as Nim (but is better called the <a href="https://en.wikipedia.org/w/index.php?title=Subtraction_game&amp;action=edit&amp;redlink=1" class="new" title="Subtraction game (page does not exist)">subtraction game</a> <i>S</i> (1,2,...,<i>k</i>)), an upper bound is imposed on the number of objects that can be removed in a turn. Instead of removing arbitrarily many objects, a player can only remove 1 or 2 or ... or <i>k</i> at a time. This game is commonly played in practice with only one heap (for instance with <i>k</i>&nbsp;=&nbsp;3 in the game <i>Thai 21</i> on <a href="https://en.wikipedia.org/wiki/Survivor:_Thailand" title="Survivor: Thailand">Survivor: Thailand</a>, where it appeared as an Immunity Challenge).</p>
+<p>Bouton's analysis carries over easily to the general multiple-heap version of this game. The only difference is that as a first step, before computing the Nim-sums, we must reduce the sizes of the heaps <a href="https://en.wikipedia.org/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a> <i>k</i>&nbsp;+&nbsp;1. If this makes all the heaps of size zero (in misère play), the winning move is to take <i>k</i> objects from one of the heaps. In particular, in ideal play from a single heap of <i>n</i> objects, the second player can win <a href="https://en.wikipedia.org/wiki/If_and_only_if" title="If and only if">if and only if</a></p>
+<dl>
+<dd><i>n</i>&nbsp;≡&nbsp;0&nbsp;(mod&nbsp;<i>k</i>&nbsp;+&nbsp;1) (in normal play), or</dd>
+<dd><i>n</i>&nbsp;≡&nbsp;1&nbsp;(mod&nbsp;<i>k</i>&nbsp;+&nbsp;1) (in misère play).</dd>
+</dl>
+<p>This follows from calculating the <a href="https://en.wikipedia.org/wiki/Nim-sequence" class="mw-redirect" title="Nim-sequence">nim-sequence</a> of <i>S</i>(1,2,...,<i>k</i>),</p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0.123</mn>
+        <mo>…<!-- … --></mo>
+        <mi>k</mi>
+        <mn>0123</mn>
+        <mo>…<!-- … --></mo>
+        <mi>k</mi>
+        <mn>0123</mn>
+        <mo>⋯<!-- ⋯ --></mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mn>0</mn>
+              <mo>˙<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mn>.123</mn>
+        <mo>…<!-- … --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>k</mi>
+              <mo>˙<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0.123\ldots k0123\ldots k0123\dots ={\dot {0}}.123\ldots {\dot {k}},\,}</annotation>
+  </semantics>
+</math></span><img src="./Nim - Wikipedia_files/b89cffe7fd7f53b38626051ef406c259af4c5f61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:41.544ex; height:3.176ex;" alt="0.123\ldots k0123\ldots k0123\dots ={\dot  0}.123\ldots {\dot  {k}},\,"></span></dd>
+</dl>
+<p>from which the strategy above follows by the <a href="https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem" title="Sprague–Grundy theorem">Sprague–Grundy theorem</a>.</p>
+<h3><span class="mw-headline" id="The_21_game">The 21 game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=8" title="Edit section: The 21 game">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The game "21" is played as a misère game with any number of players who take turns saying a number. The first player says "1" and each player in turn increases the number by 1, 2, or 3, but may not exceed 21; the player forced to say "21" loses. This can be modeled as a subtraction game with a heap of 21–<i>n</i> objects. The winning strategy for the two-player version of this game is to always say a multiple of 4; it is then guaranteed that the other player will ultimately have to say 21 – so in the standard version where the first player opens with "1", they start with a losing move.</p>
+<p>The 21 game can also be played with different numbers, like "Add at most 5; lose on 34".</p>
+<p>A sample game of 21 in which the second player follows the winning strategy:</p>
+<pre>Player     Number
+  1           1
+  2           4
+  1        5, 6 or 7
+  2           8
+  1       9, 10 or 11
+  2          12
+  1      13, 14 or 15
+  2          16
+  1      17, 18 or 19
+  2          20
+  1          21
+</pre>
+<h3><span class="mw-headline" id="The_100_game">The 100 game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=9" title="Edit section: The 100 game">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A similar version is the "100 game": two players start from 0 and alternatively add a number from 1 to 10 to the sum. The player who reaches 100 wins. The winning strategy is to reach a number in which the digits are subsequent (e.g. 01, 12, 23, 34,...) and control the game by jumping through all the numbers of this sequence. Once reached 89, the opponent has lost (he can only tell numbers from 90 to 99, and the next answer can in any case be 100).</p>
+<h3><span class="mw-headline" id="A_multiple-heap_rule">A multiple-heap rule</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=10" title="Edit section: A multiple-heap rule">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">See also: <a href="https://en.wikipedia.org/wiki/Wythoff%27s_game" title="Wythoff&#39;s game">Wythoff's game</a></div>
+<p>In another variation of Nim, besides removing any number of objects from a single heap, one is permitted to remove the same number of objects from each heap.</p>
+<h3><span class="mw-headline" id="Circular_Nim">Circular Nim</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=11" title="Edit section: Circular Nim">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">See also: <a href="https://en.wikipedia.org/wiki/Kayles" title="Kayles">Kayles</a></div>
+<p>Yet another variation of Nim is 'Circular Nim', where any number of objects are placed in a circle, and two players alternately remove one, two or three adjacent objects. For example, starting with a circle of ten objects,</p>
+<p>. . . . . . . . . .</p>
+<p>three objects are taken in the first move</p>
+<p>_ . . . . . . . _ _</p>
+<p>then another three</p>
+<p>_ . _ _ _ . . . _ _</p>
+<p>then one</p>
+<p>_ . _ _ _ . . _ _ _</p>
+<p>but then three objects cannot be taken out in one move.</p>
+<h3><span class="mw-headline" id="Grundy.27s_game">Grundy's game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=12" title="Edit section: Grundy&#39;s game">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In <a href="https://en.wikipedia.org/wiki/Grundy%27s_game" title="Grundy&#39;s game">Grundy's game</a>, another variation of Nim, a number of objects are placed in an initial heap, and two players alternately divide a heap into two nonempty heaps of different sizes. Thus, six objects may be divided into piles of 5+1 or 4+2, but not 3+3. Grundy's game can be played as either misère or normal play.</p>
+<h3><span class="mw-headline" id="Greedy_Nim">Greedy Nim</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=13" title="Edit section: Greedy Nim">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>Greedy Nim</i> is a variation where the players are restricted to choosing stones from only the largest pile.<sup id="cite_ref-Greedy_Nim_9-0" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-Greedy_Nim-9">[9]</a></sup> It is a finite <a href="https://en.wikipedia.org/wiki/Impartial_game" title="Impartial game">impartial game</a>. <i>Greedy Nim <a href="https://en.wikipedia.org/wiki/Mis%C3%A8re" title="Misère">Misère</a></i> has the same rules as Greedy Nim, but here the last player able to make a move loses.</p>
+<p>Let the largest number of stones in a pile be <i>m</i>, the second largest number of stones in a pile be <i>n</i>. Let <i>p</i><sub><i>m</i></sub> be the number of piles having <i>m</i> stones, <i>p</i><sub><i>n</i></sub> be the number of piles having <i>n</i> stones. Then there is a theorem that game positions with <i>p</i><sub><i>m</i></sub> even are <i>P</i> positions. <sup id="cite_ref-NIM_RESTRICTIONS_10-0" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-NIM_RESTRICTIONS-10">[10]</a></sup> This theorem can be shown by considering the positions where <i>p</i><sub><i>m</i></sub> is odd. If <i>p</i><sub><i>m</i></sub> is larger than 1, all stones may be removed from this pile to reduce <i>p</i><sub><i>m</i></sub> by 1 and the new <i>p</i><sub><i>m</i></sub> will be even. If <i>p</i><sub><i>m</i></sub> = 1 (i.e. the largest heap is unique), there are two cases:</p>
+<ul>
+<li>If <i>p</i><sub><i>n</i></sub> is odd, the size of the largest heap is reduced to <i>n</i> (so now the new <i>p</i><sub><i>m</i></sub> is even).</li>
+<li>If <i>p</i><sub><i>n</i></sub> is even, the largest heap is removed entirely, leaving an even number of largest heaps.</li>
+</ul>
+<p>Thus there exists a move to a state where <i>p</i><sub><i>m</i></sub> is even. Conversely, if <i>p</i><sub><i>m</i></sub> is even, if any move is possible (<i>p</i><sub><i>m</i></sub> ≠ 0) then it must take the game to a state where <i>p</i><sub><i>m</i></sub> is odd. The final position of the game is even (<i>p</i><sub><i>m</i></sub> = 0). Hence each position of the game with <i>p</i><sub><i>m</i></sub> even must be a <i>P</i> position.</p>
+<h3><span class="mw-headline" id="Index-k_Nim">Index-<i>k</i> Nim</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=14" title="Edit section: Index-k Nim">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A generalization of multi-heap Nim was called "Nim<span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {}_{k}}</annotation>
+  </semantics>
+</math></span><img src="./Nim - Wikipedia_files/d791e3ebb93f17ec06bdaa1707c4fb5552fc2f61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.096ex; height:1.676ex;" alt="{}_{k}"></span>" or "index-<i>k</i> Nim by <a href="https://en.wikipedia.org/wiki/E._H._Moore" title="E. H. Moore">E. H. Moore</a>,<sup id="cite_ref-11" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-11">[11]</a></sup> who analyzed it in 1910. In index-<i>k</i> Nim, instead of removing objects from only one heap, players can remove objects from at least one but up to <i>k</i> different heaps. The number of elements that may be removed from each heap may be either arbitrary, or limited to at most <i>r</i> elements, like in the "subtraction game" above.</p>
+<p>The winning strategy is as follows: Like in ordinary multi-heap Nim, one considers the binary representation of the heap sizes (or heap sizes modulo <i>r</i>&nbsp;+&nbsp;1). In ordinary Nim one forms the XOR-sum (or sum modulo 2) of each binary digit, and the winning strategy is to make each XOR sum zero. In the generalization to index-<i>k</i> Nim, one forms the sum of each binary digit modulo <i>k</i>&nbsp;+&nbsp;1.</p>
+<p>Again the winning strategy is to move such that this sum is zero for every digit. Indeed, the value thus computed is zero for the final position, and given a configuration of heaps for which this value is zero, any change of at most <i>k</i> heaps will make the value non-zero. Conversely, given a configuration with non-zero value, one can always take from at most <i>k</i> heaps, carefully chosen, so that the value will become zero.</p>
+<h3><span class="mw-headline" id="Building_Nim">Building Nim</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=15" title="Edit section: Building Nim">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>Building Nim</b> is a variant of Nim where the two players first construct the game of Nim. Given <i>n</i> stones and <i>s</i> empty piles, the players alternate turns placing exactly one stone into a pile of their choice.<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/Nim#cite_note-12">[12]</a></sup> Once all the stones are placed, a game of Nim begins, starting with the next player that would move. This game is denoted <i>BN(n,s)</i>.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=16" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dr._NIM" class="mw-redirect" title="Dr. NIM">Dr. NIM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fuzzy_game" title="Fuzzy game">Fuzzy game</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nimber" title="Nimber">Nimber</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nimrod_(computing)" title="Nimrod (computing)">Nimrod (computing)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Octal_games" class="mw-redirect" title="Octal games">Octal games</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Star_(game_theory)" title="Star (game theory)">Star (game theory)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Subtract_a_square" title="Subtract a square">Subtract a square</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zero_game" title="Zero game">Zero game</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_Nim" title="Android Nim">Android Nim</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Raymond_Redheffer" title="Raymond Redheffer">Raymond Redheffer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Last_Year_at_Marienbad" title="Last Year at Marienbad">Last Year at Marienbad</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=17" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-1"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite id="CITEREFJorgensen2009" class="citation">Jorgensen, Anker Helms (2009), <a rel="nofollow" class="external text" href="http://muse.jhu.edu/journals/ieee_annals_of_the_history_of_computing/v031/31.3.jorgensen.html">"Context and driving forces in the development of the early computer game Nimbi"</a>, <i>IEEE Annals of the History of Computing</i>, <b>31</b> (3): 44–53, <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1109%2FMAHC.2009.41">10.1109/MAHC.2009.41</a>, <a href="https://en.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow" class="external text" href="https://www.ams.org/mathscinet-getitem?mr=2767447">2767447</a>, <q>The two-person mathematical game Nim, which many believe originated in China, is probably one of the oldest games in the world.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Context+and+driving+forces+in+the+development+of+the+early+computer+game+Nimbi&amp;rft.aufirst=Anker+Helms&amp;rft.aulast=Jorgensen&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D2767447&amp;rft_id=http%3A%2F%2Fmuse.jhu.edu%2Fjournals%2Fieee_annals_of_the_history_of_computing%2Fv031%2F31.3.jorgensen.html&amp;rft_id=info%3Adoi%2F10.1109%2FMAHC.2009.41&amp;rft.issue=3&amp;rft.jtitle=IEEE+Annals+of+the+History+of+Computing&amp;rft.pages=44-53&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=31" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-2"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite id="CITEREFYaglom2001" class="citation"><a href="https://en.wikipedia.org/wiki/Isaak_Yaglom" title="Isaak Yaglom">Yaglom, I. M.</a> (2001), "Two games with matchsticks", in <a href="https://en.wikipedia.org/wiki/Sergei_Tabachnikov" title="Sergei Tabachnikov">Tabachnikov, Serge</a>, <a rel="nofollow" class="external text" href="https://books.google.com/books?hl=en&amp;lr=&amp;id=yID37VIW-t8C&amp;pg=PA1"><i>Kvant Selecta: Combinatorics, I, Volume 1</i></a>, Mathematical world, <b>17</b>, <a href="https://en.wikipedia.org/wiki/American_Mathematical_Society" title="American Mathematical Society">American Mathematical Society</a>, pp.&nbsp;1–8, <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9780821821718" title="Special:BookSources/9780821821718">9780821821718</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Two+games+with+matchsticks&amp;rft.aufirst=I.+M.&amp;rft.aulast=Yaglom&amp;rft.btitle=Kvant+Selecta%3A+Combinatorics%2C+I%2C+Volume+1&amp;rft.date=2001&amp;rft.genre=bookitem&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fhl%3Den%26lr%3D%26id%3DyID37VIW-t8C%26pg%3DPA1&amp;rft.isbn=9780821821718&amp;rft.pages=1-8&amp;rft.pub=American+Mathematical+Society&amp;rft.series=Mathematical+world&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-3"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite id="CITEREFBouton1901.E2.80.931902" class="citation"><a href="https://en.wikipedia.org/wiki/Charles_L._Bouton" title="Charles L. Bouton">Bouton, C. L.</a> (1901–1902), "Nim, <i>a game with a complete mathematical theory</i>", <i><a href="https://en.wikipedia.org/wiki/Annals_of_Mathematics" title="Annals of Mathematics">Annals of Mathematics</a></i>, <b>3</b> (14): 35–39, <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.2307%2F1967631">10.2307/1967631</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Nim%2C+a+game+with+a+complete+mathematical+theory&amp;rft.aufirst=C.+L.&amp;rft.aulast=Bouton&amp;rft.date=1901%2F1902&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F1967631&amp;rft.issue=14&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.pages=35-39&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=3" class="Z3988"><span style="display:none;">&nbsp;</span></span>..</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-4"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a href="https://en.wikipedia.org/wiki/Nim#CITEREFMorrissette1968">Morrissette (1968)</a> attributes this theory to <cite id="CITEREFBushaw1966" class="citation">Bushaw, D. W. (October 1966), "On the name and history of nim", <i>Washington Mathematics</i>, <b>11</b>: 52–55</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=On+the+name+and+history+of+nim&amp;rft.aufirst=D.+W.&amp;rft.aulast=Bushaw&amp;rft.date=1966-10&amp;rft.genre=article&amp;rft.jtitle=Washington+Mathematics&amp;rft.pages=52-55&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=11" class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-5"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation book">Flesch, Rudolf (1951). <i>The Art of Clear Thinking</i>. New York: Harper and Brothers Publishers. p.&nbsp;3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.aufirst=Rudolf&amp;rft.aulast=Flesch&amp;rft.btitle=The+Art+of+Clear+Thinking&amp;rft.date=1951&amp;rft.genre=book&amp;rft.pages=3&amp;rft.place=New+York&amp;rft.pub=Harper+and+Brothers+Publishers&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-6"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation news">Grant, Eugene F.; Lardner, Rex (August 2, 1952). <a rel="nofollow" class="external text" href="http://www.newyorker.com/archive/1952/08/02/1952_08_02_018_TNY_CARDS_000236053">"The Talk of the Town – It"</a>. <i><a href="https://en.wikipedia.org/wiki/The_New_Yorker" title="The New Yorker">The New Yorker</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=The+Talk+of+the+Town+%93+It&amp;rft.aufirst=Eugene+F.&amp;rft.au=Lardner%2C+Rex&amp;rft.aulast=Grant&amp;rft.date=1952-08-02&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.newyorker.com%2Farchive%2F1952%2F08%2F02%2F1952_08_02_018_TNY_CARDS_000236053&amp;rft.jtitle=The+New+Yorker&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-7"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation web">Cohen, Harvey A. <a rel="nofollow" class="external text" href="http://harveycohen.net/papers/80-Nim_Playing_Machine.pdf">"How to Construct NIM Playing Machine"</a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.aufirst=Harvey+A.&amp;rft.aulast=Cohen&amp;rft.btitle=How+to+Construct+NIM+Playing+Machine&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fharveycohen.net%2Fpapers%2F80-Nim_Playing_Machine.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-8"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite id="CITEREFMorrissette1968" class="citation">Morrissette, Bruce (1968), "Games and game structures in Robbe-Grillet", <i>Yale French Studies</i>, <b>41</b>: 159–167, <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.2307%2F2929672">10.2307/2929672</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Games+and+game+structures+in+Robbe-Grillet&amp;rft.aufirst=Bruce&amp;rft.aulast=Morrissette&amp;rft.date=1968&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2929672&amp;rft.jtitle=Yale+French+Studies&amp;rft.pages=159-167&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=41" class="Z3988"><span style="display:none;">&nbsp;</span></span>. Morrissette writes that <a href="https://en.wikipedia.org/wiki/Alain_Robbe-Grillet" title="Alain Robbe-Grillet">Alain Robbe-Grillet</a>, one of the screenwriters for the film, "thought he had invented" the game.</span></li>
+<li id="cite_note-Greedy_Nim-9"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-Greedy_Nim_9-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation book">--- (2001). <i>Winning Ways for your Mathematical Plays</i>. 4 vols. (2nd ed.). A K Peters Ltd.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.au=---&amp;rft.btitle=Winning+Ways+for+your+Mathematical+Plays&amp;rft.date=2001&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.pub=A+K+Peters+Ltd&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>; <cite class="citation book"><i>vol. 1</i>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-56881-130-6" title="Special:BookSources/1-56881-130-6">1-56881-130-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.btitle=vol.+1&amp;rft.genre=book&amp;rft.isbn=1-56881-130-6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>; <cite class="citation book"><i>vol. 2</i>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-56881-142-X" title="Special:BookSources/1-56881-142-X">1-56881-142-X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.btitle=vol.+2&amp;rft.genre=book&amp;rft.isbn=1-56881-142-X&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>; <cite class="citation book"><i>vol. 3</i>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-56881-143-8" title="Special:BookSources/1-56881-143-8">1-56881-143-8</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.btitle=vol.+3&amp;rft.genre=book&amp;rft.isbn=1-56881-143-8&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>; <cite class="citation book"><i>vol. 4</i>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-56881-144-6" title="Special:BookSources/1-56881-144-6">1-56881-144-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.btitle=vol.+4&amp;rft.genre=book&amp;rft.isbn=1-56881-144-6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span></li>
+<li id="cite_note-NIM_RESTRICTIONS-10"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-NIM_RESTRICTIONS_10-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation journal">M H Albert, R. J. Nowakowski (2004). <a rel="nofollow" class="external text" href="http://www.emis.de/journals/INTEGERS/papers/eg1/eg1.pdf">"Nim Restrictions"</a> <span style="font-size:85%;">(PDF)</span>. <i>Integers: Electronic Journal of Combinatorial Number Theory 4.G01 (2004): G01</i>: 2.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Nim+Restrictions&amp;rft.au=M+H+Albert%2C+R.+J.+Nowakowski&amp;rft.date=2004&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.emis.de%2Fjournals%2FINTEGERS%2Fpapers%2Feg1%2Feg1.pdf&amp;rft.jtitle=Integers%3A+Electronic+Journal+of+Combinatorial+Number+Theory+4.G01+%282004%29%3A+G01&amp;rft.pages=2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-11"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">Moore, E. H. <i>A Generalization of the Game Called Nim</i>. <a rel="nofollow" class="external text" href="http://www.jstor.org/stable/1967321">Annals of Mathematics 11 (3), 1910, pp. 93–94</a></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/Nim#cite_ref-12"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><cite class="citation arxiv">Larsson, Urban; Heubach, Silvia; Dufour, Matthieu; Duchêne, Eric. "Building Nim". <a href="https://en.wikipedia.org/wiki/ArXiv" title="ArXiv">arXiv</a>:<span class="plainlinks"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/1502.04068">1502.04068</a><span style="margin-left:0.1em"><img alt="Freely accessible" src="./Nim - Wikipedia_files/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813"></span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANim&amp;rft.atitle=Building+Nim&amp;rft.au=Duch%C3%AAne%2C+Eric&amp;rft.au=Dufour%2C+Matthieu&amp;rft.aufirst=Urban&amp;rft.au=Heubach%2C+Silvia&amp;rft.aulast=Larsson&amp;rft.genre=preprint&amp;rft_id=info%3Aarxiv%2F1502.04068&amp;rft.jtitle=arXiv&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Additional_reading">Additional reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=18" title="Edit section: Additional reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>W. W. Rouse Ball: <i>Mathematical Recreations and Essays</i>, The Macmillan Company, 1947.</li>
+<li>John D. Beasley: <i>The Mathematics of Games</i>, Oxford University Press, 1989.</li>
+<li>Elwyn R. Berlekamp, John H. Conway, and Richard K. Guy: <i><a href="https://en.wikipedia.org/wiki/Winning_Ways_for_your_Mathematical_Plays" title="Winning Ways for your Mathematical Plays">Winning Ways for your Mathematical Plays</a></i>, Academic Press, Inc., 1982.</li>
+<li>Manfred Eigen and Ruthild Winkler: <i>Laws of the Game</i>, Princeton University Press, 1981.</li>
+<li>Walter R. Fuchs: <i>Computers: Information Theory and Cybernetics</i>, Rupert Hart-Davis Educational Publications, 1971.</li>
+<li>G. H. Hardy and E. M. Wright: <i>An Introduction to the Theory of Numbers</i>, Oxford University Press, 1979.</li>
+<li>Edward Kasner and James Newman: <a href="https://en.wikipedia.org/wiki/Mathematics_and_the_Imagination" title="Mathematics and the Imagination">Mathematics and the Imagination</a>, Simon and Schuster, 1940.</li>
+<li>M. Kaitchik: <i>Mathematical Recreations</i>, W. W. Norton, 1942.</li>
+<li>Donal D. Spencer: <i>Game Playing with Computers</i>, Hayden Book Company, Inc., 1968.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit&amp;section=19" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tbody><tr>
+<td class="mbox-image"><a href="https://en.wikipedia.org/wiki/File:Commons-logo.svg" class="image"><img alt="" src="./Nim - Wikipedia_files/30px-Commons-logo.svg.png" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376"></a></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:Nim" class="extiw" title="commons:Category:Nim">Nim</a></b></i>.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.newyorker.com/archive/1952/08/02/1952_08_02_018_TNY_CARDS_000236053">50-pound computer plays Nim- The New Yorker magazine "Talk of the Town" August, 1952</a><span style="font-size:0.95em; font-size: 90%; color: #555">(subscription required)</span></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080820154432/http://www.cut-the-knot.org/ctk/May2001.html">The hot game of Nim</a> – Nim theory and connections with other games at <a href="https://en.wikipedia.org/wiki/Cut-the-knot" class="mw-redirect" title="Cut-the-knot">cut-the-knot</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cut-the-knot.org/nim_st.shtml">Nim</a> and 2-dimensional <a rel="nofollow" class="external text" href="http://www.cut-the-knot.org/Games/SuperNim/SNim.shtml">SuperNim</a> at <a href="https://en.wikipedia.org/wiki/Cut-the-knot" class="mw-redirect" title="Cut-the-knot">cut-the-knot</a></li>
+<li><a rel="nofollow" class="external text" href="http://illuminations.nctm.org/ActivityDetail.aspx?ID=140">Nim on NCTM's Illuminations</a></li>
+<li><a rel="nofollow" class="external text" href="http://linkstore.ru/mfile/data/27399126.jsp">NIM in Excel</a> Excel spreadsheet using basic formulas to determine best moves for a 3,4,5 start point.</li>
+<li><a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/mind-nimmer/id303603482?mt=8">Mind Nimmer</a> - Implementation of Nim for iOS.</li>
+<li><a rel="nofollow" class="external text" href="http://www.fromnorway.net/yaylas/div/nim/index.htm">Nim game</a>: a good illustration of the necessity of knowledge and mastery when failure must not be risked, however remote the probability of total loss may seem.</li>
+<li><a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/subtraction-game/id1080590027?ls=1&amp;mt=8">Subtraction Game</a>: a Subtraction Game illustration on Appstore.</li>
+</ul>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21885-0!*!0!!en!4!*!math=5 and timestamp 20161101210730 and revision id 747346060
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Nim&amp;oldid=747346060">https://en.wikipedia.org/w/index.php?title=Nim&amp;oldid=747346060</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Mathematical_games" title="Category:Mathematical games">Mathematical games</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Combinatorial_game_theory" title="Category:Combinatorial game theory">Combinatorial game theory</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Recreational_mathematics" title="Category:Recreational mathematics">Recreational mathematics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Commons_category_with_page_title_same_as_on_Wikidata" title="Category:Commons category with page title same as on Wikidata">Commons category with page title same as on Wikidata</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Pages_containing_links_to_subscription-only_content" title="Category:Pages containing links to subscription-only content">Pages containing links to subscription-only content</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_containing_proofs" title="Category:Articles containing proofs">Articles containing proofs</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_example_Python_code" title="Category:Articles with example Python code">Articles with example Python code</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [ctrl-option-n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [ctrl-option-y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Nim" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Nim" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [ctrl-option-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="https://en.wikipedia.org/wiki/Nim" title="View the content page [ctrl-option-c]" accesskey="c">Article</a></span></li>
+															<li id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Nim" title="Discussion about the content page [ctrl-option-t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0">
+							<span>Variants</span><a href="https://en.wikipedia.org/wiki/Nim#" tabindex="-1"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://en.wikipedia.org/wiki/Nim">Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=edit" title="Edit this page [ctrl-option-e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label" tabindex="0"><span>More</span><a href="https://en.wikipedia.org/wiki/Nim#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [ctrl-option-x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="https://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Nim" title="List of all English Wikipedia pages containing links to this page [ctrl-option-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Nim" rel="nofollow" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;oldid=747346060" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q724409" title="Link to connected data repository item [ctrl-option-g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Nim&amp;id=747346060" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Nim">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Nim&amp;returnto=Nim&amp;oldid=747346060&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Nim&amp;printable=yes" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Nim" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" title="Language settings" tabindex="0" role="button" aria-haspopup="true"></span>
+			<h3 id="p-lang-label">Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Roz%C5%A1%C3%AD%C5%99en%C3%A1_forma#NIM" title="Rozšířená forma – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Nim-Spiel" title="Nim-Spiel – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Nim_(juego)" title="Nim (juego) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/Nim_(ludo)" title="Nim (ludo) – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Nim_joko" title="Nim joko – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%86%DB%8C%D9%85_(%D8%A8%D8%A7%D8%B2%DB%8C)" title="نیم (بازی) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Jeux_de_Nim" title="Jeux de Nim – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%8B%98_(%EA%B2%8C%EC%9E%84)" title="님 (게임) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Nim" title="Nim – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%9D_(%D7%9E%D7%A9%D7%97%D7%A7)" title="נים (משחק) – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Nim" title="Nim – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Nim_(spel)" title="Nim (spel) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A0" title="ニム – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Nim" title="Nim – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Nim" title="Nim – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Nim_(jogo)" title="Nim (jogo) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BC_(%D0%B8%D0%B3%D1%80%D0%B0)" title="Ним (игра) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-scn"><a href="https://scn.wikipedia.org/wiki/Nim_(jocu)" title="Nim (jocu) – Sicilian" lang="scn" hreflang="scn" class="interlanguage-link-target">Sicilianu</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Nim" title="Nim – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Nim" title="Nim – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Nim" title="Nim – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B8%99%E0%B8%B4%E0%B8%A1" title="นิม – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Nim" title="Nim – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%B0%BC%E5%A7%86%E6%B8%B8%E6%88%8F" title="尼姆游戏 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q724409#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 November 2016, at 21:07.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="https://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="https://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="https://en.m.wikipedia.org/w/index.php?title=Nim&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="./Nim - Wikipedia_files/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="https://www.mediawiki.org/"><img src="./Nim - Wikipedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set( {
+    "wgPageParseReport": {
+        "limitreport": {
+            "cputime": "0.196",
+            "walltime": "0.436",
+            "ppvisitednodes": {
+                "value": 971,
+                "limit": 1000000
+            },
+            "ppgeneratednodes": {
+                "value": 0,
+                "limit": 1500000
+            },
+            "postexpandincludesize": {
+                "value": 28289,
+                "limit": 2097152
+            },
+            "templateargumentsize": {
+                "value": 422,
+                "limit": 2097152
+            },
+            "expansiondepth": {
+                "value": 10,
+                "limit": 40
+            },
+            "expensivefunctioncount": {
+                "value": 0,
+                "limit": 500
+            },
+            "entityaccesscount": {
+                "value": 1,
+                "limit": 400
+            },
+            "timingprofile": [
+                "100.00%  333.200      1 -total",
+                " 34.16%  113.815      1 Template:Reflist",
+                " 13.72%   45.720      5 Template:Citation",
+                "  7.06%   23.514      1 Template:Other_uses",
+                "  7.05%   23.506      1 Template:Commons_category",
+                "  6.06%   20.180      1 Template:Commons",
+                "  5.84%   19.475      6 Template:Cite_book",
+                "  5.71%   19.034      1 Template:Sister_project",
+                "  5.07%   16.907      1 Template:Side_box",
+                "  1.87%    6.242      1 Template:Harvtxt"
+            ]
+        },
+        "scribunto": {
+            "limitreport-timeusage": {
+                "value": "0.072",
+                "limit": "10.000"
+            },
+            "limitreport-memusage": {
+                "value": 3440471,
+                "limit": 52428800
+            }
+        },
+        "cachereport": {
+            "origin": "mw1223",
+            "timestamp": "20161101210723",
+            "ttl": 2592000,
+            "transientcontent": false
+        }
+    }
+} );});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53,"wgHostname":"mw1261"});});</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
