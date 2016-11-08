@@ -163,6 +163,26 @@ public class Solution8 {
 	        return result;
 	 }
 	 
+	 public static double merge2(List<Interval> list) {
+		 	double sum = 0.0;
+	        if (list == null || list.size() ==0) {//bug here for sum add
+	            return sum;
+	        }
+	        Collections.sort(list, new IntervalComparator());       
+	        Interval last = list.get(0);
+	        for (int i = 1; i < list.size(); i++) {
+	            Interval curt = list.get(i);
+	            if (curt.start <= last.end ){
+	                last.end = Math.max(last.end, curt.end);
+	            }else{
+	                sum+=last.end-last.start;
+	                last = curt;
+	            }
+	        }
+	        sum+=last.end-last.start;
+	        return sum;
+	 }
+	 
 	public static List<BigDecimal> findXofScanLine(Triangle[] tArr){
     	Set<BigDecimal> xSet = new HashSet<BigDecimal>();
     	for(int i = 0;i<tArr.length;i++){
@@ -205,34 +225,31 @@ public class Solution8 {
     	
     	/*find active triangles*/
     	List<List<Interval>> activeIntervalsArr = new ArrayList<List<Interval>>();
-    	for(int i = 0; i < xListS;i++){
+    	for(int i = 0; i < xListS-1;i++){
     		activeIntervalsArr.add(new ArrayList<Interval>());
     	}
-    	//for each triangle, fill scanLine array
+    	//for each triangle, fill scanLine array, for mid position
     	for(int i = 0;i<tArr.length;i++){
-//    		if(i==1){
-//    			System.out.print("");
-//    		}
-    		//for each scanLines that cut through, append intervals
-//    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
-    		for(int j=xListIndexMap.get(tArr[i].minX);j<=xListIndexMap.get(tArr[i].maxX);j++){
+
+    		//for each scanLines mid-line that cut through, append intervals
+    		int minJ =xListIndexMap.get(tArr[i].minX);
+    		int maxJ =xListIndexMap.get(tArr[i].maxX);
+    		Double preX = xList.get(minJ).doubleValue();
+    		for(int j=minJ+1;j<=maxJ;j++){
     			Double curX = xList.get(j).doubleValue();
-    			Interval intersectInterval = findIntersectInterval(curX,tArr[i]);
+    			Double midX = (preX+curX)/2.0;
+    			Interval intersectInterval = findIntersectInterval(midX,tArr[i]);
     			if(intersectInterval!=null){
-    				activeIntervalsArr.get(j).add(intersectInterval);
+    				activeIntervalsArr.get(j-1).add(intersectInterval);
     			}
+    			preX=curX;
     		}
     	}
     	
-    	BigDecimal preX = xList.get(0);
-    	double preSum = intervalSum(preX,activeIntervalsArr.get(0));
+    	//calculate area base on mid-line intervals
     	double tArea= 0;
-    	for(int i = 1;i<xListS;i++){
-    		BigDecimal curX = xList.get(i);
-    		double curSum = intervalSum(curX,activeIntervalsArr.get(i));
-    		tArea += (preSum+curSum)*(curX.doubleValue()-preX.doubleValue())/2.0;
-    		preSum = curSum;
-    		preX = curX;
+    	for(int i = 0;i<xListS-1;i++){
+    		tArea += merge2(activeIntervalsArr.get(i)) * (xList.get(i+1).doubleValue()-xList.get(i).doubleValue());
     	}
     	System.out.println(tArea);
     }
@@ -257,14 +274,6 @@ public class Solution8 {
     	}
     	return null;
 	}
-    
-    private static double intervalSum(BigDecimal cur, List<Interval> activeIntervals){
-    	double sum = 0;
-    	for(Interval iv: merge(activeIntervals)){
-			sum += iv.end-iv.start;
-    	}
-    	return sum;
-    }
 
     
     /*line x=a, and line p1->p2 's intersection y*/
