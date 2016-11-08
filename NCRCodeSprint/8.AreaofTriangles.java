@@ -43,6 +43,7 @@ image
  
 
 Thus, we print the real number  as our answer.*/
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -302,87 +303,11 @@ So:
 
 y = m1 * [(b2-b1) / (m1-m2)] + b1
 You have (this.b - line.b), change to (line.b - this.b).
-
-public Point intersect(Line line) {
-    double x = (line.b - this.b) / (this.m - line.m);
-    double y = this.m * x + this.b;
-
-    return new Point((int) x, (int) y);
-    double m1=(l1.p1.y-l1.p1.y)/(l1.p1.x-l1.p2.x)
-    double m2=(l2.p1.y-l2.p1.y)/(l2.p1.x-l2.p2.x)
-    double denom = m1-m2;
-    
     
     http://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
-    
-    up vote
-472
-down vote
-There’s a nice approach to this problem that uses vector cross products. Define the 2-dimensional vector cross product v × w to be vx wy − vy wx (this is the magnitude of the 3-dimensional cross product).
+  
 
-Suppose the two line segments run from p to p + r and from q to q + s. Then any point on the first line is representable as p + t r (for a scalar parameter t) and any point on the second line as q + u s (for a scalar parameter u).
-
-Two line segments intersecting
-
-The two lines intersect if we can find t and u such that:
-
-p + t r = q + u s
-Formulae for the point of intersection
-
-Cross both sides with s, getting
-
-(p + t r) × s = (q + u s) × s
-And since s × s = 0, this means
-
-t (r × s) = (q − p) × s
-And therefore, solving for t:
-
-t = (q − p) × s / (r × s)
-In the same way, we can solve for u:
-
-(p + t r) × r = (q + u s) × r
-
-u (s × r) = (p − q) × r
-
-u = (p − q) × r / (s × r)
-To reduce the number of computation steps, it's convenient to rewrite this as follows (remembering that s × r = − r × s):
-
-u = (q − p) × r / (r × s)
-Now there are four cases:
-
-If r × s = 0 and (q − p) × r = 0, then the two lines are collinear.
-
-In this case, express the endpoints of the second segment (q and q + s) in terms of the equation of the first line segment (p + t r):
-
-t0 = (q − p) · r / (r · r)
-
-t1 = (q + s − p) · r / (r · r) = t0 + s · r / (r · r)
-If the interval between t0 and t1 intersects the interval [0, 1] then the line segments are collinear and overlapping; otherwise they are collinear and disjoint.
-
-Note that if s and r point in opposite directions, then s · r < 0 and so the interval to be checked is [t1, t0] rather than [t0, t1].
-If r × s = 0 and (q − p) × r ≠ 0, then the two lines are parallel and non-intersecting.
-If r × s ≠ 0 and 0 ≤ t ≤ 1 and 0 ≤ u ≤ 1, the two line segments meet at the point p + t r = q + u s.
-Otherwise, the two line segments are not parallel but do not intersect.
-Credit: this method is the 2-dimensional specialization of the 3D line intersection algorithm from the article "Intersection of two lines in three-space" by Ronald Goldman, published in Graphics Gems, page 304. In three dimensions, the usual case is that the lines are skew (neither parallel nor intersecting) in which case the method gives the points of closest approach of the two lines.
-    
-}
-     */
-    
-//    public static Point lineIntersect(Line l1, Line l2){
-//   
-//    	double denominator = (l1.p2.x-l1.p1.x)*(l2.p2.y-l2.p1.y) - (l1.p2.y-l1.p1.y)*(l2.p2.x-l2.p1.x);	
-//		if(denominator==0.0) return null;
-//		double numerator1 = (l2.p2.x-l2.p1.x)*(l1.p1.y-l2.p1.y) - (l2.p2.y-l2.p1.y)*(l1.p1.x-l2.p1.x);
-//		double numerator2 = (l1.p2.x-l1.p1.x)*(l1.p1.y-l2.p1.y) - (l1.p2.y-l1.p1.y)*(l1.p1.x-l2.p1.x);
-//		double t1 = (double)numerator1/(double)denominator;
-//		double t2 = (double)numerator2/(double)denominator;
-//		if(t1<=1.0&&t1>=0.0&&t2<=1.0&&t2>=0.0){
-//			return new Point(1,l1.p1.x+t1*(l1.p2.x-l1.p1.x)); 
-//    	}else{
-//    		return null;
-//    	}
-//    }
-//    
+*/  
     
     private static Point lineIntersect(Line l1, Line l2) {
     	Point a =l1.p1;
@@ -395,35 +320,35 @@ Credit: this method is the 2-dimensional specialization of the 3D line intersect
         if (Math.abs(b.y - a.y) + Math.abs(b.x - a.x) + Math.abs(d.y - c.y)
                 + Math.abs(d.x - c.x) == 0) {
             if ((c.x - a.x) + (c.y - a.y) == 0) {
-                //System.out.println("ABCD是同一个点！");
+                //System.out.println("ABCD Same Point");
                 return l1.p1;
             } else {
-                //System.out.println("AB是一个点，CD是一个点，且AC不同！");
+                //System.out.println("AB is same point，CD is same point，AC differs！");
                 return null;
             }
         }
 
         if (Math.abs(b.y - a.y) + Math.abs(b.x - a.x) == 0) {
             if ((a.x - d.x) * (c.y - d.y) - (a.y - d.y) * (c.x - d.x) == 0) {
-                //System.out.println("A、B是一个点，且在CD线段上！");
+                //System.out.println("A B is same point，AB on CD line segment！");
             	return l1.p1;
             } else {
-//                System.out.println("A、B是一个点，且不在CD线段上！");
+//                System.out.println("A B is same point，AB not on CD line segment！");
                 return null;
             }
         }
         if (Math.abs(d.y - c.y) + Math.abs(d.x - c.x) == 0) {
             if ((d.x - b.x) * (a.y - b.y) - (d.y - b.y) * (a.x - b.x) == 0) {
-                //System.out.println("C、D是一个点，且在AB线段上！");
+                //System.out.println("C D is same point，CD on AB line segment！");
             	 return l2.p1;
             } else {
             	 return null;
-                //System.out.println("C、D是一个点，且不在AB线段上！");
+                //System.out.println("C D is same point，CD no on AB line segment！");
             }
         }
 
         if ((b.y - a.y) * (c.x - d.x) - (b.x - a.x) * (c.y - d.y) == 0) {
-            //System.out.println("线段平行，无交点！");
+            //System.out.println("two line segments parallel, no intersection！");
             return null;
         }
 
@@ -449,35 +374,15 @@ Credit: this method is the 2-dimensional specialization of the 3D line intersect
 //                && (intersection.y - a.y) * (intersection.y - b.y) <= 0
 //                && (intersection.y - c.y) * (intersection.y - d.y) <= 0) {
             
-            //System.out.println("线段相交于点(" + intersection.x + "," + intersection.y + ")！");
+            //System.out.println("line segments intersect at (" + intersection.x + "," + intersection.y + ")！");
             return new Point(intersection.x,intersection.y); // '相交
         } else {
-            //System.out.println("线段相交于虚交点(" + intersection.x + "," + intersection.y + ")！");
-            return null; // '相交但不在线段上
+            //System.out.println("line segments intersect at extended lines(" + intersection.x + "," + intersection.y + ")！");
+            return null; // intersect but not on two segments
         }
     }
     
-    
-    /*
-     *     public static Point lineIntersect(Line l1, Line l2) {
-   
-    	double x1=l1.p1.x, y1=l1.p1.y, x2=l1.p2.x, y2=l1.p2.y, 
-    		   x3=l2.p1.x, y3=l2.p1.y, x4=l2.p2.x, y4=l2.p2.y;
-    	double denom = (y4 - y3) * (x2 - x1) - (x4 - x3) * (y2 - y1);
-    	  if (denom == 0.0) { // Lines are parallel.
-    	     return null;
-    	  }
-    	  double ua = ((x4 - x3) * (y1 - y3) - (y4 - y3) * (x1 - x3))/denom;
-    	  double ub = ((x2 - x1) * (y1 - y3) - (y2 - y1) * (x1 - x3))/denom;
-    	    if (ua >= 0.0f && ua <= 1.0f && ub >= 0.0f && ub <= 1.0f) {
-    	        // Get the intersection point.
-    	    	Point retP =new Point((int) (x1 + ua*(x2 - x1)), (int) (y1 + ua*(y2 - y1)));
-    	    	//System.out.println("(lineIntersect:"+l1.toString()+","+l2.toString()+","+retP);
-    	        return retP;
-    	    }
 
-    	  return null;
-    }*/
 }
 
 /*
