@@ -43,6 +43,7 @@ image
  
 
 Thus, we print the real number  as our answer.*/
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -50,6 +51,13 @@ import java.math.*;
 import java.util.regex.*;
 /*
  * https://www.hackerrank.com/contests/ncr-codesprint/challenges/area-of-triangles
+ * 5
+17 20 5 23 5 -3
+20 18 9 6 18 1
+1 -4 9 -2 14 -5
+6 16 -3 -3 14 15
+16 2 13 10 9 2
+333.8752293422984 only one test case not passed
  */
 public class Solution8 {
 
@@ -190,13 +198,17 @@ public class Solution8 {
     	}
     	List<BigDecimal> xList = findXofScanLine(tArr);
     	Map<BigDecimal, Integer> xListIndexMap = new HashMap<BigDecimal, Integer>();
+    	int xListS = xList.size();
     	for(int i = 0; i<xList.size();i++){
     		xListIndexMap.put(xList.get(i), i);
     	}
     	
     	/*find active triangles*/
-    	Map<BigDecimal, List<Interval>> activeIntervalsMap = new HashMap<BigDecimal, List<Interval>>();
-    	//for each triangle
+    	List<List<Interval>> activeIntervalsArr = new ArrayList<List<Interval>>();
+    	for(int i = 0; i < xListS;i++){
+    		activeIntervalsArr.add(new ArrayList<Interval>());
+    	}
+    	//for each triangle, fill scanLine array
     	for(int i = 0;i<tArr.length;i++){
 //    		if(i==1){
 //    			System.out.print("");
@@ -205,27 +217,19 @@ public class Solution8 {
 //    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
     		for(int j=xListIndexMap.get(tArr[i].minX);j<=xListIndexMap.get(tArr[i].maxX);j++){
     			Double curX = xList.get(j).doubleValue();
-    			BigDecimal key = new BigDecimal(Double.toString(curX)).setScale(7,RoundingMode.HALF_UP);
     			Interval intersectInterval = findIntersectInterval(curX,tArr[i]);
-    			
     			if(intersectInterval!=null){
-		    		if(activeIntervalsMap.containsKey(key)){
-		    			activeIntervalsMap.get(key).add(intersectInterval);
-		    		}else{
-		    			List<Interval> intervals = new ArrayList<Interval>();
-		    			intervals.add(intersectInterval);
-		    			activeIntervalsMap.put(key, intervals);
-		    		}
+    				activeIntervalsArr.get(j).add(intersectInterval);
     			}
-			}
+    		}
     	}
     	
     	BigDecimal preX = xList.get(0);
-    	double preSum = intervalSum(preX,activeIntervalsMap);
+    	double preSum = intervalSum(preX,activeIntervalsArr.get(0));
     	double tArea= 0;
-    	for(int i = 1;i<xList.size();i++){
+    	for(int i = 1;i<xListS;i++){
     		BigDecimal curX = xList.get(i);
-    		double curSum = intervalSum(curX,activeIntervalsMap);
+    		double curSum = intervalSum(curX,activeIntervalsArr.get(i));
     		tArea += (preSum+curSum)*(curX.doubleValue()-preX.doubleValue())/2.0;
     		preSum = curSum;
     		preX = curX;
@@ -254,17 +258,11 @@ public class Solution8 {
     	return null;
 	}
     
-    private static double intervalSum(BigDecimal cur, Map<BigDecimal, List<Interval>> activeIntervalsMap){
-    	List<Interval> feed =activeIntervalsMap.get(cur);
-    	//System.out.println(feed.toString());
-		List<Interval> ivl = merge(feed);
-		double sum = 0;
-		if(ivl!=null){
-			for(Interval iv:ivl){
-				sum += iv.end-iv.start;
-				//System.out.println(iv.toString());
-			}
-		}
+    private static double intervalSum(BigDecimal cur, List<Interval> activeIntervals){
+    	double sum = 0;
+    	for(Interval iv: merge(activeIntervals)){
+			sum += iv.end-iv.start;
+    	}
     	return sum;
     }
 
