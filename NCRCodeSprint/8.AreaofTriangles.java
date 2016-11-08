@@ -43,7 +43,6 @@ image
  
 
 Thus, we print the real number  as our answer.*/
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -168,7 +167,7 @@ public class Solution8 {
     		//Add all intersections
     		for(int j=i+1;j<tArr.length;j++){
     			for(int k=0;k<3;k++){
-    				for(int l=k;l<3;l++){
+    				for(int l=0;l<3;l++){//fixed bug here, 3x3 = 9 instead of 3x2 =6 for comparing two triangles
 	    				Point iP=lineIntersect(tArr[i].lines.get(k),tArr[j].lines.get(l));
 	    				if(iP!=null){
 	    					xSet.add(new BigDecimal(Double.toString(iP.x)).setScale(10, RoundingMode.HALF_UP));
@@ -199,17 +198,17 @@ public class Solution8 {
     	Map<BigDecimal, Integer> xListIndexMap = new HashMap<BigDecimal, Integer>();
     	for(int i = 0; i<xList.size();i++){
     		xListIndexMap.put(xList.get(i), i);
-    		System.out.println(xList.get(i));
+    		//System.out.println(xList.get(i));
     	}
     	/*find active triangles*/
     	Map<BigDecimal, List<Interval>> activeIntervalsMap = new HashMap<BigDecimal, List<Interval>>();
     	//for each triangle
     	for(int i = 0;i<tArr.length;i++){
-    		if(i==1){
-    			System.out.print("");
-    		}
+//    		if(i==1){
+//    			System.out.print("");
+//    		}
     		//for each scanLines that cut through, append intervals
-    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
+//    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
     		for(int j=xListIndexMap.get(tArr[i].minX);j<=xListIndexMap.get(tArr[i].maxX);j++){
     			Double curX = xList.get(j).doubleValue();
     			BigDecimal key = new BigDecimal(Double.toString(curX)).setScale(10,RoundingMode.HALF_UP);
@@ -267,7 +266,7 @@ public class Solution8 {
     
     private static double intervalSum(BigDecimal cur, Map<BigDecimal, List<Interval>> activeIntervalsMap){
     	List<Interval> feed =activeIntervalsMap.get(cur);
-    	System.out.println(feed.toString());
+    	//System.out.println(feed.toString());
 		List<Interval> ivl = merge(feed);
 		double sum = 0;
 		if(ivl!=null){
