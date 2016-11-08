@@ -44,32 +44,41 @@ image
 
 Thus, we print the real number  as our answer.*/
 
-import java.awt.geom.Line2D;
 import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-
+/*
+ * https://www.hackerrank.com/contests/ncr-codesprint/challenges/area-of-triangles
+ */
 public class Solution8 {
 
 	public static final double fMin = -1000000; //can't be 6 0s, will lose precision in intersect function
 	public static final double fMax = 1000000;
+	
 	static class Point{
 		public double x;
 		public double y;
 		int tri;
-		Point(double x, double y){this.x = x; this.y = y;}
+		public Point(double x, double y){this.x = x; this.y = y;}
 		public String toString(){
 			return "(p:"+x+","+y+")";
 		}
 	}
 	
+	long doubleToLong(double input){
+		return (long) (input * 10000000);//70
+	}
+	
+	double longToDouble(long input){
+		return (double)input/10000000.0;
+	}
 	static class Line
 	{
-		Point p1;
-		Point p2;
-		Line(Point x, Point y) { this.p1 = x; this.p2 = y; }
+		public Point p1;
+		public Point p2;
+		public Line(Point x, Point y) { this.p1 = x; this.p2 = y; }
 		public String toString(){
 			return "(l:"+p1.toString()+","+p2.toString()+")";
 		}
@@ -78,8 +87,8 @@ public class Solution8 {
 	static class Triangle{
 		List<Point> points;
 		List<Line> lines;
-		double minX = fMax;
-		double maxX = fMin;
+		BigDecimal minX = new BigDecimal(Double.toString(fMax)).setScale(10, RoundingMode.HALF_UP);
+		BigDecimal maxX = new BigDecimal(Double.toString(fMin)).setScale(10, RoundingMode.HALF_UP);
 		Triangle(Point p1, Point p2, Point p3) { 
 			points = new ArrayList<Point>();
 			points.add(p1);
@@ -92,30 +101,28 @@ public class Solution8 {
 			lines.add(new Line(p2, p3));
 			for(int i = 0;i<3;i++){
 				double tempX = points.get(i).x;
-				if(minX > tempX){
-					minX =tempX;
+				if(minX.doubleValue() > tempX){
+					minX = new BigDecimal(Double.toString(tempX)).setScale(10, RoundingMode.HALF_UP);
 				}
-				if(maxX < tempX){
-					maxX = tempX;
+				if(maxX.doubleValue() < tempX){
+					maxX = new BigDecimal(Double.toString(tempX)).setScale(10, RoundingMode.HALF_UP);
 				}
 			}
 		}
 		public String toString(){
 			return "(t:"+lines.get(0).toString()+","+lines.get(1).toString()+","+lines.get(2).toString()+")";
 		}
-		
 	}
 	
 	
 	/* Merge Intervals Reference jiuzhang*/
 	
-	 public static class Interval {
+	 public static class Interval{
 		      double start;
 		      double end;
-		      Interval() { start = 0; end = 0; }
 		      Interval(double s, double e) { 
 		    	  if(s<e){
-		    	  start = s; end = e; 
+		    		  start = s; end = e; 
 		    	  }else{
 		    		  start = e; end = s; 
 		    	  }
@@ -126,22 +133,20 @@ public class Solution8 {
 		      }
 	 }
 	 
-	    private static class IntervalComparator implements Comparator<Interval> {
-	        public int compare(Interval a, Interval b) {
-	            double diff = a.start - b.start;
-	            if(diff<0) return -1;
-	            if(diff>0) return 1;
-	            return 0;
-	        }
-	    }
+    private static class IntervalComparator implements Comparator<Interval> {
+        public int compare(Interval a, Interval b) {
+            double diff = a.start - b.start;
+            if(diff<0) return -1;
+            if(diff>0) return 1;
+            return 0;
+        }
+    }
 
 	 public static List<Interval> merge(List<Interval> list) {
 	        if (list == null || list.size() <= 1) {
 	            return list;
 	        }
-	        
 	        Collections.sort(list, new IntervalComparator());       
-	  
 	        ArrayList<Interval> result = new ArrayList<Interval>();
 	        Interval last = list.get(0);
 	        for (int i = 1; i < list.size(); i++) {
@@ -153,14 +158,33 @@ public class Solution8 {
 	                last = curt;
 	            }
 	        }
-	        
 	        result.add(last);
 	        return result;
-	    }
-	    
-	    
-
+	 }
 	 
+	public static List<BigDecimal> findXofScanLine(Triangle[] tArr){
+    	Set<BigDecimal> xSet = new HashSet<BigDecimal>();
+    	for(int i = 0;i<tArr.length;i++){
+    		//Add all intersections
+    		for(int j=i+1;j<tArr.length;j++){
+    			for(int k=0;k<3;k++){
+    				for(int l=k;l<3;l++){
+	    				Point iP=lineIntersect(tArr[i].lines.get(k),tArr[j].lines.get(l));
+	    				if(iP!=null){
+	    					xSet.add(new BigDecimal(Double.toString(iP.x)).setScale(10, RoundingMode.HALF_UP));
+	    				}
+    				}
+    			}
+    		}
+    		//Add all triangle points
+			for(int j = 0;j<3;j++){
+				xSet.add(new BigDecimal(Double.toString(tArr[i].points.get(j).x)).setScale(10, RoundingMode.HALF_UP));
+			}
+    	}
+    	List<BigDecimal> result = new ArrayList<BigDecimal>(xSet);
+		Collections.sort(result);
+		return result;
+    }
 	 
     public static void main(String[] args) {
     	Scanner scan = new Scanner(System.in);
@@ -171,31 +195,33 @@ public class Solution8 {
     							   new Point(scan.nextInt(),scan.nextInt()),
     							   new Point(scan.nextInt(),scan.nextInt()));
     	}
-    	List<Double> xList = findXofScanLine(tArr);
-    	Map<Double, Integer> xListIndexMap = new HashMap<Double, Integer>();
+    	List<BigDecimal> xList = findXofScanLine(tArr);
+    	Map<BigDecimal, Integer> xListIndexMap = new HashMap<BigDecimal, Integer>();
     	for(int i = 0; i<xList.size();i++){
     		xListIndexMap.put(xList.get(i), i);
+    		System.out.println(xList.get(i));
     	}
     	/*find active triangles*/
-    	Map<Double, List<Interval>> activeIntervalsMap = new HashMap<Double, List<Interval>>();
+    	Map<BigDecimal, List<Interval>> activeIntervalsMap = new HashMap<BigDecimal, List<Interval>>();
     	//for each triangle
     	for(int i = 0;i<tArr.length;i++){
     		if(i==1){
     			System.out.print("");
     		}
     		//for each scanLines that cut through, append intervals
+    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
     		for(int j=xListIndexMap.get(tArr[i].minX);j<=xListIndexMap.get(tArr[i].maxX);j++){
-    			Double curX = xList.get(j);
-    	
+    			Double curX = xList.get(j).doubleValue();
+    			BigDecimal key = new BigDecimal(Double.toString(curX)).setScale(10,RoundingMode.HALF_UP);
     			Interval intersectInterval = findIntersectInterval(curX,tArr[i]);
     			
     			if(intersectInterval!=null){
-		    		if(activeIntervalsMap.containsKey(curX)){
-		    			activeIntervalsMap.get(curX).add(intersectInterval);
+		    		if(activeIntervalsMap.containsKey(key)){
+		    			activeIntervalsMap.get(key).add(intersectInterval);
 		    		}else{
 		    			List<Interval> intervals = new ArrayList<Interval>();
 		    			intervals.add(intersectInterval);
-		    			activeIntervalsMap.put(curX, intervals);
+		    			activeIntervalsMap.put(key, intervals);
 		    		}
     			}
 			}
@@ -203,13 +229,13 @@ public class Solution8 {
     		
     	}
     	
-    	double preX = xList.get(0);
+    	BigDecimal preX = xList.get(0);
     	double preSum = intervalSum(preX,activeIntervalsMap);
     	double tArea= 0;
     	for(int i = 1;i<xList.size();i++){
-    		double curX = xList.get(i);
+    		BigDecimal curX = xList.get(i);
     		double curSum = intervalSum(curX,activeIntervalsMap);
-    		tArea += (preSum+curSum)*(curX-preX)/2.0;
+    		tArea += (preSum+curSum)*(curX.doubleValue()-preX.doubleValue())/2.0;
     		preSum = curSum;
     		preX = curX;
     	}
@@ -218,25 +244,28 @@ public class Solution8 {
     
     private static Interval findIntersectInterval(Double x, Triangle t) {
     	//A triangle can have 3 lines joined to the scan line, thus use set.
-    	Set<Double> set = new HashSet<Double>();
+    	Set<BigDecimal> set = new HashSet<BigDecimal>();
     	//System.out.println("curLine:"+x);
     	for(int i = 0;i<3;i++){
     		Point temp = lineIntersect(new Line(new Point(x,fMin), new Point(x,fMax)), t.lines.get(i));
     		if(temp != null){
-    			set.add(temp.y);
+    			BigDecimal key = new BigDecimal(Double.toString(temp.y)).setScale(10,RoundingMode.HALF_UP);
+    			set.add(key);
     		}
     	}
-    	List<Double> list = new ArrayList<Double>(set);
+    	
+    	List<BigDecimal> list = new ArrayList<BigDecimal>(set);
     	if(set.size()==2){
     		//System.out.print("(x:"+x+":"+points.get(0).y+" "+ points.get(1).y+";)");
-    		return new Interval(list.get(0),list.get(1));
+    		return new Interval(list.get(0).doubleValue(),list.get(1).doubleValue());
+    		
     	}else if (set.size()==1){
-    		return new Interval(list.get(0),list.get(0));
+    		return new Interval(list.get(0).doubleValue(),list.get(0).doubleValue());
     	}
     	return null;
 	}
     
-    private static double intervalSum(double cur, Map<Double,List<Interval>> activeIntervalsMap){
+    private static double intervalSum(BigDecimal cur, Map<BigDecimal, List<Interval>> activeIntervalsMap){
     	List<Interval> feed =activeIntervalsMap.get(cur);
     	System.out.println(feed.toString());
 		List<Interval> ivl = merge(feed);
@@ -250,29 +279,7 @@ public class Solution8 {
     	return sum;
     }
 
-	public static List<Double> findXofScanLine(Triangle[] tArr){
-    	Set<Double> xSet = new HashSet<Double>();
-    	for(int i = 0;i<tArr.length;i++){
-    		//Add all intersections
-    		for(int j=i+1;j<tArr.length;j++){
-    			for(int k=0;k<3;k++){
-    				for(int l=k;l<3;l++){
-	    				Point iP=lineIntersect(tArr[i].lines.get(k),tArr[j].lines.get(l));
-	    				if(iP!=null){
-	    					xSet.add(iP.x);
-	    				}
-    				}
-    			}
-    		}
-    		//Add all triangle points
-			for(int j = 0;j<3;j++){
-				xSet.add(tArr[i].points.get(j).x);
-			}
-    	}
-    	List<Double> result = new ArrayList<Double>(xSet);
-		Collections.sort(result);
-		return result;
-    } 
+ 
     
     /*
      * http://stackoverflow.com/questions/31506740/java-find-intersection-of-two-lines
