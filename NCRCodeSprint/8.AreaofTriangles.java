@@ -43,7 +43,6 @@ image
  
 
 Thus, we print the real number  as our answer.*/
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -54,8 +53,9 @@ import java.util.regex.*;
  */
 public class Solution8 {
 
-	public static final double fMin = -1000000; //can't be 6 0s, will lose precision in intersect function
+	public static final double fMin = -1000000; 
 	public static final double fMax = 1000000;
+	public static final double precision = 0.0000001;
 	
 	static class Point{
 		public double x;
@@ -67,13 +67,6 @@ public class Solution8 {
 		}
 	}
 	
-	long doubleToLong(double input){
-		return (long) (input * 10000000);//70
-	}
-	
-	double longToDouble(long input){
-		return (double)input/10000000.0;
-	}
 	static class Line
 	{
 		public Point p1;
@@ -87,14 +80,14 @@ public class Solution8 {
 	static class Triangle{
 		List<Point> points;
 		List<Line> lines;
-		BigDecimal minX = new BigDecimal(Double.toString(fMax)).setScale(10, RoundingMode.HALF_UP);
-		BigDecimal maxX = new BigDecimal(Double.toString(fMin)).setScale(10, RoundingMode.HALF_UP);
+		BigDecimal minX = new BigDecimal(Double.toString(fMax)).setScale(7, RoundingMode.HALF_UP);
+		BigDecimal maxX = new BigDecimal(Double.toString(fMin)).setScale(7, RoundingMode.HALF_UP);
+		
 		Triangle(Point p1, Point p2, Point p3) { 
 			points = new ArrayList<Point>();
 			points.add(p1);
 			points.add(p2);
 			points.add(p3);
-			
 			lines = new ArrayList<Line>();
 			lines.add(new Line(p1, p2));
 			lines.add(new Line(p1, p3));
@@ -102,10 +95,10 @@ public class Solution8 {
 			for(int i = 0;i<3;i++){
 				double tempX = points.get(i).x;
 				if(minX.doubleValue() > tempX){
-					minX = new BigDecimal(Double.toString(tempX)).setScale(10, RoundingMode.HALF_UP);
+					minX = new BigDecimal(Double.toString(tempX)).setScale(7, RoundingMode.HALF_UP);
 				}
 				if(maxX.doubleValue() < tempX){
-					maxX = new BigDecimal(Double.toString(tempX)).setScale(10, RoundingMode.HALF_UP);
+					maxX = new BigDecimal(Double.toString(tempX)).setScale(7, RoundingMode.HALF_UP);
 				}
 			}
 		}
@@ -169,16 +162,16 @@ public class Solution8 {
     		for(int j=i+1;j<tArr.length;j++){
     			for(int k=0;k<3;k++){
     				for(int l=0;l<3;l++){//fixed bug here, 3x3 = 9 instead of 3x2 =6 for comparing two triangles
-	    				Point iP=lineIntersect(tArr[i].lines.get(k),tArr[j].lines.get(l));
-	    				if(iP!=null){
-	    					xSet.add(new BigDecimal(Double.toString(iP.x)).setScale(10, RoundingMode.HALF_UP));
+	    				Double iX=xIntersect(tArr[i].lines.get(k),tArr[j].lines.get(l));
+	    				if(iX!=null){
+	    					xSet.add(new BigDecimal(Double.toString(iX.doubleValue())).setScale(7, RoundingMode.HALF_UP));
 	    				}
     				}
     			}
     		}
     		//Add all triangle points
 			for(int j = 0;j<3;j++){
-				xSet.add(new BigDecimal(Double.toString(tArr[i].points.get(j).x)).setScale(10, RoundingMode.HALF_UP));
+				xSet.add(new BigDecimal(Double.toString(tArr[i].points.get(j).x)).setScale(7, RoundingMode.HALF_UP));
 			}
     	}
     	List<BigDecimal> result = new ArrayList<BigDecimal>(xSet);
@@ -199,8 +192,8 @@ public class Solution8 {
     	Map<BigDecimal, Integer> xListIndexMap = new HashMap<BigDecimal, Integer>();
     	for(int i = 0; i<xList.size();i++){
     		xListIndexMap.put(xList.get(i), i);
-    		//System.out.println(xList.get(i));
     	}
+    	
     	/*find active triangles*/
     	Map<BigDecimal, List<Interval>> activeIntervalsMap = new HashMap<BigDecimal, List<Interval>>();
     	//for each triangle
@@ -212,7 +205,7 @@ public class Solution8 {
 //    		System.out.println("minX"+tArr[i].minX);System.out.println("maxX"+tArr[i].maxX);
     		for(int j=xListIndexMap.get(tArr[i].minX);j<=xListIndexMap.get(tArr[i].maxX);j++){
     			Double curX = xList.get(j).doubleValue();
-    			BigDecimal key = new BigDecimal(Double.toString(curX)).setScale(10,RoundingMode.HALF_UP);
+    			BigDecimal key = new BigDecimal(Double.toString(curX)).setScale(7,RoundingMode.HALF_UP);
     			Interval intersectInterval = findIntersectInterval(curX,tArr[i]);
     			
     			if(intersectInterval!=null){
@@ -225,8 +218,6 @@ public class Solution8 {
 		    		}
     			}
 			}
-    		//System.out.println();
-    		
     	}
     	
     	BigDecimal preX = xList.get(0);
@@ -247,20 +238,18 @@ public class Solution8 {
     	Set<BigDecimal> set = new HashSet<BigDecimal>();
     	//System.out.println("curLine:"+x);
     	for(int i = 0;i<3;i++){
-    		Point temp = lineIntersect(new Line(new Point(x,fMin), new Point(x,fMax)), t.lines.get(i));
+    		Double temp = getY(x,t.lines.get(i));
+    		
     		if(temp != null){
-    			BigDecimal key = new BigDecimal(Double.toString(temp.y)).setScale(10,RoundingMode.HALF_UP);
+    			//System.out.print("(x:"+x+":"+t.toString()+"y-intersect"+temp.toString());
+    			BigDecimal key = new BigDecimal(temp.toString()).setScale(7,RoundingMode.HALF_UP);
     			set.add(key);
     		}
     	}
-    	
     	List<BigDecimal> list = new ArrayList<BigDecimal>(set);
     	if(set.size()==2){
-    		//System.out.print("(x:"+x+":"+points.get(0).y+" "+ points.get(1).y+";)");
+    		//System.out.println("(x:"+x+":"+list.get(0).doubleValue()+" "+ list.get(1).doubleValue()+";)");
     		return new Interval(list.get(0).doubleValue(),list.get(1).doubleValue());
-    		
-    	}else if (set.size()==1){
-    		return new Interval(list.get(0).doubleValue(),list.get(0).doubleValue());
     	}
     	return null;
 	}
@@ -279,110 +268,50 @@ public class Solution8 {
     	return sum;
     }
 
- 
     
-    /*
-     * http://stackoverflow.com/questions/31506740/java-find-intersection-of-two-lines
-     * 
-6
-down vote
-accepted
-Lets assume you have these 2 functions:
-
-y = m1*x + b1    
-y = m2*x + b2
-To find the intersection point of the x-axis we do:
-
-m1*x+b1 = m2*x+b2    
-m1*x-m2*x = b2 - b2    
-x(m1-m2) = (b2-b1)    
-x = (b2-b1) / (m1-m2)
-To find y, you use of the function expressions and replace x for its value (b2-b1) / (m1-m2).
-
-So:
-
-y = m1 * [(b2-b1) / (m1-m2)] + b1
-You have (this.b - line.b), change to (line.b - this.b).
-    
-    http://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
-  
-
-*/  
-    
-    private static Point lineIntersect(Line l1, Line l2) {
-    	Point a =l1.p1;
-        Point b= l1.p2;
-        Point c= l2.p1;
-        Point d= l2.p2;
-    	
-        Point intersection = new Point(0, 0);
-
-        if (Math.abs(b.y - a.y) + Math.abs(b.x - a.x) + Math.abs(d.y - c.y)
-                + Math.abs(d.x - c.x) == 0) {
-            if ((c.x - a.x) + (c.y - a.y) == 0) {
-                //System.out.println("ABCD Same Point");
-                return l1.p1;
-            } else {
-                //System.out.println("AB is same point，CD is same point，AC differs！");
-                return null;
-            }
-        }
-
-        if (Math.abs(b.y - a.y) + Math.abs(b.x - a.x) == 0) {
-            if ((a.x - d.x) * (c.y - d.y) - (a.y - d.y) * (c.x - d.x) == 0) {
-                //System.out.println("A B is same point，AB on CD line segment！");
-            	return l1.p1;
-            } else {
-//                System.out.println("A B is same point，AB not on CD line segment！");
-                return null;
-            }
-        }
-        if (Math.abs(d.y - c.y) + Math.abs(d.x - c.x) == 0) {
-            if ((d.x - b.x) * (a.y - b.y) - (d.y - b.y) * (a.x - b.x) == 0) {
-                //System.out.println("C D is same point，CD on AB line segment！");
-            	 return l2.p1;
-            } else {
-            	 return null;
-                //System.out.println("C D is same point，CD no on AB line segment！");
-            }
-        }
-
-        if ((b.y - a.y) * (c.x - d.x) - (b.x - a.x) * (c.y - d.y) == 0) {
-            //System.out.println("two line segments parallel, no intersection！");
-            return null;
-        }
-
-        intersection.x = ((b.x - a.x) * (c.x - d.x) * (c.y - a.y) - 
-                c.x * (b.x - a.x) * (c.y - d.y) + a.x * (b.y - a.y) * (c.x - d.x)) / 
-                ((b.y - a.y) * (c.x - d.x) - (b.x - a.x) * (c.y - d.y));
-        intersection.y = ((b.y - a.y) * (c.y - d.y) * (c.x - a.x) - c.y
-                * (b.y - a.y) * (c.x - d.x) + a.y * (b.x - a.x) * (c.y - d.y))
-                / ((b.x - a.x) * (c.y - d.y) - (b.y - a.y) * (c.x - d.x));
-
-        
-    	double denominator = (l1.p2.x-l1.p1.x)*(l2.p2.y-l2.p1.y) - (l1.p2.y-l1.p1.y)*(l2.p2.x-l2.p1.x);	
+    /*line x=a, and line p1->p2 's intersection y*/
+	public static Double getY(double x, Line l)
+	{
+		//System.out.print("x:"+x+l.toString());
+		Point p1 = l.p1;Point p2 = l.p2;
+		double left = 0;
+		double right = 0;
+		if(p1.x<p2.x){
+			left = p1.x;
+			right = p2.x;
+		}else{
+			right = p1.x;
+			left = p2.x;
+		}
+		
+		//double left > x comparison may lost precision
+		if(left-x>precision||x-right>precision || Math.abs(p2.x-p1.x)<precision){
+			//System.out.print("left:"+left+"right:"+right+"x:"+x);
+			//System.out.println("null");
+			return null;
+		}
+		double y = p1.y + (x-p1.x)*(p2.y-p1.y)/(p2.x-p1.x);
+		//System.out.println("y:"+y);
+		return y;
+	}
+	
+	/*
+	 * http://stackoverflow.com/questions/31506740/java-find-intersection-of-two-lines
+	 * http://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect  
+	 */
+    private static Double xIntersect(Line l1, Line l2) {
+    	double denominator = (double)(l1.p2.x-l1.p1.x)*(l2.p2.y-l2.p1.y) - (double)(l1.p2.y-l1.p1.y)*(l2.p2.x-l2.p1.x);	
 		if(denominator==0.0) return null;
 		double numerator1 = (l2.p2.x-l2.p1.x)*(l1.p1.y-l2.p1.y) - (l2.p2.y-l2.p1.y)*(l1.p1.x-l2.p1.x);
 		double numerator2 = (l1.p2.x-l1.p1.x)*(l1.p1.y-l2.p1.y) - (l1.p2.y-l1.p1.y)*(l1.p1.x-l2.p1.x);
 		double t1 = (double)numerator1/(double)denominator;
 		double t2 = (double)numerator2/(double)denominator;
-		if(t1<=1.0&&t1>=0.0&&t2<=1.0&&t2>=0.0){
-  	    	
-  	    
-//        if ((intersection.x - a.x) * (intersection.x - b.x) <= 0
-//                && (intersection.x - c.x) * (intersection.x - d.x) <= 0
-//                && (intersection.y - a.y) * (intersection.y - b.y) <= 0
-//                && (intersection.y - c.y) * (intersection.y - d.y) <= 0) {
-            
-            //System.out.println("line segments intersect at (" + intersection.x + "," + intersection.y + ")！");
-            return new Point(intersection.x,intersection.y); // '相交
-        } else {
-            //System.out.println("line segments intersect at extended lines(" + intersection.x + "," + intersection.y + ")！");
-            return null; // intersect but not on two segments
-        }
+		if (t1<=1.0&&t1>=0.0&&t2<=1.0&&t2>=0.0){
+			return l1.p1.x + t1*(l1.p2.x-l1.p1.x);
+		}else{
+			return null;
+		}
     }
-    
-
 }
 
 /*
@@ -390,22 +319,6 @@ You have (this.b - line.b), change to (line.b - this.b).
  * */
 
 /*
- * 3
--1 2 -5 -4 -2 -5
-1 -3 -5 4 -1 -3
--1 -5 -5 2 -3 -1
-[(iv:-4.0,-4.0), (iv:4.0,4.0), (iv:2.0,2.0)]
-[(iv:-4.615384615384615,-1.2307692307692306), (iv:0.769230769230769,1.8461538461538454), (iv:-1.230769230769231,-0.7692307692307695)]
-[(iv:-4.666666666666667,-1.0), (iv:0.5,1.6666666666666667), (iv:-1.5,-1.0)]
-[(iv:-4.82051282051282,-0.3076923076923075), (iv:-0.307692307692308,1.128205128205128), (iv:-2.307692307692308,-1.9230769230769236)]
-[(iv:-5.0,0.5), (iv:-1.25,0.5), (iv:-3.25,-3.0)]
-[(iv:-3.444444444444444,0.8333333333333335), (iv:-1.638888888888889,0.24074074074074067), (iv:-3.638888888888889,-3.444444444444445)]
-[(iv:-2.0,1.142857142857143), (iv:-2.0,-0.0), (iv:-4.0,-3.857142857142857)]
-[(iv:2.0,2.0), (iv:-3.0,-0.6666666666666666), (iv:-5.0,-5.0)]
-[(iv:-3.0,-3.0)]
-16.712606837606835
-
-
 3
 -1 2 -5 -4 -2 -5
 1 -3 -5 4 -1 -3
@@ -414,7 +327,7 @@ You have (this.b - line.b), change to (line.b - this.b).
 17.019693005407
 
 https://www.hackerrank.com/contests/ncr-codesprint/challenges/area-of-triangles/submissions/code/7734664
-
+https://www.hackerrank.com/contests/ncr-codesprint/challenges/area-of-triangles/
 http://ucsmp.uchicago.edu/secondary/curriculum/advanced-algebra/demos/polyplotter-aa/
 */
 
