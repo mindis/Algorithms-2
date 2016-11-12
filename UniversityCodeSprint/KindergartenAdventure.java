@@ -1,4 +1,5 @@
 import java.lang.StringBuilder;
+import java.util.Scanner;
 
 /** 
  * Implementation of an AVL Tree, along with code to test insertions on the tree.
@@ -39,6 +40,17 @@ class AvlTree<T extends Comparable<? super T>> {
     protected int      height;
     
     /**
+     * Count of all child/grandchild... nodes of current node.
+     */
+    protected int count;
+    
+    /**
+     * Frequency of current node;
+     */
+    protected int freq;
+    
+    
+    /**
      * Constructor; creates a node without any children
      * 
      * @param theElement  The element contained in this node
@@ -58,11 +70,17 @@ class AvlTree<T extends Comparable<? super T>> {
       element = theElement;
       left = lt;
       right = rt;
+      count = 0;
+      freq = 1;
     }
   }
 
   public AvlNode<T> root;
-  
+
+  /**
+   * Current node of attention after insertion
+   */
+  public AvlNode<T> curNode;
   // TODO: make these optional based on some sort of 'debug' flag?
   // at the very least, make them read-only properties
   public int countInsertions;
@@ -111,16 +129,17 @@ class AvlTree<T extends Comparable<? super T>> {
    * @param x Element to insert into the tree
    * @return True - Success, the Element was added. 
    *         False - Error, the element was a duplicate.
+ * @throws Exception 
    */
-  public boolean insert (T x){
-    try {
-      root = insert (x, root);
-      
+  public int insert (T x) throws Exception{
+//    try {
+      root = insert (x, this.root);
       countInsertions++;
-      return true;
-    } catch(Exception e){ // TODO: catch a DuplicateValueException instead!
-      return false;
-    }
+      return 0;
+//      return true;
+//    } catch(Exception e){ // TODO: catch a DuplicateValueException instead!
+//      return false;
+//    }
   }
   
   /**
@@ -132,11 +151,12 @@ class AvlTree<T extends Comparable<? super T>> {
    * @throws Exception 
    */
   protected AvlNode<T> insert (T x, AvlNode<T> t) throws Exception{
-    if (t == null)
+    if (t == null){
       t = new AvlNode<T> (x);
+    }
     else if (x.compareTo (t.element) < 0){
+      t.count++;
       t.left = insert (x, t.left);
-      
       if (height (t.left) - height (t.right) == 2){
         if (x.compareTo (t.left.element) < 0){
           t = rotateWithLeftChild (t);
@@ -149,8 +169,8 @@ class AvlTree<T extends Comparable<? super T>> {
       }
     }
     else if (x.compareTo (t.element) > 0){
-      t.right = insert (x, t.right);
-      
+    t.count++;
+    t.right = insert (x, t.right);
       if ( height (t.right) - height (t.left) == 2)
         if (x.compareTo (t.right.element) > 0){
           t = rotateWithRightChild (t);
@@ -162,7 +182,8 @@ class AvlTree<T extends Comparable<? super T>> {
         }
     }
     else {
-      throw new Exception("Attempting to insert duplicate value");
+//      throw new Exception("Attempting to insert duplicate value");
+      t.freq ++;
     }
     
     t.height = max (height (t.left), height (t.right)) + 1;
@@ -185,7 +206,8 @@ class AvlTree<T extends Comparable<? super T>> {
     
     k2.height = max (height (k2.left), height (k2.right)) + 1;
     k1.height = max (height (k1.left), k2.height) + 1;
-    
+    k1.count += 1 + (k2.right==null?0:(k2.right.count+1));
+    k2.count -= 1 + (k1.left==null?0:(k1.left.count+1));
     return (k1);
   }
   
@@ -219,7 +241,8 @@ class AvlTree<T extends Comparable<? super T>> {
     
     k1.height = max (height (k1.left), height (k1.right)) + 1;
     k2.height = max (height (k2.right), k1.height) + 1;
-    
+    k1.count -= 1 + (k2.right==null?0:(k2.right.count+1));
+    k2.count += 1 + (k1.left == null?0:(k1.left.count+1));
     return (k2);
   }
 
@@ -260,7 +283,7 @@ class AvlTree<T extends Comparable<? super T>> {
   protected void serializeInfix(AvlNode<T> t, StringBuilder str, String sep){
     if (t != null){
       serializeInfix (t.left, str, sep);
-      str.append(t.element.toString());
+      str.append("("+t.element.toString()+","+t.freq+","+t.count+")");
       str.append(sep);
       serializeInfix (t.right, str, sep);
     }    
@@ -288,7 +311,7 @@ class AvlTree<T extends Comparable<? super T>> {
    */  
   private void serializePrefix (AvlNode<T> t, StringBuilder str, String sep){
     if (t != null){
-      str.append(t.element.toString());
+      str.append("("+t.element.toString()+","+t.freq+","+t.count+")");
       str.append(sep);
       serializePrefix (t.left, str, sep);
       serializePrefix (t.right, str, sep);
@@ -523,10 +546,57 @@ public class KindergartenAdventure{
 
   /**
    * Main entry point; contains test code for the tree.
+   * @throws Exception 
    **/
-  public static void main (String[] args) { //String []args){
-    AvlTree<Integer> t = new AvlTree<Integer>();
+  public static void main (String[] args) throws Exception { //String []args){
+
+  /**
+   * Read input 
+   */
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    int[] arr = new int[n];
+    for(int i = 0; i < n; i++){
+        arr[i] = scan.nextInt();
+    }
+   /**
+    * if time>=student finish time then count ++
+    * Case 1: curI-startI >= curV  --> curI-curV>=startI
+    * Case 2: (N - startI) + curI >= curV --> N+curI-curV>=startI
+    * Create two arrays, one for find 
+    * Traverse once (curI, curV) to build the two arrays 
+    * During traverse:
+    * Use two AVL trees to find elements in these two arrays 
+    * that are >= startI
+    * Case 1 array is traversed from right to left
+    * Case 2 array is traversed from left to right
+    * count elements bigger than cur value in these two arrays
+    * while inserting them in. At each point compare their sum
+    * with the maxCount.
+    * Adding count and freq into AvlTreeNode;
+    */
     
+    int[] arr1 = new int[n];
+    int[] arr2 = new int[n];
+    AvlTree<Integer> t1 = new AvlTree<Integer>();
+    AvlTree<Integer> t2 = new AvlTree<Integer>();
+    int maxCount = 0;
+    int maxIndex = 0;
+    for(int i=0; i<n; i++){
+      arr1[i] = i-arr[i];
+      //System.out.println(arr1[i]);
+      int tempCount = t1.insert(new Integer(arr1[i]));
+      arr2[n-i-1] = n+arr1[i];
+      //System.out.println(arr2[n-i-1]);
+      tempCount+= t2.insert(new Integer(arr2[n-i-1]));
+      if(tempCount>maxCount) {
+        maxCount = tempCount;
+        maxIndex = i;
+      }
+    }
+//    
+//    System.out.println(maxIndex);
+    AvlTree<Integer> t = new AvlTree<Integer>();
     t.insert (new Integer(2));
     t.insert (new Integer(1));
     t.insert (new Integer(4));
@@ -535,11 +605,28 @@ public class KindergartenAdventure{
     t.insert (new Integer(3));
     t.insert (new Integer(6));
     t.insert (new Integer(7));
+    t.insert (new Integer(7));
+//    System.out.println(t.root.height);
+    
     
     System.out.println ("Infix Traversal:");
     System.out.println(t.serializeInfix());
     
     System.out.println ("Prefix Traversal:");
     System.out.println(t.serializePrefix());
+    
+//    System.out.println ("Infix Traversal:");
+//    System.out.println(t1.serializeInfix());
+//    
+//    System.out.println ("Prefix Traversal:");
+//    System.out.println(t1.serializePrefix());
+//    
+//    System.out.println ("Infix Traversal:");
+//    System.out.println(t2.serializeInfix());
+//    
+//    System.out.println ("Prefix Traversal:");
+//    System.out.println(t2.serializePrefix());
+    
+
   }
 }
