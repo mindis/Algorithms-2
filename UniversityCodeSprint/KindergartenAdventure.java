@@ -77,10 +77,6 @@ class AvlTree<T extends Comparable<? super T>> {
 
   public AvlNode<T> root;
 
-  /**
-   * Current node of attention after insertion
-   */
-  public AvlNode<T> curNode;
   // TODO: make these optional based on some sort of 'debug' flag?
   // at the very least, make them read-only properties
   public int countInsertions;
@@ -94,7 +90,6 @@ class AvlTree<T extends Comparable<? super T>> {
    */
   public AvlTree (){
     root = null;
-        
     countInsertions = 0;
     countSingleRotations = 0;
     countDoubleRotations = 0;    
@@ -493,6 +488,38 @@ class AvlTree<T extends Comparable<? super T>> {
 
     return true; // Can only reach here if node was found
   }
+  /**
+   * Search for n element bigger or equal to input
+   * tailMap, TreeMap
+   */
+  public int nBiggerEqualTo(T x, AvlNode<T> t){
+//      if (t == null){
+//          return 0; // The node was not found
+//       } else if (x.compareTo(t.element) < 0){
+//          return nBiggerEqualTo(x, t.left);
+//        } else if (x.compareTo(t.element) > 0){
+//          return nBiggerEqualTo(x, t.right); 
+//        }
+//        return t.count+t.freq;
+    
+    // keep going down the tree and add all right subtree count.
+    //Divide and counquer. 
+    int sum = 0;
+    if(t==null){
+      return 0;
+    //if target value < current node value, add current node count + its right child treenode count
+    }else if(x.compareTo(t.element) < 0){
+      sum += t.freq + ((t.right==null)?0:(t.right.count+t.right.freq));
+      sum += nBiggerEqualTo(x, t.left);
+    //if target value > current, go down right child to search
+    }else if(x.compareTo(t.element) > 0){
+      sum += nBiggerEqualTo(x, t.right);
+    //if target == current, count curren't freq + right childs count and freq
+    }else if(x.compareTo(t.element)==0){
+      sum += t.freq+((t.right==null)?0:(t.right.count+t.right.freq));
+    }
+    return sum;
+  }
   
   /***********************************************************************/
   // Diagnostic functions for the tree
@@ -562,7 +589,7 @@ public class KindergartenAdventure{
    /**
     * if time>=student finish time then count ++
     * Case 1: curI-startI >= curV  --> curI-curV>=startI
-    * Case 2: (N - startI) + curI >= curV --> N+curI-curV>=startI
+    * Case 2: (N - startI-1) + curI >= curV --> N-1+curI-curV>=startI
     * Create two arrays, one for find 
     * Traverse once (curI, curV) to build the two arrays 
     * During traverse:
@@ -578,24 +605,65 @@ public class KindergartenAdventure{
     
     int[] arr1 = new int[n];
     int[] arr2 = new int[n];
+    int[] arr1processed = new int[n];
+    int[] arr2processed = new int[n];
     AvlTree<Integer> t1 = new AvlTree<Integer>();
     AvlTree<Integer> t2 = new AvlTree<Integer>();
     int maxCount = 0;
     int maxIndex = 0;
+    
+    /**
+     * Build two AVL Tree, then process it use nBiggerEqualTo
+     */
     for(int i=0; i<n; i++){
-      arr1[i] = i-arr[i];
-      //System.out.println(arr1[i]);
-      int tempCount = t1.insert(new Integer(arr1[i]));
-      arr2[n-i-1] = n+arr1[i];
-      //System.out.println(arr2[n-i-1]);
-      tempCount+= t2.insert(new Integer(arr2[n-i-1]));
-      if(tempCount>maxCount) {
-        maxCount = tempCount;
-        maxIndex = i;
-      }
+      //curI-curV
+      arr1[n-i-1] = n-i-1 - arr[n-i-1];
+      t1.insert(new Integer(arr1[n-i-1]));
+      //count>=startI
+      arr1processed[n-i-1] = t1.nBiggerEqualTo(n-i-1, t1.root);
+    
+      // N-1+curI-curV
+      arr2[i] = n - 1 + i-arr[i];
+      t2.insert(new Integer(arr2[i]));
+      //count>=startI
+      arr2processed[i] = t2.nBiggerEqualTo(i, t2.root);
     }
-//    
-//    System.out.println(maxIndex);
+    /**
+     * perform enumeration of start time
+     */
+    //put it here because, we want to find smallest index
+  if(arr1processed[0]>maxCount) {
+    maxCount = arr1processed[0];
+    maxIndex = 0;
+  }
+  
+    for(int i=1; i<n; i++){
+    int tempCount = arr1processed[i] + arr2processed[i-1];
+    if(tempCount>maxCount) {
+      maxCount = tempCount;
+      maxIndex = i;
+    }
+    }
+    
+/**Debug**/
+    for(int i=0; i<n; i++){
+    System.out.print(arr1processed[i] + " ");
+
+    }
+    System.out.println();
+    for(int i=0; i<n; i++){
+    System.out.print(arr2processed[i] + " ");
+
+    }
+    System.out.println();
+
+
+
+    //since it is id, need to +1
+    System.out.println(maxIndex+1);
+    /**
+     * 
+     *
     AvlTree<Integer> t = new AvlTree<Integer>();
     t.insert (new Integer(2));
     t.insert (new Integer(1));
@@ -606,7 +674,6 @@ public class KindergartenAdventure{
     t.insert (new Integer(6));
     t.insert (new Integer(7));
     t.insert (new Integer(7));
-//    System.out.println(t.root.height);
     
     
     System.out.println ("Infix Traversal:");
@@ -614,19 +681,44 @@ public class KindergartenAdventure{
     
     System.out.println ("Prefix Traversal:");
     System.out.println(t.serializePrefix());
+    */
     
 //    System.out.println ("Infix Traversal:");
 //    System.out.println(t1.serializeInfix());
 //    
 //    System.out.println ("Prefix Traversal:");
 //    System.out.println(t1.serializePrefix());
-//    
-//    System.out.println ("Infix Traversal:");
-//    System.out.println(t2.serializeInfix());
-//    
-//    System.out.println ("Prefix Traversal:");
-//    System.out.println(t2.serializePrefix());
     
-
+/*Test case:
+  5
+  5 1 5 2 3
+  
+  5
+  1 1 1 1 1
+  
+  5
+  4 4 4 4 4
+  
+  5
+  0 0 0 0 0
+  
+  5
+  0 1 2 3 4
+  
+  5
+  0 0 0 3 3
+  
+  1
+  5
+  
+  1
+  1
+  
+  5
+  3 1 0 1 3
+  
+  5
+  5 4 3 2 1
+ */
   }
 }
