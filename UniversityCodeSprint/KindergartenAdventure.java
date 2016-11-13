@@ -176,7 +176,7 @@ class AvlTree<T extends Comparable<? super T>> {
           countDoubleRotations++;
         }
     }
-    else {
+    else {//equal
 //      throw new Exception("Attempting to insert duplicate value");
       t.freq ++;
     }
@@ -201,8 +201,8 @@ class AvlTree<T extends Comparable<? super T>> {
     
     k2.height = max (height (k2.left), height (k2.right)) + 1;
     k1.height = max (height (k1.left), k2.height) + 1;
-    k1.count += 1 + (k2.right==null?0:(k2.right.count+1));
-    k2.count -= 1 + (k1.left==null?0:(k1.left.count+1));
+    k1.count += k2.freq + (k2.right==null?0:(k2.right.count+k2.right.freq));
+    k2.count -= k1.freq + (k1.left==null?0:(k1.left.count+k1.left.freq));
     return (k1);
   }
   
@@ -236,8 +236,8 @@ class AvlTree<T extends Comparable<? super T>> {
     
     k1.height = max (height (k1.left), height (k1.right)) + 1;
     k2.height = max (height (k2.right), k1.height) + 1;
-    k1.count -= 1 + (k2.right==null?0:(k2.right.count+1));
-    k2.count += 1 + (k1.left == null?0:(k1.left.count+1));
+    k1.count -= k2.freq + (k2.right==null?0:(k2.right.count+k2.right.freq));
+    k2.count += k1.freq + (k1.left == null?0:(k1.left.count+k1.left.freq));
     return (k2);
   }
 
@@ -646,21 +646,43 @@ public class KindergartenAdventure{
     }
     
 /**Debug**/
-    for(int i=0; i<n; i++){
-    System.out.print(arr1processed[i] + " ");
+//    for(int i=0; i<n; i++){
+//    System.out.print(arr1[i] + " ");
+//
+//    }
+//    System.out.println();
+//    for(int i=0; i<n; i++){
+//    System.out.print(arr2[i] + " ");
+//
+//    }
+//    System.out.println();
+//    for(int i=0; i<n; i++){
+//    System.out.print(arr1processed[i] + " ");
+//
+//    }
+//    System.out.println();
+//    for(int i=0; i<n; i++){
+//    System.out.print(arr2processed[i] + " ");
+//
+//    }
+//    System.out.println();
+//    
+//    System.out.println ("Infix Traversal:");
+//    System.out.println(t1.serializeInfix());
+//    
+//    System.out.println ("Prefix Traversal:");
+//    System.out.println(t1.serializePrefix());
+//    
+//    System.out.println("maxCount"+maxCount);
+    
+//since it is id, need to +1
 
-    }
-    System.out.println();
-    for(int i=0; i<n; i++){
-    System.out.print(arr2processed[i] + " ");
+  System.out.println(maxIndex+1);  
 
-    }
-    System.out.println();
+//
+//
+//
 
-
-
-    //since it is id, need to +1
-    System.out.println(maxIndex+1);
     /**
      * 
      *
@@ -682,12 +704,7 @@ public class KindergartenAdventure{
     System.out.println ("Prefix Traversal:");
     System.out.println(t.serializePrefix());
     */
-    
-//    System.out.println ("Infix Traversal:");
-//    System.out.println(t1.serializeInfix());
-//    
-//    System.out.println ("Prefix Traversal:");
-//    System.out.println(t1.serializePrefix());
+
     
 /*Test case:
   5
@@ -719,6 +736,29 @@ public class KindergartenAdventure{
   
   5
   5 4 3 2 1
+  
+  5
+  0 1 5 0 1
+  
+  5
+  1 2 3 4 0
+  
+  5
+  5 0 4 2 3
+  
+  
+  fault here!!!!
+  6
+  4 4 0 2 3 2
+  
+  
+  -4 -3 2 1 1 3 
+1 2 7 6 6 8 
+5 5 3 1 0 0 
+1 2 2 2 3 4 
+maxCount6
+2
+
  */
   }
 }
