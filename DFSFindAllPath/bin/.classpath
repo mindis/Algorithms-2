@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="topcoder/|HackerRankCodeSprint/|hackerrankHourRank14/|LCA/src/|DFSFindAllPath/src/|UniversityCodeSprint/|test/src/|courseHero/src/|FindMatchingStringInWordDictionary/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="courseHero/src"/>
+	<classpathentry kind="src" path="DFSFindAllPath/src"/>
+	<classpathentry kind="src" path="FindMatchingStringInWordDictionary/src"/>
+	<classpathentry kind="src" path="HackerRankCodeSprint"/>
+	<classpathentry kind="src" path="hackerrankHourRank14"/>
+	<classpathentry kind="src" path="LCA/src"/>
+	<classpathentry kind="src" path="test/src"/>
+	<classpathentry kind="src" path="topcoder"/>
+	<classpathentry kind="src" path="UniversityCodeSprint"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="DFSFindAllPath/bin"/>
+</classpath>

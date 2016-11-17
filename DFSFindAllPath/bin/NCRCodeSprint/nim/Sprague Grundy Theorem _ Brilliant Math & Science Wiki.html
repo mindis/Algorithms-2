@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://brilliant.org/wiki/sprague-grundy-theorem/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+        <title>Sprague Grundy Theorem | Brilliant Math &amp; Science Wiki</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <meta property="fb:app_id" content="326254770799145">
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/eommhbliilafdkodaijeejngbjiiaccl">
+        
+            
+                <meta property="al:ios:url" content="com.brilliant.Brilliant://wiki/sprague-grundy-theorem/">
+                <meta property="al:ios:app_store_id" content="913335252">
+                <meta property="al:ios:app_name" content="Brilliant.org">
+                <meta property="al:android:url" content="https://brilliant.org/wiki/sprague-grundy-theorem/">
+                <meta property="al:android:package" content="org.brilliant.android">
+                <meta property="al:android:app_name" content="Brilliant">
+            
+            
+                <link rel="canonical" href="https://brilliant.org/wiki/sprague-grundy-theorem/">
+            
+            
+            
+            <link rel="alternate" href="android-app://org.brilliant.android/http/brilliant.org/wiki/sprague-grundy-theorem/">
+        
+
+        
+
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-76x76-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-180x180-precomposed.png">
+
+        
+    <meta name="description" content="The Sprague-Grundy theorem is a statement about impartial games. In Combinatorial Games - Winning Positions, we analyzed winning positions of impartial games. Several questions arose in trying to find a general characterization for whether a set of nim piles is a winning position or a losing position. Here, we answer these questions by giving the complete characterization for winning and losing positions of nim. Claim Suppose we have nim piles of sizes ...">
+    
+
+    
+
+
+    <meta property="og:type" content="website">
+
+
+
+    <meta property="og:title" content="Sprague Grundy Theorem | Brilliant Math &amp; Science Wiki">
+
+
+
+    <meta property="og:description" content="The Sprague-Grundy theorem is a statement about impartial games. In Combinatorial Games - Winning Positions, we analyzed winning positions of impartial games. Several questions arose in trying to find a general characterization for whether a set of nim piles is a winning position or a losing position. Here, we answer these questions by giving the complete characterization for winning and losing positions of nim. Claim Suppose we have nim piles of sizes ...">
+
+
+
+
+<meta property="og:url" content="https://brilliant.org/wiki/sprague-grundy-theorem/">
+
+
+
+
+
+<meta name="twitter:site" content="@brilliantorg">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+
+
+        
+    
+    <link href="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/brilliant_lib.css" type="text/css" rel="stylesheet" media="all">
+    
+        <link href="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/brilliant_common_desktop.css" type="text/css" rel="stylesheet" media="all">
+        
+    <link href="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/wiki.css" type="text/css" rel="stylesheet" media="all">
+
+    
+
+
+
+        
+        
+        <!--[if lt IE 6]><script type="text/javascript">var ie_version = -1;</script><![endif]-->
+        <!--[if IE 6]><script type="text/javascript">var ie_version = 6;</script><![endif]-->
+        <!--[if IE 7]><script type="text/javascript">var ie_version = 7;</script><![endif]-->
+        <!--[if IE 8]><script type="text/javascript">var ie_version = 8;</script><![endif]-->
+        <!--[if IE 9]><script type="text/javascript">var ie_version = 9;</script><![endif]-->
+
+        
+        
+
+
+    <script async="" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/czn.js"></script><script async="" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/fbevents.js"></script><script async="" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/analytics.js"></script><script type="text/javascript" async="" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/mixpanel.2.js"></script><script id="facebook-jssdk" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/sdk.js"></script><script type="text/javascript">
+        (function (w, loc) {
+            var u = /cdn\d\.staticbrilliant\.org|781382595\.r\.cdn77\.net|\.r\.worldssl\.net|d18l82el6cdm1i\.cloudfront\.net/;
+            if(u.test(loc.host)){ w.location=loc.protocol+'//brilliant.org'+loc.pathname;}
+        })(window,window.location);
+    </script>
+
+
+        
+
+        <noscript>
+            &lt;style&gt;.cmp-deferred .no-js{display:block !important;}&lt;/style&gt;
+        </noscript>
+
+    <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+        <body class="latexprocessor no-wrapper wiki-page logged-out has-global-navigation instant-try-it-yourself fonts js webkit chrome" data-is-mobile="false" data-app-version="0.0.0" data-user="None" data-media-host="https://d18l82el6cdm1i.cloudfront.net">
+
+        
+        <!-- site_is_live -->
+        
+
+            
+            
+
+            
+
+            
+
+                
+                    <div id="header" class="site-header">
+                        
+                            
+                                
+    
+        
+                                    
+<div id="logged-out-header" class="container">
+    <div class="hdr-logo col col-2"><div>
+        <a href="https://brilliant.org/" class="logo css-sprite-logos" title="Solve problems in math, physics, and algorithms."></a>
+    </div></div>
+
+    <div class="hdr-main col col-10 col-last">
+        <p id="tagline">
+            
+                Excel in math, science, and engineering
+            
+        </p>
+
+        
+            <a href="https://brilliant.org/account/signup/?next=/wiki/sprague-grundy-theorem/" class="btn signup-btn col-2 ax-click" data-ax-id="clicked_signup_from_header" data-ax-type="button">
+                    Sign up</a>
+
+            <a href="https://brilliant.org/account/login/?next=/wiki/sprague-grundy-theorem/" class="btn login-link col-2 ax-click" data-ax-id="clicked_login_from_header" data-ax-type="link">
+                    Log in</a>
+        
+    </div>
+</div>
+
+                                
+    
+
+                            
+                        
+                    </div>
+                
+
+            
+
+            
+                
+            
+
+            
+
+            <div id="post-header">
+                
+            </div>
+
+            <div id="wrapper" class="container clearfix" data-controller="" data-controller-inited="true">
+
+                
+    
+        
+                    
+                        
+                            
+                            
+                                
+<div class="like-us-modal" data-controller="util/sharing:likeUsModal.loggedOut" data-controller-inited="true">
+    <h6>Waste less time on Facebook — follow Brilliant.</h6>
+    <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/brilliantorg" data-width="400" data-layout="standard" data-action="like" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=326254770799145&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fbrilliantorg&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;width=400"><span style="vertical-align: bottom; width: 400px; height: 24px;"><iframe name="f38020274d7374c" width="400px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/like.html" style="border: none; visibility: visible; width: 400px; height: 24px;" class=""></iframe></span></div>
+    <span class="close">×</span>
+</div>
+
+                            
+                        
+                    
+                
+    
+
+
+                
+    
+        
+        
+        
+            
+                    
+
+
+    
+    
+    
+    
+    
+
+    <div id="sidebar" class="sidebar col col-2" data-controller="app/sidebar:main" data-controller-inited="true">
+        <div>
+
+            
+            
+
+            
+
+
+            
+            
+
+            <div class="sb-section sb-section-expandable">
+                <h5><a href="https://brilliant.org/explorations/" class="sb-section-toggle">
+                        Explorations
+                        <span class="chevron css-sprite-chevrons"></span>
+                </a></h5>
+                <ul class="unstyled">
+                    <li><a href="https://brilliant.org/explorations/joy-problem-solving/" data-tag-url="/explorations/joy-problem-solving/" class="">Joy of Problem Solving</a><!-- navigation:topic: --></li><li><a href="https://brilliant.org/explorations/probability/" data-tag-url="/explorations/probability/" class="">Probability</a><!-- navigation:topic: --></li><li><a href="https://brilliant.org/explorations/physics-everyday/" data-tag-url="/explorations/physics-everyday/" class="">Physics of the Everyday</a><!-- navigation:topic: --></li><li><a href="https://brilliant.org/explorations/complex-algebra/" data-tag-url="/explorations/complex-algebra/" class="">Complex Algebra</a><!-- navigation:topic: --></li><li><a href="https://brilliant.org/explorations/">See all...</a></li>
+
+                </ul>
+            </div>
+
+
+            
+            
+
+            <div id="topic-list" class="sb-section sb-section-expandable expanded">
+
+                <h5><a href="https://brilliant.org/math/algebra/" class="sb-section-toggle">
+                        Topics
+                        <span class="chevron css-sprite-chevrons"></span>
+                </a></h5>
+                <ul class="unstyled">
+                    <li><a href="https://brilliant.org/math/algebra/" data-tag-url="/math/algebra/" class="">Algebra</a><!-- navigation:topic:algebra --></li><li><a href="https://brilliant.org/math/geometry/" data-tag-url="/math/geometry/" class="">Geometry</a><!-- navigation:topic:geometry --></li><li><a href="https://brilliant.org/math/number-theory/" data-tag-url="/math/number-theory/" class="">Number Theory</a><!-- navigation:topic:number-theory --></li><li><a href="https://brilliant.org/math/calculus/" data-tag-url="/math/calculus/" class="">Calculus</a><!-- navigation:topic:calculus --></li><li><a href="https://brilliant.org/math/combinatorics/" data-tag-url="/math/combinatorics/" class="">Discrete Mathematics</a><!-- navigation:topic:combinatorics --></li><li><a href="https://brilliant.org/math/basic-mathematics/" data-tag-url="/math/basic-mathematics/" class="">Basic Mathematics</a><!-- navigation:topic:basic-mathematics --></li><li><a href="https://brilliant.org/computer-science/logic/" data-tag-url="/computer-science/logic/" class="">Logic</a><!-- navigation:topic:logic --></li><li><a href="https://brilliant.org/physics/mechanics-2/" data-tag-url="/physics/mechanics-2/" class="">Classical Mechanics</a><!-- navigation:topic:mechanics-2 --></li><li><a href="https://brilliant.org/physics/electricity-and-magnetism/" data-tag-url="/physics/electricity-and-magnetism/" class="">Electricity and Magnetism</a><!-- navigation:topic:electricity-and-magnetism --></li><li><a href="https://brilliant.org/computer-science/computer-science/" data-tag-url="/computer-science/computer-science/" class="">Computer Science</a><!-- navigation:topic:computer-science --></li><li><a href="https://brilliant.org/economics/quantitative-finance/" data-tag-url="/economics/quantitative-finance/" class="">Quantitative Finance</a><!-- navigation:topic:quantitative-finance --></li><li><a href="https://brilliant.org/chemistry/chemistry/" data-tag-url="/chemistry/chemistry/" class="">Chemistry</a><!-- navigation:topic:chemistry --></li>
+
+                </ul>
+            </div>
+
+
+            
+            
+
+            
+
+
+            
+            
+
+            <div class="sb-section sb-section-expandable ">
+                <h5><a href="https://brilliant.org/community/problems/featured/easy/" class="sb-section-toggle">
+                        Community
+                        <span class="chevron css-sprite-chevrons"></span>
+                </a></h5>
+                <ul class="unstyled">
+                    <li><a href="https://brilliant.org/community/problems/featured/easy/" class="">
+                            New
+                    </a></li>
+
+                    
+                </ul>
+            </div>
+
+
+            
+            
+
+            <div class="sb-squared">
+                
+            </div>
+
+
+            
+            
+
+            <div class="sb-footer">
+                <div class="apps-footer">
+    <a href="https://itunes.apple.com/app/apple-store/id913335252?pt=105095803&amp;ct=brilliant_website_footer&amp;mt=8" class="app-store-badge css-sprite-global ax-click" data-ax-id="clicked_ios_app_link_from_homepage" data-ax-type="link">
+            Practice math and science questions on the Brilliant iOS app.</a>
+    <a href="https://play.google.com/store/apps/details?id=org.brilliant.android&amp;referrer=utm_source%3Dbrilliant%26utm_medium%3Dsite%26utm_campaign%3Dplaystore_full_footer_icon" class="google-play-badge css-sprite-global">
+            Practice math and science questions on the Brilliant Android app.</a>
+</div>
+
+
+                
+                    <div class="social">
+                        Follow us!
+                        <a href="https://twitter.com/brilliantorg" class="css-sprite-social tw">
+                            Twitter</a>
+                        <a href="https://www.facebook.com/brilliantorg" class="css-sprite-social fb">
+                            Facebook</a>
+                    </div>
+                
+
+                
+<ul class="site-footer-main unstyled">
+    <li><a href="https://brilliant.org/about/">
+        About</a></li>
+
+    <li><a href="https://brilliant.org/help/">
+        Help</a></li>
+
+    <li><a href="https://brilliant.org/terms-of-use/">
+        Terms</a></li>
+
+    <li><a href="https://brilliant.org/privacy_policy/">
+        Privacy</a></li>
+
+    <li>© Brilliant 2016</li>
+</ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+                
+        
+        
+    
+
+
+                <div id="system-msgs" class="col col-10 col-last clearfix">
+                    
+
+                        
+
+                        
+                    
+                </div>
+
+                
+    <div class="col col-10 col-last wiki-main-column has-sidebar">
+
+        <header id="wiki-header" class="wiki-header">
+    
+        <div class="pull-right">
+            
+
+            
+        </div>
+    
+
+    <h1>Sprague Grundy Theorem</h1>
+</header>
+
+
+    
+
+<div class="signup-modal hide">
+
+    <div class="modal-bg"></div>
+
+    
+        <div class="modal-content">
+            <div class="buttons">
+                <a href="https://brilliant.org/account/facebook/login/?next=/wiki/sprague-grundy-theorem/" class="btn signup-fb ax-click" data-ax-id="clicked_signup_modal_facebook" data-ax-type="button">
+                        Sign up with Facebook</a>
+                <span class="or">or</span>
+                <a href="https://brilliant.org/account/signup/?signup=true&amp;next=/wiki/sprague-grundy-theorem/" class="btn signup-email ax-click" data-ax-id="clicked_signup_modal_email" data-ax-type="button">
+                        Sign up manually</a>
+            </div>
+            <div class="alternative">
+                <p>
+                    Already have an account?
+                    <a href="https://brilliant.org/account/login/?next=/wiki/sprague-grundy-theorem/" class="ax-click" data-ax-id="clicked_signup_modal_login" data-ax-type="link">
+                            Log in here.
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+
+</div>
+
+
+
+
+        
+
+    <div class="col col-4 col-right wiki-sidebar sidebar" id="wiki-sidebar">
+        
+
+        
+            <div id="cmp_wiki_skill_appears_in_id" class="appears-in">
+                
+
+    <div class="wiki-sidebar-section wiki-relevant">
+        <h4>Relevant For...</h4>
+        <ul class="unstyled">
+            
+                <li>
+                    Discrete Mathematics
+                    <span class="css-sprite-chevrons"></span>
+                    <a href="https://brilliant.org/math/combinatorics/?subtopic=advanced-combinatorics&amp;chapter=combinatorial-games">
+                        Combinatorial Games</a>
+                </li>
+            
+                <li>
+                    Logic
+                    <span class="css-sprite-chevrons"></span>
+                    <a href="https://brilliant.org/computer-science/logic/?subtopic=games&amp;chapter=deterministic-games">
+                        Deterministic Games</a>
+                </li>
+            
+        </ul>
+    </div>
+
+
+            </div>
+        
+    </div>
+
+
+
+        
+            <div class="wiki-top-editors" id="cmp_wiki_top_editors_id">
+                
+
+    
+        <a href="https://brilliant.org/profile/calvin-8u8hog/" class="btn-profile mini-profile" data-id="ctypzo0ald07sbrx0ty8umfajtqhk3nc" rel="nofollow">
+            Calvin Lin</a>,
+        
+    
+        <a href="https://brilliant.org/profile/arron-udsft3/" class="btn-profile mini-profile" data-id="ooiokyDuFwpOeiDLLy5TBQO7ON25K2pr" rel="nofollow">
+            Arron Kau</a>,
+        
+    
+        <a href="https://brilliant.org/profile/eli-oyeeys/" class="btn-profile mini-profile" data-id="1Ogyx9vCZon1L1msTClMgybPmQFVMRl7" rel="nofollow">
+            Eli Ross</a>,
+        
+    
+
+    
+        and
+        <div class="dropdown tipsy">
+            <button class="btn-link dropdown-toggle" data-toggle="dropdown">
+                1 other
+            </button>
+            <ul class="dropdown-menu">
+                
+                    <li><a href="https://brilliant.org/profile/jimin-hqyzve/" class="mini-profile" data-id="sFxPAbPDtKOIiquGfMHdp279pk40JIS5" rel="nofollow">
+                        Jimin Khim
+                    </a></li>
+                
+            </ul>
+        </div>
+    
+
+    contributed
+
+
+            </div>
+        
+
+        
+
+        <div id="wiki-main">
+            
+
+
+
+
+
+            
+
+            <div class="summary-container" id="cmp_wiki_canonical_page_id">
+                
+
+    <div class="summary" data-controller="app/wiki:summary,app/zoomable:images" data-cmp-url="/wiki/sprague-grundy-theorem/" data-page-key="wiki_canonical_page" data-cmp-key="wiki_canonical_page" data-controller-inited="true">
+        
+
+        
+
+        <div class="section collapsed" id="section-pre-header-section"><div class="section-container"><p>The <strong>Sprague-Grundy theorem</strong> is a statement about impartial <a href="https://brilliant.org/wiki/combinatorial-games-definition/" class="wiki_link" title="games" target="_blank">games</a>.</p>
+
+</div>
+</div>
+
+    <div class="toc wiki-toc">
+        <h4>Contents</h4>
+        <ul class="unstyled">
+            
+                <li>
+                    <a href="https://brilliant.org/wiki/sprague-grundy-theorem/#explanation">Explanation</a>
+                </li>
+            
+                <li>
+                    <a href="https://brilliant.org/wiki/sprague-grundy-theorem/#worked-examples">Worked Examples</a>
+                </li>
+            
+        </ul>
+    </div>
+
+
+<div id="explanation" class="anchor skill-heading collapsed" data-controller="app/wiki:expandOrCollapse" data-controller-inited="true">
+    <header class="section-header">
+        <span class="css-sprite-chevrons chevron"></span>
+        <h2>Explanation</h2>
+
+        
+    </header>
+</div>
+
+<div class="section collapsed" id="section-explanation"><div class="section-container">
+
+<p>In <a href="https://brilliant.org/wiki/combinatorial-games-winning-positions/" class="wiki_link" title="Combinatorial Games - Winning Positions" target="_blank">Combinatorial Games - Winning Positions</a>, we analyzed winning positions of impartial games.  Several questions arose in trying to find a general characterization for whether a set of nim piles is a winning position or a losing position.  Here, we answer these questions by giving the complete characterization for winning and losing positions of nim.</p>
+
+<blockquote>
+  <p><strong>Claim</strong></p>
+  
+  <p>Suppose we have nim piles of sizes <span class="latexprocessor-inline latexprocessor-bf81a46b3cdef6a26faeba8fe60470fa763b2e392b46cc1bd509723ef833b25b" title="LaTeX: \((a_1, a_2, \ldots, a_n)\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 15ex; height: 2.444ex; vertical-align: -0.778ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -770.9033013280564 6469.037516565143 1041.8066026561128"><defs><path id="MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-2026-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60ZM525 60Q525 84 542 102T585 120Q609 120 627 104T646 61Q646 36 629 18T586 0T543 17T525 60ZM972 60Q972 84 989 102T1032 120Q1056 120 1074 104T1093 61Q1093 36 1076 18T1033 0T990 17T972 60Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><g transform="translate(389,0)"><use xlink:href="#MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="748" y="-213"></use></g><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1371" y="0"></use><g transform="translate(1816,0)"><use xlink:href="#MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="748" y="-213"></use></g><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2798" y="0"></use><use xlink:href="#MJMAIN-2026-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3243" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="4582" y="0"></use><g transform="translate(5026,0)"><use xlink:href="#MJMATHI-61-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="748" y="-213"></use></g><use xlink:href="#MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="6080" y="0"></use></g></svg></span>.  Let <span class="latexprocessor-inline latexprocessor-baeef5451c8e7e35eadcb9dab588fa6498b2254f95663ea19d61a795bc3ac06d" title="LaTeX: \(b_i\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.778ex; height: 2.111ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 772.9518395093589 893.5847772491647"><defs id="MathJax_SVG_glyphs-4fd627fc270911e3bb5c40400601ade9740df62d422a40a9afaa3ff793c718b4"><path id="MJMATHI-62-4fd627fc270911e3bb5c40400601ade9740df62d422a40a9afaa3ff793c718b4" stroke-width="0" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJMATHI-69-4fd627fc270911e3bb5c40400601ade9740df62d422a40a9afaa3ff793c718b4" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-62-4fd627fc270911e3bb5c40400601ade9740df62d422a40a9afaa3ff793c718b4"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-69-4fd627fc270911e3bb5c40400601ade9740df62d422a40a9afaa3ff793c718b4" x="606" y="-213"></use></g></svg></span> be the base 2 representation of <span class="latexprocessor-inline latexprocessor-b851eb78c843af830f4513690dddb4414d8b4bd3885c072e3fea2763ab87bbc9" title="LaTeX: \(a_i\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 2ex; height: 1.444ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -461.9033013280564 872.9518395093589 640.5847772491647"><defs id="MathJax_SVG_glyphs-39be99e427c311e3bb5c40400601ade90db4dfc3d5a74e43b6662724d8c5f128"><path id="MJMATHI-61-39be99e427c311e3bb5c40400601ade90db4dfc3d5a74e43b6662724d8c5f128" stroke-width="0" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJMATHI-69-39be99e427c311e3bb5c40400601ade90db4dfc3d5a74e43b6662724d8c5f128" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-61-39be99e427c311e3bb5c40400601ade90db4dfc3d5a74e43b6662724d8c5f128"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-69-39be99e427c311e3bb5c40400601ade90db4dfc3d5a74e43b6662724d8c5f128" x="748" y="-213"></use></g></svg></span>.  A nim position is losing if over all the numbers in <span class="latexprocessor-inline latexprocessor-aee23918a240862a9848e1c028f7dfc34a15b536d28ca67ae2a23621cb763252" title="LaTeX: \(\{b_i\}_{i=1}^{n}\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 7ex; height: 2.556ex; vertical-align: -0.889ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -770.9033013280564 3020.586145375126 1106.0746935194056"><defs><path id="MJMAIN-7B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M434 -231Q434 -244 428 -250H410Q281 -250 230 -184Q225 -177 222 -172T217 -161T213 -148T211 -133T210 -111T209 -84T209 -47T209 0Q209 21 209 53Q208 142 204 153Q203 154 203 155Q189 191 153 211T82 231Q71 231 68 234T65 250T68 266T82 269Q116 269 152 289T203 345Q208 356 208 377T209 529V579Q209 634 215 656T244 698Q270 724 324 740Q361 748 377 749Q379 749 390 749T408 750H428Q434 744 434 732Q434 719 431 716Q429 713 415 713Q362 710 332 689T296 647Q291 634 291 499V417Q291 370 288 353T271 314Q240 271 184 255L170 250L184 245Q202 239 220 230T262 196T290 137Q291 131 291 1Q291 -134 296 -147Q306 -174 339 -192T415 -213Q429 -213 431 -216Q434 -219 434 -231Z"></path><path id="MJMATHI-62-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-7D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M65 731Q65 745 68 747T88 750Q171 750 216 725T279 670Q288 649 289 635T291 501Q292 362 293 357Q306 312 345 291T417 269Q428 269 431 266T434 250T431 234T417 231Q380 231 345 210T298 157Q293 143 292 121T291 -28V-79Q291 -134 285 -156T256 -198Q202 -250 89 -250Q71 -250 68 -247T65 -230Q65 -224 65 -223T66 -218T69 -214T77 -213Q91 -213 108 -210T146 -200T183 -177T207 -139Q208 -134 209 3L210 139Q223 196 280 230Q315 247 330 250Q305 257 280 270Q225 304 212 352L210 362L209 498Q208 635 207 640Q195 680 154 696T77 713Q68 713 67 716T65 731Z"></path><path id="MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-7B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><g transform="translate(500,0)"><use xlink:href="#MJMATHI-62-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="606" y="-213"></use></g><g transform="translate(1272,0)"><use xlink:href="#MJMAIN-7D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="707" y="498"></use><g transform="translate(500,-307)"><use transform="scale(0.7071067811865476)" xlink:href="#MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="345" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1123" y="0"></use></g></g></g></svg></span>, the number of 1s in each binary position is even and winning otherwise.  </p>
+</blockquote>
+
+<p>Before we prove this statement, let’s look at an example to see what we mean. If the nim piles have sizes <span class="latexprocessor-inline latexprocessor-58c1f1e1416995a37112b65b0f0ac03e3a35f5fe7d47ba6a51c702759c4278d7" title="LaTeX: \((3,6,8)\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 7.333ex; height: 2.444ex; vertical-align: -0.778ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -770.9033013280564 3167.3333333333335 1041.8066026561128"><defs><path id="MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-36-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-38-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="389" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="889" y="0"></use><use xlink:href="#MJMAIN-36-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1333" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1833" y="0"></use><use xlink:href="#MJMAIN-38-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2278" y="0"></use><use xlink:href="#MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2778" y="0"></use></g></svg></span>, then we can write these numbers as <span class="latexprocessor-inline latexprocessor-0a60e331ede09611bfeb602f35d13a0b157379438ec7d867e6e73fe6702fc270" title="LaTeX: \(11_2, 110_2, 1000_2\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 15.667ex; height: 2.111ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -686.9033013280564 6749.993505113156 902.8066026561128"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1414" y="-213"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1453" y="0"></use><g transform="translate(1898,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2121" y="-213"></use></g><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3851" y="0"></use><g transform="translate(4296,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1500" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2828" y="-213"></use></g></g></svg></span>.  We want to look at each binary position of these numbers, so let’s arrange them in a table:</p>
+
+<p><span class="latexprocessor-block latexprocessor-bb6254223e4c936a409843770d6aa1ab9c73620a0680abc8daa5f98e066382a8" title="LaTeX: \[ \begin{array}{cccc}
+&amp; &amp; 1 &amp;1\\
+&amp; 1 &amp;1 &amp;0\\
+1 &amp; 0 &amp; 0 &amp; 0\\
+\end{array}\]"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 12.333ex; height: 8ex; vertical-align: -3.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -1970.9033013280564 5318.322524003957 3441.806602656113"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g transform="translate(167,0)"><g transform="translate(-16,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1250"></use></g><g transform="translate(1484,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-50"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1250"></use></g><g transform="translate(2984,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="1150"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-50"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1250"></use></g><g transform="translate(4484,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="1150"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-50"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1250"></use></g></g></g></svg></span></p>
+
+<p>We can construct a number that represents the parity of the number of 1's in each binary position.  We call this the <strong>nim-sum</strong> of these numbers.  Looking at each column of the table, we see that the 1's column has a single 1, the 10's column has two 1's, and the 100's column and the 1000's column each have a single 1.  Our nim-sum here is <span class="latexprocessor-inline latexprocessor-bbcff0fb0ad04547bb777bf0fb1a43ce500cb91a4152ec998145681ae9bf6fbf" title="LaTeX: \(1101_2\ = 13\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 11.667ex; height: 2ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -686.9033013280564 5037.10894614883 857.8066026561128"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0"></path><path id="MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1500" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2828" y="-213"></use><use xlink:href="#MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2453" y="0"></use><use xlink:href="#MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2981" y="0"></use><g transform="translate(4037,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use></g></g></svg></span>.  </p>
+
+<p>If the piles have sizes <span class="latexprocessor-inline latexprocessor-fe2ac90154a0432d6618c39c84c31317878d1c0085301a95530a99f67766735c" title="LaTeX: \(7,9,14\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 6.667ex; height: 2.111ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -697.9033013280564 2889.333333333333 913.8066026561128"><defs><path id="MJMAIN-37-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-39-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-34-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-37-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-39-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="944" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1444" y="0"></use><g transform="translate(1889,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-34-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use></g></g></svg></span>, then we can write these numbers as <span class="latexprocessor-inline latexprocessor-ee649dcbc821676eb0157e7c8f47a452448829b1454e46230a14d5f20db72b3c" title="LaTeX: \(111_2, 1001_2, 1110_2\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 18ex; height: 2.111ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -686.9033013280564 7749.993505113156 902.8066026561128"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2121" y="-213"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1953" y="0"></use><g transform="translate(2398,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1500" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2828" y="-213"></use></g><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="4851" y="0"></use><g transform="translate(5296,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1000" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1500" y="0"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2828" y="-213"></use></g></g></svg></span>. We want to look at each binary position of these numbers, so let’s arrange them in a table:</p>
+
+<p><span class="latexprocessor-block latexprocessor-98bb9f8fd11265c627ead02088f55ca70eae2ff6b05832fa44256782f79bde50" title="LaTeX: \[ \begin{array}{cccc}
+&amp; 1&amp; 1 &amp;1\\
+1&amp;  0&amp;0 &amp;1\\
+1 &amp; 1&amp; 1 &amp; 0\\
+\hline
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{array}\]"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 14.222ex; height: 11.778ex; vertical-align: -5.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -2786.1803013280564 6118.322524003957 5072.360602656113"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g transform="translate(167,0)"><g transform="translate(384,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="550"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-650"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1850"></use></g><g transform="translate(1884,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="1750"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="550"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-650"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1850"></use></g><g transform="translate(3384,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="1750"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="550"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-650"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1850"></use></g><g transform="translate(4884,0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="1750"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="550"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-650"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="0" y="-1850"></use></g><line stroke-width="31.35" x1="0" y2="15.677475996042308" y1="15.677475996042308" x2="5784" transform="translate(0,-944)"></line></g></g></svg></span></p>
+
+<p>The last line represents the parity of the number of 1's, which gives us that the nim-sum of these numbers is 0.</p>
+
+<blockquote class="proof"><p>
+We will modify our description of a winning position to be one where the nim-sum of the pile sizes is not 0, which is equivalent to the original definition.  To verify that this accurately describes the set of winning and losing positions, we check 3 things.  </p>
+
+<p>First, it is clear that the game with no stones is losing, and has nim-sum 0.</p>
+
+<p>Second, if we are in a losing position, we have nim-sum 0.  If we remove stones from a single pile, we are changing the positions of 1's in a single column, which will make the nim-sum no longer 0.</p>
+
+<p>Third, if we are in a winning position, we have nim-sum of the form <span class="latexprocessor-inline latexprocessor-b56eb72b4176e49389d786b9952388fd4152b84cf582dff388c5bc667c9f105a" title="LaTeX: \(1x_2\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 3.556ex; height: 2ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -686.9033013280564 1525.553390593274 857.8066026561128"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMATHI-78-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><g transform="translate(500,0)"><use xlink:href="#MJMATHI-78-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use transform="scale(0.7071067811865476)" xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="808" y="-213"></use></g></g></svg></span>, where <span class="latexprocessor-inline latexprocessor-b5eb933c119f6667524ce50ea2589d75a032624cfcafa90609d0cc5610963b14" title="LaTeX: \(x\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.333ex; height: 1.111ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -462.9033013280564 572 494.80660265611283"><defs id="MathJax_SVG_glyphs-538bb548261311e3937340400601ade92b36ddfabd924414a2f2919facbf4bf4"><path id="MJMATHI-78-538bb548261311e3937340400601ade92b36ddfabd924414a2f2919facbf4bf4" stroke-width="0" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-78-538bb548261311e3937340400601ade92b36ddfabd924414a2f2919facbf4bf4"></use></g></svg></span> is a binary string.  We choose a pile that has a 1 in the same position as the leftmost 1 in the nim-sum.  We change this number by flipping each digit for which there is a 1 in the corresponding position in the nim-sum.  The nim-sum of these new numbers will be 0, which is a losing position.  It is left as an exercise to show that the new number is less than the original number and thus constitutes a valid move. <span class="latexprocessor-inline latexprocessor-74ae1f8d59304cfc79506e467915a8bdb2618d5bd5d56c65a54900d603946b5e" title="LaTeX: \( _\square\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.556ex; height: 1.222ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -358.09987356558764 650.129075763134 529.0031748936441"><defs><path id="MJAMS-25A1-0a7a49f82b3311e39e2840400601ade93f89117fa57342ccbdf3b96b85cf5976" stroke-width="0" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use transform="scale(0.7071067811865476)" xlink:href="#MJAMS-25A1-0a7a49f82b3311e39e2840400601ade93f89117fa57342ccbdf3b96b85cf5976" x="0" y="-213"></use></g></svg></span></p>
+
+<!-- end-proof --></blockquote>
+
+<p>The nim-sum actually gives us more information than determining whether a position is winning or losing; it also assigns a value to that position.  If a position has nim-sum <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span>, then from that position it will always be possible to move to a position with nim-sum <span class="latexprocessor-inline latexprocessor-90c74cded9b71139b2a67c666df6068be4b2de6e3e3081d50e2d1d72bc4630ec" title="LaTeX: \(j\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1ex; height: 2.111ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -681.9033013280564 424 906.8066026561128"><defs id="MathJax_SVG_glyphs-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"><path id="MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"></use></g></svg></span> for any <span class="latexprocessor-inline latexprocessor-9dfb23d3df839146139499113090628fb8aab5e322b6cc860c2a2beaf3c5175f" title="LaTeX: \(j &lt; k,\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 6ex; height: 2.125ex; vertical-align: -0.625ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -712.5807122916057 2556.5555555555557 935.1614245832114"><defs><path id="MJMATHI-6A-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJMAIN-3C-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" stroke-width="0" d="M694 -11T694 -19T688 -33T678 -40Q671 -40 524 29T234 166L90 235Q83 240 83 250Q83 261 91 266Q664 540 678 540Q681 540 687 534T694 519T687 505Q686 504 417 376L151 250L417 124Q686 -4 687 -5Q694 -11 694 -19Z"></path><path id="MJMATHI-6B-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJMAIN-2C-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0"></use><use xlink:href="#MJMAIN-3C-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" x="689" y="0"></use><use xlink:href="#MJMATHI-6B-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" x="1745" y="0"></use><use xlink:href="#MJMAIN-2C-32f5f02ccfd111e5b12902153406529fd2c7482381b54b9abe062dfde47e34d0" x="2266" y="0"></use></g></svg></span> and not possible to move to a position with nim-sum <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span>.  To see this, consider the proof that any winning position can get to a 0 position, and replace 0 with any smaller number.  The described method will extend to this.</p>
+
+<p>We have spent a lot of time developing the theory for a single impartial game, Nim. In fact, this is all the theory that we need to understand any general impartial game! We have the following surprising result:</p>
+
+<blockquote class="theorem"><p> <br>
+<strong>Sprague-Grundy Theorem</strong></p>
+
+<p>Any position of an impartial game is equivalent to a nim pile of a certain size. <span class="latexprocessor-inline latexprocessor-1755612713976ef9719cc30204eed752cee45c9b60ee7122bb90234a8cfb6a6d" title="LaTeX: \(_\square\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.556ex; height: 1.222ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -358.09987356558764 650.129075763134 529.0031748936441"><defs id="MathJax_SVG_glyphs-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7"><path id="MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" stroke-width="0" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use transform="scale(0.7071067811865476)" xlink:href="#MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" x="0" y="-213"></use></g></svg></span>
+</p><!-- end-theorem --></blockquote>
+
+<p>We can assign a nim-sum to the positions in any impartial game by building up sequentially through small cases. The <strong>nim-sum of a position</strong> is the smallest non-negative integer <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span> such that we cannot move to a position with nim-sum <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span>. This requires us to calculate the nim-sum of every position that we can move to. Since the game will always end, this calculation is finite. However, it can get computationally intensive, and a computer may be useful.</p>
+
+<p>The proof of the Sprague-Grundy theorem is identical to our previous proof, where we checked 3 statements.</p>
+
+</div>
+</div>
+
+<div id="worked-examples" class="anchor skill-heading collapsed" data-controller="app/wiki:expandOrCollapse" data-controller-inited="true">
+    <header class="section-header">
+        <span class="css-sprite-chevrons chevron"></span>
+        <h2>Worked Examples</h2>
+
+        
+    </header>
+</div>
+
+<div class="section collapsed" id="section-worked-examples"><div class="section-container">
+
+<blockquote class="example">
+
+<h3>Two players play a game starting with a pile of <span class="latexprocessor-inline latexprocessor-bef7e92d003faea67cf0be669d1bd7bfc28fa83e447e6dd8197ae1c63355437e" title="LaTeX: \(n\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.444ex; height: 1.111ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -463.9033013280564 600 495.80660265611283"><defs id="MathJax_SVG_glyphs-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"><path id="MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"></use></g></svg></span> stones. On each turn, a player removes from the pile <span class="latexprocessor-inline latexprocessor-4c91d1e2a1911e8b409fb5d282dce6af1185b67c4afaf622e983df9048017377" title="LaTeX: \(1,2,3,\ldots, \mbox{ or } k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 15.222ex; height: 2.111ex; vertical-align: -0.556ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 6530.333333333333 930.8066026561128"><defs><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-2026-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60ZM525 60Q525 84 542 102T585 120Q609 120 627 104T646 61Q646 36 629 18T586 0T543 17T525 60ZM972 60Q972 84 989 102T1032 120Q1056 120 1074 104T1093 61Q1093 36 1076 18T1033 0T990 17T972 60Z"></path><path id="MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0"></path><path id="MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJMAIN-72-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path><path id="MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0"></path><path id="MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="500" y="0"></use><use xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="944" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1444" y="0"></use><use xlink:href="#MJMAIN-33-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1889" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2389" y="0"></use><use xlink:href="#MJMAIN-2026-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2833" y="0"></use><use xlink:href="#MJMAIN-2C-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="4172" y="0"></use><g transform="translate(4617,0)"><use xlink:href="#MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="250" y="0"></use><use xlink:href="#MJMAIN-72-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="750" y="0"></use><use xlink:href="#MJMAIN-20-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1142" y="0"></use></g><use xlink:href="#MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="6009" y="0"></use></g></svg></span> stones. The person who takes the last stone wins. Determine, in terms of <span class="latexprocessor-inline latexprocessor-bef7e92d003faea67cf0be669d1bd7bfc28fa83e447e6dd8197ae1c63355437e" title="LaTeX: \(n\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.444ex; height: 1.111ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -463.9033013280564 600 495.80660265611283"><defs id="MathJax_SVG_glyphs-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"><path id="MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"></use></g></svg></span> and <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span>, the nim-sum of each position.</h3>
+
+<hr>
+
+<p>For <span class="latexprocessor-inline latexprocessor-c0c096f71b20bded8f4f3a35a68c165f1335a9adcb8a8afe13c5268712694c33" title="LaTeX: \(j \leq k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 5.333ex; height: 2.222ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -714.9033013280564 2278.5555555555557 939.8066026561128"><defs><path id="MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJMAIN-2264-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-2264-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="689" y="0"></use><use xlink:href="#MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1745" y="0"></use></g></svg></span>, the nim-sum of the game with <span class="latexprocessor-inline latexprocessor-90c74cded9b71139b2a67c666df6068be4b2de6e3e3081d50e2d1d72bc4630ec" title="LaTeX: \(j\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1ex; height: 2.111ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -681.9033013280564 424 906.8066026561128"><defs id="MathJax_SVG_glyphs-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"><path id="MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"></use></g></svg></span> stones will be <span class="latexprocessor-inline latexprocessor-90c74cded9b71139b2a67c666df6068be4b2de6e3e3081d50e2d1d72bc4630ec" title="LaTeX: \(j\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1ex; height: 2.111ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -681.9033013280564 424 906.8066026561128"><defs id="MathJax_SVG_glyphs-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"><path id="MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-96cd2148264011e389b940400601ade9cb007eab0dbf48f6a443cb91f31d25ae"></use></g></svg></span>.  This is easy to see inductively starting at <span class="latexprocessor-inline latexprocessor-358d04c61b821533e59e74a0bf2e2b2ed2acc5c15ffb4c1efd0d7dcc41d5239b" title="LaTeX: \(j = 0\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 5.222ex; height: 2.111ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -686.9033013280564 2257.5555555555557 911.8066026561128"><defs><path id="MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="689" y="0"></use><use xlink:href="#MJMAIN-30-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1745" y="0"></use></g></svg></span>.  When <span class="latexprocessor-inline latexprocessor-5ab45debf7a1a200bacde2e46fbdca1bc4ea89bf981145b88181a6659086fc60" title="LaTeX: \(j = k+1\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 9.333ex; height: 2.222ex; vertical-align: -0.667ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="-12 -714.9033013280564 4001 939.8066026561128"><defs><path id="MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6A-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-3D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="689" y="0"></use><use xlink:href="#MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1745" y="0"></use><use xlink:href="#MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2488" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3489" y="0"></use></g></svg></span>, this is a losing position, so the nim-sum will be 0.  If we repeat this, we see inductively that the nim-sum of <span class="latexprocessor-inline latexprocessor-8ef93edee320f8550adee0fb3c19ab077eddc853d144453e84c923ba7d591dde" title="LaTeX: \(i\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0.778ex; height: 1.667ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -681.9033013280564 345 713.8066026561128"><defs id="MathJax_SVG_glyphs-3550d1a626f111e3bb5c40400601ade9b0910604e03042fda783f3ca6ec08b15"><path id="MJMATHI-69-3550d1a626f111e3bb5c40400601ade9b0910604e03042fda783f3ca6ec08b15" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-69-3550d1a626f111e3bb5c40400601ade9b0910604e03042fda783f3ca6ec08b15"></use></g></svg></span> and <span class="latexprocessor-inline latexprocessor-34b741dcf81274d3a19e14314090cf568c9bc51b3a41400a50d65e8eff6e7773" title="LaTeX: \(i + k + 1\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 8.889ex; height: 1.889ex; vertical-align: -0.333ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 3810.8888888888887 817.8066026561128"><defs><path id="MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-69-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="567" y="0"></use><use xlink:href="#MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1567" y="0"></use><use xlink:href="#MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="2310" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3310" y="0"></use></g></svg></span> will always be the same.  So the nim-sum of <span class="latexprocessor-inline latexprocessor-bef7e92d003faea67cf0be669d1bd7bfc28fa83e447e6dd8197ae1c63355437e" title="LaTeX: \(n\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.444ex; height: 1.111ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -463.9033013280564 600 495.80660265611283"><defs id="MathJax_SVG_glyphs-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"><path id="MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"></use></g></svg></span> stones where we can remove at most <span class="latexprocessor-inline latexprocessor-1ef62047d2c51bc2b93ab6418c5ad3f4c1a6f3d1bedcc2092518ee31777be029" title="LaTeX: \(k\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.222ex; height: 1.778ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -714.9033013280564 521 746.8066026561128"><defs id="MathJax_SVG_glyphs-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"><path id="MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6B-cfdaa908261b11e3937340400601ade996ebf29079604f8c98ab056eca6cd34b"></use></g></svg></span> is <span class="latexprocessor-inline latexprocessor-f12c4a532fc67c3cc20c03757a66c4c3cfa508d88580f395b1ea9c52a95ec55d" title="LaTeX: \(n \pmod{k + 1}.\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 15.667ex; height: 2.444ex; vertical-align: -0.778ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -770.9033013280564 6732.88888888889 1041.8066026561128"><defs><path id="MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJMAIN-6D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJMAIN-64-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"></path><path id="MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJMAIN-2E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1044" y="0"></use><g transform="translate(1433,0)"><use xlink:href="#MJMAIN-6D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="833" y="0"></use><use xlink:href="#MJMAIN-64-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1333" y="0"></use></g><use xlink:href="#MJMATHI-6B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3822" y="0"></use><use xlink:href="#MJMAIN-2B-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="4565" y="0"></use><use xlink:href="#MJMAIN-31-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="5565" y="0"></use><use xlink:href="#MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="6065" y="0"></use><use xlink:href="#MJMAIN-2E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="6454" y="0"></use></g></svg></span> <span class="latexprocessor-inline latexprocessor-1755612713976ef9719cc30204eed752cee45c9b60ee7122bb90234a8cfb6a6d" title="LaTeX: \(_\square\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.556ex; height: 1.222ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -358.09987356558764 650.129075763134 529.0031748936441"><defs id="MathJax_SVG_glyphs-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7"><path id="MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" stroke-width="0" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use transform="scale(0.7071067811865476)" xlink:href="#MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" x="0" y="-213"></use></g></svg></span>
+</p><!-- end-example --></blockquote>
+
+<blockquote class="example">
+
+<h3>Odd Nim is like Nim, except you can only remove an odd number of stones from a pile.  Determine the nim-sum for a single pile of <span class="latexprocessor-inline latexprocessor-bef7e92d003faea67cf0be669d1bd7bfc28fa83e447e6dd8197ae1c63355437e" title="LaTeX: \(n\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.444ex; height: 1.111ex; vertical-align: -0.222ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -463.9033013280564 600 495.80660265611283"><defs id="MathJax_SVG_glyphs-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"><path id="MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-46851128261311e3937340400601ade9ea3c92bc735949d58c9338629bebd4e0"></use></g></svg></span> stones.</h3>
+
+<hr>
+
+<p>Since we can only take an odd number of stones from the pile, the game will always be a losing position if the number of stones is even and a winning position if the number of stones is odd.  From a winning position, we can only get to the 0 position, so all winning positions have nim-sum 1.  Thus the nim-sum is <span class="latexprocessor-inline latexprocessor-835549a0f7708ceb3446c5a42ba50cf0e4e0bb0c9c8a79ac74ea1a49f95c89ab" title="LaTeX: \(n \pmod{2} \)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 10.889ex; height: 2.444ex; vertical-align: -0.778ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -770.9033013280564 4711.444444444444 1041.8066026561128"><defs><path id="MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJMAIN-6D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJMAIN-64-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"></path><path id="MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" stroke-width="0" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#MJMATHI-6E-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-28-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1044" y="0"></use><g transform="translate(1433,0)"><use xlink:href="#MJMAIN-6D-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f"></use><use xlink:href="#MJMAIN-6F-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="833" y="0"></use><use xlink:href="#MJMAIN-64-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="1333" y="0"></use></g><use xlink:href="#MJMAIN-32-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="3822" y="0"></use><use xlink:href="#MJMAIN-29-88755cb42bb311e39e2840400601ade98a378b0cc6f641a38d887c86c363146f" x="4322" y="0"></use></g></svg></span>. <span class="latexprocessor-inline latexprocessor-1755612713976ef9719cc30204eed752cee45c9b60ee7122bb90234a8cfb6a6d" title="LaTeX: \(_\square\)"><svg xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1.556ex; height: 1.222ex; vertical-align: -0.444ex; margin-top: 1px; margin-right: 0px; margin-bottom: 1px; margin-left: 0px; " viewBox="0 -358.09987356558764 650.129075763134 529.0031748936441"><defs id="MathJax_SVG_glyphs-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7"><path id="MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" stroke-width="0" d="M71 0Q59 4 55 16V346L56 676Q64 686 70 689H709Q719 681 722 674V15Q719 10 709 1L390 0H71ZM682 40V649H95V40H682Z"></path></defs><g stroke="black" fill="black" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use transform="scale(0.7071067811865476)" xlink:href="#MJAMS-25A1-ee77a9aa27bb11e3bb5c40400601ade9f6483ae68f944975b2350d1cbfc110a7" x="0" y="-213"></use></g></svg></span>
+ </p><!-- end-example --></blockquote>
+</div>
+</div>
+    </div>
+
+
+
+
+
+<div id="mentions-data" data-url="/mentions/candidates/" data-type="wiki" data-id="1593">
+</div>
+
+            </div>
+        </div>
+
+        
+            <div class="wiki-self-citation" data-controller="app/wiki:getCitationTime" data-controller-inited="true">
+                <strong>Cite as:</strong>
+                Sprague Grundy Theorem.
+                <em>Brilliant.org</em>.
+                Retrieved<span class="retrieval-time">
+                11:22, November 6, 2016,
+            </span>from
+                <a href="https://brilliant.org/wiki/sprague-grundy-theorem/">https://brilliant.org/wiki/sprague-grundy-theorem/</a>
+            </div>
+
+            <script type="text/template" id="retrieval-time-content">
+                <%- hour %>:<%- minute %>, <%- month %> <%- day %>, <%- year %>,
+            </script>
+        
+
+        <div class="wiki-rating-feedback-wrapper row" data-controller="app/wiki:feedback" data-controller-inited="true">
+            
+
+            
+        </div>
+
+    </div>
+
+    <div class="wiki-overlay"></div>
+
+    
+
+    
+
+
+    
+
+    
+        <!-- __MATHJAX_PLACEHOLDER__ -->
+    
+
+    <div data-controller="util/analytics:init" data-analytics-live="true" data-mixpanel-key="9839e265610a538902f6c10038885c59" data-nonajax-people-set="{}" data-cio-key="9b180e7983a5a792f198" data-analytics-super-properties="{&quot;svg_enabled_for_current_browser&quot;: &quot;True&quot;, &quot;account_type&quot;: &quot;anonymous&quot;, &quot;svg_supported_by_browser&quot;: &quot;True&quot;, &quot;locale&quot;: &quot;en&quot;, &quot;ab_test__android_paywall_tab_2016_06&quot;: true, &quot;svg_rendering_enabled&quot;: &quot;True&quot;, &quot;test_account&quot;: false, &quot;anon_ident_latest&quot;: &quot;AXegqOxYURZbIh8BXahP4ruENKyzhOV9&quot;, &quot;ab_test__show_branch_banner_logged_in&quot;: true, &quot;sessionid&quot;: &quot;cn6rxi&quot;, &quot;client&quot;: &quot;desktop-browser&quot;, &quot;ab_test__brilliant_square_price&quot;: false, &quot;debug&quot;: false, &quot;ab_test__reduced_email_early_lifecycle_05_2016&quot;: true, &quot;ab_test__android_paywall_copy_get_vs_learn_2016_06&quot;: true, &quot;identity&quot;: &quot;AXegqOxYURZbIh8BXahP4ruENKyzhOV9&quot;}" data-identify-data="{&quot;id&quot;: &quot;AXegqOxYURZbIh8BXahP4ruENKyzhOV9&quot;}" data-facebook-ad-pixel-id="712046235504105" data-corazon-ad-pixel-id="8cyJN1Spxr" data-google-ad-pixel-id="1007657493" data-ltv-event-id="0" data-ltv-event-ltv="" data-ltv-event-currency="" data-ltv-event-confirm-url="" data-is-tracked-user="true" data-controller-inited="true">
+
+        <div class="ax-event" data-ax-name="sign_of_life" data-ax-properties="{&quot;from_request&quot;: true, &quot;is_android&quot;: false, &quot;ajax&quot;: false, &quot;path&quot;: &quot;/wiki/sprague-grundy-theorem/&quot;, &quot;method&quot;: &quot;GET&quot;, &quot;full_path&quot;: &quot;/wiki/sprague-grundy-theorem/&quot;}"></div>
+
+        
+
+</div>
+
+
+    
+        
+
+
+    <div data-controller="util/branch:init" data-branch-key="key_live_hchs2frj8AeD0WKiFpCVunopxFc92aiU" data-controller-inited="true">
+
+        
+        
+        
+    </div>
+
+
+    
+
+    
+
+</div>
+
+
+    
+
+
+
+
+
+
+<div id="global-modal-data" data-close="Close"></div>
+<div id="default-ajax-error" class="hide" data-error-title="Error" data-error-content="We encountered an error while talking to our servers. Refresh the page and try again in a few seconds. If the problem persists, please &lt;a href=&#39;mailto:support@brilliant.org&#39;&gt;email us&lt;/a&gt;." data-timeout-content="That action is taking longer than expected. This is likely due to network issues. Please try again in a few seconds, and if the problem persists, &lt;a href=&#39;mailto:support@brilliant.org&#39;&gt;send us an email&lt;/a&gt;.">
+</div>
+
+
+    <script type="text/javascript">
+        VERSIONS = {
+            moderators_new_problem_writers: 1,
+moderators_confirm_problem_reports: 1,
+quizzes_landing: 1,
+home_tab: 1,
+assessment_webview_edit_problem: 1,
+profile_summer_camp_optional_details: 1,
+disputediscussions_publicsolvableadddisputepostmodal: 1,
+stats_attempt_punchcard: 1,
+wiki_quiz_footer: 1,
+contacts_newsfeed_element: 1,
+profile_minibiography: 1,
+quizzes_add_solvable_to_saved_set: 1,
+assessment_webview_scratchpad: 1,
+newsfeed_remove_feed_item: 1,
+profile_savedsets_set_listing_container: 1,
+homepage: 1,
+quizzes_navigation_component: 1,
+topic_practice_navigation: 1,
+profile_note_in_savedset: 1,
+stats_topic_quiz_map: 1,
+profile_resume: 1,
+profile_why_are_you_passionate: 1,
+assessment_webview_saved_sets: 1,
+profile_gender: 1,
+profile_problem_in_savedset_component_modal: 1,
+disputediscussions_publicsolvabledisputelist: 1,
+profile_note_in_savedset_modal: 1,
+discussions_post_vote: 1,
+profile_waterlooscholarship: 1,
+index_getnotified: 1,
+profile_competitions: 1,
+quizzes_challengesolvablesolutioncomments: 1,
+community_problems_container: 1,
+practicesection_webview_dispute: 1,
+explorations_chapter_paywall: 1,
+wiki_canonical_page: 1,
+quizzes_problemset: 1,
+wiki_canonical_start_practicing: 1,
+accountsettings_deactivate: 1,
+practicesection_subtopic_menu: 1,
+practicesection_topic_landing_page_v2: 1,
+practicesection_topic_landing_page_v1: 1,
+wikis_need_help: 1,
+problems_started_problems: 1,
+practicesection_earned_skills: 1,
+wiki_featured: 1,
+newsfeed_explore_container: 1,
+stats_topic: 1,
+profile_problem_in_your_area: 1,
+explorations_menu: 1,
+profile_stats_sidebar: 1,
+profile_savedset_problem_details_header: 1,
+home_todays_challenges: 1,
+newsfeed_feeditem_challengerecommendation: 1,
+discussions_modal_single_component: 1,
+assessment_end_state_disputes_header: 1,
+newsfeed_mark_favorite: 1,
+disputediscussions_publicsolvabledisputecomments: 1,
+profile_deeply_care_about: 1,
+sets_feed_container: 1,
+profile_problem_in_savedset_component_modal_logged_out: 1,
+quizzes_challengesolvablesolutionlist: 1,
+profile_favoritequote: 1,
+profile_savedsets_share_to_feed: 1,
+stats_overview_in_topic: 1,
+quizzes_need_problems: 1,
+discussions_feed: 1,
+newsfeed_mark_reshare: 1,
+profile_avatar: 1,
+wiki_show_wiki_rating: 1,
+quizzes_logged_out_quiz_component: 1,
+wiki_edit_log_entry_component: 1,
+home_tab_feeditem_usersolutionpost: 1,
+profile_who_to_follow: 1,
+solutiondiscussions_publicsolvablesolutionsubscribe: 1,
+newsfeed_create_solvable: 1,
+profile_savedsets_set_leaderboard: 1,
+quizzes_webview_dispute: 1,
+wiki_edits_log: 1,
+profile_following: 1,
+newsfeed_create_post: 1,
+wiki_canonical_related_pages: 1,
+moderators_write_wiki_examples: 1,
+quizzes_recent_explorations: 1,
+assessment: 1,
+problems_started_problems_container: 1,
+wiki_skill_appears_in: 1,
+quizzes_end_state_disputes_header: 1,
+newsfeed_generic_tag: 1,
+wiki_canonical_edit_summary: 1,
+profile_savedsets_save_set: 1,
+solutiondiscussions_publicsolvablesolutionlist: 1,
+quizzes_solvabledisputecomments: 1,
+quizzes_addsolvabledisputepost: 1,
+teacherclasses_problem_listing: 1,
+wikidiscussions_wikifeedbacklist: 1,
+profile_skills: 1,
+home_activity_feed: 1,
+friends_sidebarleaderboard: 1,
+profile_streak: 1,
+profile_home_phone_number: 1,
+notifications_page: 1,
+assessment_recently_solved_by_logged_out: 1,
+profile_school_postal_code: 1,
+quizzes_logged_out_solvable_component: 1,
+profile_savedsets_item_problem: 1,
+profile_free_response_1: 1,
+profile_free_response_2: 1,
+profile_free_response_3: 1,
+profile_clubs: 1,
+newsfeed_mark_reshare_special: 1,
+assessment_public_solvable_logged_in: 1,
+wiki_rate_wiki: 1,
+wiki_merge_wikis: 1,
+practicesection_chapter_menu: 1,
+assessment_webview_disputes: 1,
+my_savedsets_sidebar: 1,
+assessment_solvable_solution: 1,
+teacherclasses_home_sidebar: 1,
+profile_problem_in_savedset_component_logged_out: 1,
+newsfeed_topic_tag_difficulty_preference: 1,
+profile_savedsets_set_listing_page: 1,
+quizzes_preemptive_wiki: 1,
+assessment_challenge_friends: 1,
+discussions_single: 1,
+profile_about: 1,
+profile_savedsets_item_note: 1,
+wiki_edit_level: 1,
+profile_school_city: 1,
+community_discussions_container: 1,
+stats_level_details: 1,
+quizzes_logged_out_interstitial_pane_component: 1,
+quizzes_solvabledisputesubscribe: 1,
+wiki_all_edit_log: 1,
+profile_college: 1,
+profile_home_country: 1,
+practicesection_webview_scratchpad: 1,
+profile_subscribe_to_user_wrapper: 1,
+topic_feed_container: 1,
+newsfeed_feed_container: 1,
+newsfeed_subscription: 1,
+practicesection_topic_landing_page: 1,
+wiki_delete: 1,
+practicesection_topic_menu: 1,
+teacherclasses_student_stats: 1,
+sidebar: 1,
+quizzes_addsolvabledisputepostmodal: 1,
+profile_home_postal_code: 1,
+profile_savedsets_create_set: 1,
+canonical_topic_difficulty_preference: 1,
+teacherclasses_set_listing: 1,
+newsfeed_feeditem_discussionpost: 1,
+profile_home_state: 1,
+profile_savedsets_set_page: 1,
+wiki_categorize_wiki: 1,
+profile_home_address_1: 1,
+profile_triesbyweekalpha: 1,
+profile_home_address_2: 1,
+newsfeed_topic_feed_sidebar: 1,
+solutiondiscussions_publicsolvablesolutionwrapper: 1,
+profile_followers: 1,
+moderators_dashboard: 1,
+wiki_report_disputed_wiki: 1,
+discussions_comments: 1,
+profile_school_address_2: 1,
+solutiondiscussions_subscribetofirstsolution: 1,
+profile_high_school: 1,
+profile_school_address_1: 1,
+assessment_end_state_header: 1,
+discussions_comment_subscribe: 1,
+solutiondiscussions_publicsolvableaddsolutionpost: 1,
+profile_solution_list: 1,
+profile_example_question: 1,
+homepage_discussions_feed: 1,
+quizzes_challengesolvablesolutionsubscribe: 1,
+profile_savedsets_copy_to_class: 1,
+quizzes_header: 1,
+quizzes_recent_solvers: 1,
+teacherclasses_student_stats_sidebar: 1,
+wiki_create_new_wiki: 1,
+profile_problem_in_savedset_component: 1,
+stats_overview: 1,
+community_wikis_featured: 1,
+community_discussions_component: 1,
+community_tab_container_component: 1,
+stats_first_topic: 1,
+assessment_modal_public_solvable_component: 1,
+profile_savedsets_set_container: 1,
+account_selectlang: 1,
+assessment_modal_public_solvable_component_logged_out: 1,
+newsfeed_subscribe_to_tag_wrapper: 1,
+disputediscussions_publicsolvableadddisputepost: 1,
+newsfeed_feeditem_saved_set: 1,
+newsfeed_feed: 1,
+discussions_subscribe: 1,
+wiki_canonical_edit_section: 1,
+mobile_apps: 1,
+profile_academic_project_overview: 1,
+assessment_webview_solution_discussions: 1,
+account_selecttimezone: 1,
+disputediscussions_publicsolvabledisputesubscribe: 1,
+problems_started_solvable_component: 1,
+discussions_add_to_saved_set: 1,
+assessment_public_solvable_logged_out: 1,
+community_wikis_featured_container: 1,
+wikidiscussions_wikifeedbackcomments: 1,
+profile_savedset_note_details_header: 1,
+wiki_staff_edit: 1,
+assessment_content_grade: 1,
+profile_interests: 1,
+account_personalinfo: 1,
+explorations_chapter: 1,
+wiki_request_feedback: 1,
+wikidiscussions_wikifeedbacksubscribe: 1,
+quizzes_end_state_header: 1,
+profile_cities: 1,
+header_coupon: 1,
+topics_tab: 1,
+profile_savedsets_share_to_class: 1,
+sets_feed: 1,
+profile_accomplishments: 1,
+practicesection_skill_problemset: 1,
+wiki_approve_all_edits: 1,
+profile_school_country: 1,
+newsfeed_reported_problem_warning: 1,
+newsfeed_newsfeed_container: 1,
+problems_feed_container: 1,
+profile_languages: 1,
+profile_school_temp_city: 1,
+profile_savedsets_set_page_modal: 1,
+teacherclasses_classlisting: 1,
+newsfeed_explore: 1,
+quizzes_challengesolvablesolutionwrapper: 1,
+topic_subtopics_listing: 1,
+profile_newsfeed_favorites_container: 1,
+old_homepage: 1,
+homepage_signup_form: 1,
+newsfeed_firehose: 1,
+discussions_tag_subscribe: 1,
+wikidiscussions_addwikifeedbackpost: 1,
+quizzes_challengesolvableaddsolutionpost: 1,
+assessment_add_solvable_to_saved_set: 1,
+teacherclasses_class: 1,
+problems_feed: 1,
+profile_newsfeed_favorites: 1,
+newsfeed_generic_tag_container: 1,
+topic_feed_page: 1,
+savedsets_user_saved_page: 1,
+stats_leaderboard: 1,
+handle_404: 1,
+stats_redirect: 1,
+community_tab: 1,
+discussions_addedby: 1,
+teacherclasses_join: 1,
+quizzes_interstitial_pane: 1,
+profile_savedsets_setlisting_item_set: 1,
+quizzes_solvabledisputelist: 1,
+wiki_top_editors: 1,
+profile_home_city: 1,
+assessment_public_solvable_start_preloaded_attempt: 1,
+profile_savedsets_set_header: 1,
+explorations_topics: 1,
+profile_topic_difficulty_preference: 1,
+community_wikis_featured_item: 1,
+community_problems_component: 1,
+profile_status_msg: 1,
+newsfeed_feeditem_preview: 1,
+quizzes_chapter_info_page: 1,
+quizzes_content_grade: 1,
+profile_school_state: 1,
+teacherclasses_student_stats_landing: 1,
+stats_summary: 1,
+solutiondiscussions_publicsolvablesolutioncomments: 1,
+home_activity_container: 1,
+newsfeed_create_wiki: 1,
+newsfeed_firehose_container: 1,
+profile_savedset_problem_start_preloaded_attempt: 1,
+discussions_feed_container: 1,
+profile_company: 1,
+newsfeed_bump_popularity_score: 1,
+newsfeed_practice_topic_sidebar: 1,
+teacherclasses_create: 1
+        } ;
+    </script>
+
+
+    
+    <script type="text/javascript">
+    var oldonload = window.onload || function () {};
+    window.onload = function () {
+        window.isLoaded = true;
+        oldonload.apply(this);
+    };
+</script>
+
+    
+    <script src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/brilliant_packages.js"></script>
+    <script src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/brilliant_lib.js"></script>
+    <script src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/brilliant_core.js"></script>
+    
+        
+    <script src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/wiki.js"></script>
+
+    
+
+
+
+
+    
+        
+    
+
+    
+    
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/fTmIQU3LxvB.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: '326254770799145',
+        version: 'v2.2',
+        status: true,
+        xfbml: true,
+        frictionlessRequests: true
+    });
+
+    
+    window.fb_auth_status=function(c){
+        c=c||function(){};
+        FB.getLoginStatus(function(r){
+            if(r.status==='connected'){c(true,r);}
+            else{c(false,r);}
+        });
+    };
+    
+    window._fb_status=window._fb_status||[];
+    var i=0,l=_fb_status.length;
+    for(i;i<l;i++){fb_auth_status(_fb_status[i]);}
+    _fb_status=[];
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+    
+    
+
+    
+
+    
+        
+            
+
+    <div class="nf-feeditem-modal inited" id="nf-feeditem-modal">
+
+        <div class="nf-modal-close close" id="nf-modal-close">×</div>
+
+        <div class="nf-modal-loading">
+            <div class="logo"></div>
+            <div class="stripe"></div>
+            <p class="solvable-text">Problem Loading...</p>
+            <p class="note-text">Note Loading...</p>
+            <p class="set-text">Set Loading...</p>
+        </div>
+
+        <div class="nf-feeditem-modal-wrapper">
+            <div class="nf-solvable-modal-content nf-modal-content solv-modal clearfix" id="cmp_assessment_modal_public_solvable_component_id"></div>
+            <div class="nf-post-modal-content nf-modal-content newdisc-single logged-out" id="cmp_discussions_modal_single_component_id"></div>
+            <div class="nf-set-modal-content" id="cmp_profile_savedsets_set_page_modal_id"></div>
+        </div>
+    </div>
+
+
+        
+    
+
+    
+
+
+
+<img src="./Sprague Grundy Theorem _ Brilliant Math &amp; Science Wiki_files/track.gif" height="1" width="1" alt="" style="border-style: none; display: none;"></body></html>
