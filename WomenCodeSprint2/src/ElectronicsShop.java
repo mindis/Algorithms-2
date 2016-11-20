@@ -1,4 +1,6 @@
-
+/*
+https://www.hackerrank.com/contests/womens-codesprint-2/challenges/electronics-shop
+*/
 import java.util.Arrays;
 import java.util.Scanner;
 

@@ -1,3 +1,6 @@
+/*
+https://www.hackerrank.com/contests/womens-codesprint-2/challenges/minimum-loss
+*/
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

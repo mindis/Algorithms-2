@@ -1,3 +1,6 @@
+/*
+https://www.hackerrank.com/contests/womens-codesprint-2/challenges/prime-xor
+*/
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
