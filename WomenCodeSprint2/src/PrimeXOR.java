@@ -11,9 +11,13 @@ public class PrimeXOR {
 	/**
 	 * Test case:
 	 * Input:
-	   1
-	   3
-	   3511 3671 4153
+1
+3
+3511 3671 4153
+
+1
+4
+3511 3511 3511 3511
 	   
 	   Output:
 	   4
@@ -138,6 +142,7 @@ public class PrimeXOR {
     		for(int j = 0; j < list.size(); j++){
     			int curVal = list.get(j);
     			int curFreq = elementMap.get(curVal);
+    			
     			/**
     			 * Have a second map to prevent concurrent modification
     			 */
@@ -163,12 +168,14 @@ public class PrimeXOR {
     			/**
     			 * append current val
     			 */
+    			long appendValue = curFreq%2==0? (curFreq/2):(curFreq/2+1);
     			if(newResultMap.containsKey(curVal)){
-    				long combinedFreq = newResultMap.get(curVal)+curFreq;
+    				
+    				long combinedFreq = newResultMap.get(curVal)+appendValue;
     				if(combinedFreq>=mod) combinedFreq %= mod;
 					newResultMap.put(curVal, combinedFreq);
 				}else{
-					newResultMap.put(curVal, (long) curFreq);
+					newResultMap.put(curVal, (long) appendValue);
 				}
     			/**
     			 * rotate map
@@ -181,7 +188,7 @@ public class PrimeXOR {
     		 */
     		long result = 0;
     		for(Entry<Integer, Long> entry: resultMap.entrySet()){
-    			System.out.println(entry.getKey());
+    			//System.out.println(entry.getKey());
     			if(!notPrimes[entry.getKey()]){
     				result += entry.getValue();
     			}
