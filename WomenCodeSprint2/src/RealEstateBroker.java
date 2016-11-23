@@ -2,8 +2,6 @@
 https://www.hackerrank.com/contests/womens-codesprint-2/challenges/real-estate-broker
 */
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,17 +29,17 @@ public class RealEstateBroker {
 		}
 	}
 	
-    private static Comparator<House> houseAreaComparator = new Comparator<House>() {
-        public int compare(House left, House right) {
-        	return (left.x - right.x);
-        }
-    };
-    
-    private static Comparator<House> housePriceComparator = new Comparator<House>() {
-        public int compare(House left, House right) {
-        	return (left.y - right.y);
-        }
-    };
+//    private static Comparator<House> houseAreaComparator = new Comparator<House>() {
+//        public int compare(House left, House right) {
+//        	return (left.x - right.x);
+//        }
+//    };
+//    
+//    private static Comparator<House> housePriceComparator = new Comparator<House>() {
+//        public int compare(House left, House right) {
+//        	return (left.y - right.y);
+//        }
+//    };
     
     public static void main(String[] args) {
     	Scanner scan = new Scanner(System.in);
@@ -82,10 +80,15 @@ public class RealEstateBroker {
     	/**
     	 * sort house by area
     	 */
-    	List<House> hListByArea = new ArrayList<House>(hList);
-    	List<House> hListByPrice = new ArrayList<House>(hList);
-    	Collections.sort(hListByArea, houseAreaComparator);
-    	Collections.sort(hListByPrice, housePriceComparator);
+//    	List<House> hListByArea = new ArrayList<House>(hList);
+//    	List<House> hListByPrice = new ArrayList<House>(hList);
+//    	Collections.sort(hListByArea, houseAreaComparator);
+//    	Collections.sort(hListByPrice, housePriceComparator);
+    	
+    	
+    	/**
+    	 * Use Ford–Fulkerson algorithm
+    	 */
     	
     	
     }
