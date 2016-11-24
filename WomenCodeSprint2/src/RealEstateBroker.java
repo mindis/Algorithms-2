@@ -88,6 +88,47 @@ public class RealEstateBroker {
     	
     	/**
     	 * Use Ford–Fulkerson algorithm
+    	 * https://www.topcoder.com/community/data-science/data-science-tutorials/maximum-flow-section-1/
+    	 * 
+    	 * 
+  int bfs() 
+  queue Q
+  push source to Q
+  mark source as visited
+  keep an array from with the semnification: from[x] is the 
+previous vertex visited in the shortest path from the source to x;
+initialize from with -1 (or any other sentinel value) 
+  while Q is not empty
+    where = pop from Q 
+    for each vertex next adjacent to where
+      if next is not visited and capacity[where][next] > 0
+        push next to Q
+        mark next as visited
+        from[next] = where
+        if next = sink
+          exit while loop
+    end for
+  end while
+  // we compute the path capacity
+  where = sink, path_cap = infinity
+  while from[where] > -1
+    prev = from[where] // the previous vertex 
+    path_cap = min(path_cap, capacity[prev][where])
+    where = prev
+  end while
+  // we update the residual network; if no path is found the while 
+loop will not be entered
+  where = sink
+  while from[where] > -1
+    prev = from[where]
+    capacity[prev][where] -= path_capacity
+        capacity[where][prev] += path_capacity
+    where = prev
+  end while
+  // if no path is found, path_cap is infinity
+  if path_cap = infinity
+    return 0
+  else return path_cap
     	 */
     	
     	
