@@ -1,4 +1,19 @@
+/**
+379. Design Phone Directory   Add to List QuestionEditorial Solution  My Submissions
+Total Accepted: 5154
+Total Submissions: 17967
+Difficulty: Medium
+Contributors: Admin
+Design a Phone Directory which supports the following operations:
+
+get: Provide a number which is not assigned to anyone.
+check: Check if a number is available or not.
+release: Recycle or release a number.
+*/
+
+
 public class PhoneDirectory {
+
     private boolean[] nums;
     
     /** Initialize your data structure here
