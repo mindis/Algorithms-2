@@ -1,54 +1,80 @@
-/**
-379. Design Phone Directory   Add to List QuestionEditorial Solution  My Submissions
-Total Accepted: 5154
-Total Submissions: 17967
-Difficulty: Medium
-Contributors: Admin
-Design a Phone Directory which supports the following operations:
-
-get: Provide a number which is not assigned to anyone.
-check: Check if a number is available or not.
-release: Recycle or release a number.
+/*The idea is to use java's bitset and use smallestFreeIndex/max to keep track of the limit.
+Also, by keeping track of the updated smallestFreeIndex all the time, the run time of get()
+is spared from scanning the entire bitset every time.
 */
+
 
 
 public class PhoneDirectory {
 
-    private boolean[] nums;
-    
-    /** Initialize your data structure here
-        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */
+    BitSet bitset;
+    int max; // max limit allowed
+    int smallestFreeIndex; // current smallest index of the free bit
+
     public PhoneDirectory(int maxNumbers) {
-        nums = new boolean[maxNumbers];
+        this.bitset = new BitSet(maxNumbers);
+        this.max = maxNumbers;
     }
-    
-    /** Provide a number which is not assigned to anyone.
-        @return - Return an available number. Return -1 if none is available. */
+
     public int get() {
-        for(int i = 0; i< nums.length;i++){
-            if(check(i)){
-                nums[i] = true;
-                return i;
-            }
+        // handle bitset fully allocated
+        if(smallestFreeIndex == max) {
+            return -1;
         }
-        return -1;
+        int num = smallestFreeIndex;
+        bitset.set(smallestFreeIndex);
+        //Only scan for the next free bit, from the previously known smallest free index
+        smallestFreeIndex = bitset.nextClearBit(smallestFreeIndex);
+        return num;
     }
-    
-    /** Check if a number is available or not. */
+
     public boolean check(int number) {
-        return !nums[number];
+        return bitset.get(number) == false;
     }
-    
-    /** Recycle or release a number. */
+
     public void release(int number) {
-        nums[number] = false;
+        //handle release of unallocated ones
+        if(bitset.get(number) == false)
+            return;
+        bitset.clear(number);
+        if(number < smallestFreeIndex) {
+            smallestFreeIndex = number;
+        }
     }
 }
+/*
+Java AC solution using queue and set
+*/
 
-/**
- * Your PhoneDirectory object will be instantiated and called as such:
- * PhoneDirectory obj = new PhoneDirectory(maxNumbers);
- * int param_1 = obj.get();
- * boolean param_2 = obj.check(number);
- * obj.release(number);
- */
+  Set<Integer> used = new HashSet<Integer>();
+    Queue<Integer> available = new LinkedList<Integer>();
+    int max;
+    public PhoneDirectory(int maxNumbers) {
+        max = maxNumbers;
+        for (int i = 0; i < maxNumbers; i++) {
+            available.offer(i);
+        }
+    }
+    
+    public int get() {
+        Integer ret = available.poll();
+        if (ret == null) {
+            return -1;
+        }
+        used.add(ret);
+        return ret;
+    }
+    
+    public boolean check(int number) {
+        if (number >= max || number < 0) {
+            return false;
+        }
+        return !used.contains(number);
+    }
+    
+    public void release(int number) {
+        if (used.remove(number)) {
+            available.offer(number);
+        }
+    }
+
