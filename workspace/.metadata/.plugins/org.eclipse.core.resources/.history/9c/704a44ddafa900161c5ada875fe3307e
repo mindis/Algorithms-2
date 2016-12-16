@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class WalkingtheLongestPathApproximationProblem {
+	static Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+	public static void main(String[] args){
+		//input
+		Scanner scan = new Scanner(System.in);
+		int nNodes = scan.nextInt();
+		int nEdges = scan.nextInt();
+		for(int i = 0; i < nEdges; i++){
+			int start = scan.nextInt();
+			int end = scan.nextInt();
+			if(map.containsKey(start)){
+				map.get(start).add(end);
+			}else{
+				List<Integer> list= new ArrayList<Integer>();
+				list.add(end);
+				map.put(start,list);
+			}
+		}
+		List<Integer> paths = new ArrayList<Integer>>();
+        Set<Integer> set = new HashSet<Integer>();
+        set.add(start);
+        dfs(paths, map, end, new StringBuilder(start), set);
+	}
+	
+	
+    
+    //search all path
+    private static void dfs(List<Integer> paths, Map<String, List<String>> map, String end, StringBuilder path, Set<String> set){
+    	//get current node
+    	String cur = String.valueOf(path.charAt(path.length() - 1));
+    	
+    	if(cur.equals(end)){
+    		paths.add(new String(path.toString()));
+    		return;
+    	}
+    	
+    	//reach leaf node of graph, prevent map.get(cur) returns null pointer exception.
+    	if(!map.containsKey(cur)) return;
+    	
+    	for(String neighbor:map.get(cur)){
+    		//prevent A->(B->C->D->B) happens;(back-edge prevention)
+    		if(set.contains(neighbor)) return;
+    		path.append(neighbor);set.add(neighbor);
+    		dfs(paths,map,end,path,set);
+    		path.deleteCharAt(path.length()-1);set.remove(neighbor);
+    	}
+    	return;
+    }
+	
+}

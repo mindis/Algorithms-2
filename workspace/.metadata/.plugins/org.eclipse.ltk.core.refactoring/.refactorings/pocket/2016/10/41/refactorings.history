@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;pocket&apos;&#x0A;- Original project: &apos;pocket&apos;&#x0A;- Destination element: &apos;pocket&apos;&#x0A;- Original elements:&#x0A;     input_3.txt&#x0A;     input_2.txt&#x0A;     input_1.txt&#x0A;- Update references to refactored element" description="Move files" destination="=pocket" element1="src/input_3.txt" element2="src/input_2.txt" element3="src/input_1.txt" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1475907872338" units="0" version="1.0"/>
+</session>

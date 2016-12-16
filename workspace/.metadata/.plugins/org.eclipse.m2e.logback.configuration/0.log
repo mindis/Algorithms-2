@@ -1,0 +1,1334 @@
+2016-07-11 09:50:23,289 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-07-11 09:50:23,566 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zenvisage/src/main/java
+2016-07-11 09:50:23,566 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zenvisage/src/main/resources
+2016-07-11 09:50:23,567 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zenvisage/src/main/webapp
+2016-07-11 09:50:23,569 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zenvisage/src/test/java
+2016-07-11 09:50:23,645 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2016-07-11 09:50:24,677 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 09:50:24,682 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 09:50:24,813 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 09:50:24,995 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 09:50:24,995 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 10:07:01,539 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 10:07:01,542 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 10:07:01,545 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 10:07:01,549 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 10:07:01,549 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 10:07:02,584 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 10:07:02,584 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 10:07:02,587 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 10:07:02,590 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 10:07:02,591 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 10:25:27,386 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not available. Remote download required.
+2016-07-11 10:25:27,474 [main] ERROR c.g.t.t.d.PublishedGradleVersions - Cannot download published Gradle versions.
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1478) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[na:1.8.0_31]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:150) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [na:1.8.0_31]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2663) [na:1.8.0_31]
+	at java.lang.Class.getConstructor0(Class.java:3067) [na:1.8.0_31]
+	at java.lang.Class.newInstance(Class.java:408) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.0.v20150531-1948.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[na:1.8.0_31]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460) ~[na:1.8.0_31]
+	... 95 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_31]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_31]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_31]
+	... 101 common frames omitted
+2016-07-11 15:01:23,172 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:01:23,172 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:01:23,176 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:01:23,180 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:01:23,180 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:27:48,376 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:48,377 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:27:48,381 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:27:48,385 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:48,385 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:27:49,443 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:49,445 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:27:49,449 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:27:49,451 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:49,451 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:27:53,859 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:53,859 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:27:53,864 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:27:53,870 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:27:53,870 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:31:59,685 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:31:59,685 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:31:59,689 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:31:59,691 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:31:59,691 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:32:14,980 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:32:14,980 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:32:14,985 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:32:14,989 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:32:14,989 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:33:04,252 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:33:04,252 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:33:04,256 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:33:04,259 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:33:04,259 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:33:14,652 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:33:14,652 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:33:14,655 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:33:14,658 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:33:14,658 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:34:06,541 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:06,542 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:34:06,545 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:34:06,549 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:06,549 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:34:07,575 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:07,575 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:34:07,578 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:34:07,581 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:07,581 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:34:09,213 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:09,213 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:34:09,216 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:34:09,219 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:09,219 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:34:21,822 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:21,823 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:34:21,826 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:34:21,828 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:21,829 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:34:26,223 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:26,224 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:34:26,226 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:34:26,229 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:34:26,229 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:36:01,353 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:01,354 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:36:01,359 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:36:01,363 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:01,363 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:36:02,387 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:02,387 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:36:02,391 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:36:02,394 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:02,394 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:36:29,327 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:29,327 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:36:29,331 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:36:29,337 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:29,337 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:36:52,732 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:52,733 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:36:52,737 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:36:52,740 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:36:52,740 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:37:51,647 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:37:51,647 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:37:51,652 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:37:51,656 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:37:51,656 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:37:58,602 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:37:58,602 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:37:58,605 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:37:58,608 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:37:58,608 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:38:08,547 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:08,548 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:38:08,550 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:38:08,555 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:08,555 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:38:17,028 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:17,028 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:38:17,031 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:38:17,034 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:17,034 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:38:58,336 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:58,336 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:38:58,339 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:38:58,341 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:38:58,341 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:39:38,250 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:39:38,250 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:39:38,253 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:39:38,256 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:39:38,256 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:40:21,057 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:40:21,058 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:40:21,061 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:40:21,064 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:40:21,064 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:07,122 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:07,124 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:07,137 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:07,149 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:07,150 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:11,170 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:11,172 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:11,187 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:11,199 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:11,199 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:16,696 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:16,698 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:16,713 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:16,724 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:16,725 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:32,837 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:32,839 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:32,853 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:32,867 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:32,868 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:52,073 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:52,075 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:52,088 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:52,100 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:52,100 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:41:57,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:57,097 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:41:57,110 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:41:57,121 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:41:57,121 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:43:23,407 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:43:23,409 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:43:23,422 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:43:23,434 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:43:23,435 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:43:35,293 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:43:35,295 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:43:35,308 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:43:35,319 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:43:35,319 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:45:32,687 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:32,688 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:45:32,691 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:45:32,693 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:32,693 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:45:33,709 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:33,709 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:45:33,713 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:45:33,716 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:33,716 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:45:48,089 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:48,089 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:45:48,092 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:45:48,095 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:48,095 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:45:50,754 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:50,754 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:45:50,757 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:45:50,760 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:50,760 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:45:54,240 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:54,240 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:45:54,243 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:45:54,246 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:45:54,246 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:46:08,243 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:46:08,243 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:46:08,246 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:46:08,249 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:46:08,249 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:47:03,369 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:03,370 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:47:03,373 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:47:03,375 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:03,375 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:47:15,116 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:15,116 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:47:15,119 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:47:15,122 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:15,122 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:47:28,749 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:28,750 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 15:47:28,752 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 15:47:28,755 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:47:28,755 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:50:40,000 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:50:40,000 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-11 15:50:40,002 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-11 15:50:40,002 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:50:40,002 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 15:50:41,012 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:50:41,012 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-11 15:50:41,012 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-07-11 15:50:41,013 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 15:50:41,013 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:03:58,642 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:03:58,642 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:03:58,648 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:03:58,650 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:03:58,651 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:03:59,668 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:03:59,668 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:03:59,671 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:03:59,674 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:03:59,674 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:07:09,591 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:07:09,591 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:07:09,594 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:07:09,597 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:07:09,598 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:08:20,180 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:08:20,180 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:08:20,183 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:08:20,186 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:08:20,186 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:08:24,742 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:08:24,742 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:08:24,745 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:08:24,748 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:08:24,748 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:18:55,866 [Worker-71] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE-sources.jar
+2016-07-11 16:18:56,055 [Worker-71] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE-sources.jar
+2016-07-11 16:18:56,069 [Worker-71] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-web:3.0.5.RELEASE
+2016-07-11 16:18:56,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:18:56,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-11 16:18:56,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-11 16:18:56,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:18:56,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:18:57,292 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:18:57,292 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-11 16:18:57,292 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-07-11 16:18:57,293 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:18:57,293 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:29:05,260 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:29:05,261 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:29:05,264 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:29:05,267 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:29:05,267 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:29:06,291 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:29:06,291 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:29:06,295 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:29:06,298 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:29:06,298 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:30:09,905 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:30:09,905 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:30:09,908 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:30:09,911 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:30:09,911 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 16:30:30,640 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:30:30,640 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 16:30:30,643 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 16:30:30,646 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 16:30:30,646 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:02:40,973 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:02:40,973 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:02:40,978 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:02:40,982 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:02:40,982 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:02:42,003 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:02:42,004 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:02:42,007 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:02:42,009 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:02:42,009 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:03:10,439 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:10,440 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:03:10,443 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:03:10,445 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:10,445 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:03:30,656 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:30,656 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:03:30,659 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:03:30,662 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:30,662 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:03:35,303 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:35,304 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:03:35,307 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:03:35,309 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:03:35,309 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:13:24,868 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:24,869 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:13:24,872 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:13:24,876 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:24,876 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:13:25,899 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:25,900 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:13:25,902 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:13:25,905 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:25,905 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:13:29,528 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:29,528 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:13:29,531 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:13:29,534 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:29,534 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:13:32,461 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:32,461 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:13:32,464 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:13:32,467 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:32,467 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:13:39,539 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:39,539 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:13:39,542 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:13:39,544 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:13:39,544 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:16:25,580 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:25,580 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:16:25,583 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:16:25,587 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:25,587 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:16:26,614 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:26,615 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:16:26,618 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:16:26,622 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:26,622 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:16:45,533 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:45,533 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:16:45,536 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:16:45,539 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:45,539 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:16:52,227 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:52,228 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:16:52,231 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:16:52,233 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:16:52,233 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:17:10,578 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:10,578 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:17:10,581 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:17:10,583 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:10,583 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:17:15,733 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:15,733 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:17:15,736 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:17:15,739 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:15,739 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:17:18,666 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:18,666 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:17:18,669 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:17:18,672 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:18,672 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:17:27,005 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:27,006 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:17:27,009 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:17:27,011 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:17:27,011 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:18:03,279 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:18:03,280 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:18:03,283 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:18:03,285 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:18:03,285 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:18:32,416 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:18:32,416 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-11 17:18:32,419 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:18:32,422 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:18:32,422 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-11 17:19:20,292 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:19:20,292 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-11 17:19:20,360 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-11 17:19:20,364 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-11 17:19:20,364 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-12 17:07:57,143 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-12 17:07:57,144 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-12 17:07:57,148 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-12 17:07:57,154 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-12 17:07:57,154 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-12 17:07:58,202 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-12 17:07:58,202 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-12 17:07:58,206 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-12 17:07:58,211 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-12 17:07:58,211 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:44:19,183 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:19,190 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-14 09:44:19,198 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:44:19,217 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:19,217 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:44:31,603 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:31,607 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-14 09:44:31,608 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-14 09:44:31,610 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:31,610 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:44:32,623 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:32,623 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-14 09:44:32,623 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-14 09:44:32,625 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:44:32,625 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:45:46,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:45:46,396 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:45:46,400 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:45:46,405 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:45:46,405 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:45:47,551 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:45:47,551 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:45:47,555 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:45:47,558 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:45:47,558 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:48:22,650 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:48:22,650 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:48:22,653 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:48:22,656 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:48:22,656 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:48:29,210 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:48:29,210 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:48:29,214 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:48:29,218 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:48:29,218 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:48:47,945 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not available. Remote download required.
+2016-07-14 09:48:48,039 [main] ERROR c.g.t.t.d.PublishedGradleVersions - Cannot download published Gradle versions.
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1478) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[na:1.8.0_31]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:150) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [na:1.8.0_31]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2663) [na:1.8.0_31]
+	at java.lang.Class.getConstructor0(Class.java:3067) [na:1.8.0_31]
+	at java.lang.Class.newInstance(Class.java:408) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.0.v20150531-1948.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[na:1.8.0_31]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460) ~[na:1.8.0_31]
+	... 95 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_31]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_31]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_31]
+	... 101 common frames omitted
+2016-07-14 09:53:49,330 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:53:49,331 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:53:49,334 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:53:49,338 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:53:49,339 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 09:53:50,385 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:53:50,385 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 09:53:50,390 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 09:53:50,394 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 09:53:50,394 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:35,285 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:35,286 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:35,290 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:35,293 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:35,293 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:36,328 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:36,329 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:36,333 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:36,336 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:36,337 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:39,443 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:39,444 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:39,447 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:39,450 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:39,450 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:40,469 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:40,470 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:40,474 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:40,478 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:40,478 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:58,066 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:58,067 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:58,071 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:58,075 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:58,075 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:08:59,093 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:59,094 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:08:59,106 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:08:59,110 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:08:59,110 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:09:46,006 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:09:46,006 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:09:46,010 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:09:46,015 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:09:46,015 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:09:52,176 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:09:52,177 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:09:52,180 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:09:52,184 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:09:52,184 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:10:04,549 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:10:04,550 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:10:04,553 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:10:04,556 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:10:04,556 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:35:03,017 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:03,018 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:35:03,021 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:35:03,025 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:03,025 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:35:34,899 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:34,900 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-14 17:35:34,900 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-07-14 17:35:34,901 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:34,901 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:35:35,914 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:35,914 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-07-14 17:35:35,914 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-07-14 17:35:35,915 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:35:35,916 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-14 17:37:22,023 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:37:22,024 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-14 17:37:22,027 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-14 17:37:22,030 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-14 17:37:22,030 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 00:01:19,068 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 00:01:19,075 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-15 00:01:19,082 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 00:01:19,092 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 00:01:19,092 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 00:01:20,146 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 00:01:20,151 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 00:01:20,156 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 00:01:20,160 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 00:01:20,160 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 13:56:15,750 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:56:15,751 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 13:56:15,754 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 13:56:15,758 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:56:15,758 [Worker-126] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 13:56:16,798 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:56:16,799 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 13:56:16,804 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 13:56:16,808 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:56:16,808 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 13:57:38,611 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:57:38,612 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 13:57:38,616 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 13:57:38,619 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:57:38,619 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 13:57:39,660 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:57:39,660 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 13:57:39,664 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 13:57:39,667 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 13:57:39,667 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:36:47,247 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:36:47,248 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 14:36:47,253 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 14:36:47,256 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:36:47,256 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:36:48,278 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:36:48,279 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 14:36:48,282 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 14:36:48,285 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:36:48,285 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:38:41,097 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:38:41,097 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 14:38:41,100 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 14:38:41,104 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:38:41,104 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:52:21,498 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:52:21,498 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-15 14:52:21,498 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-15 14:52:21,499 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:52:21,499 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:58:49,288 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:58:49,290 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-07-15 14:58:49,372 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 14:58:49,443 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:58:49,443 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:59:08,266 [Worker-156] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-07-15 14:59:08,709 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-07-15 14:59:08,932 [Worker-156] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zenvisage/src/main/java
+2016-07-15 14:59:08,932 [Worker-156] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zenvisage/src/main/resources
+2016-07-15 14:59:08,932 [Worker-156] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zenvisage/src/main/webapp
+2016-07-15 14:59:08,934 [Worker-156] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zenvisage/src/test/java
+2016-07-15 14:59:09,071 [Worker-156] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-07-15 14:59:09,468 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:59:09,469 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 14:59:09,551 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 14:59:09,622 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 14:59:09,622 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 14:59:26,153 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-07-15 15:00:37,025 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not available. Remote download required.
+2016-07-15 15:00:37,103 [main] ERROR c.g.t.t.d.PublishedGradleVersions - Cannot download published Gradle versions.
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1478) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[na:1.8.0_31]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:150) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [na:1.8.0_31]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2663) [na:1.8.0_31]
+	at java.lang.Class.getConstructor0(Class.java:3067) [na:1.8.0_31]
+	at java.lang.Class.newInstance(Class.java:408) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.0.v20150531-1948.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[na:1.8.0_31]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460) ~[na:1.8.0_31]
+	... 95 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_31]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_31]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_31]
+	... 101 common frames omitted
+2016-07-15 15:02:08,158 [Worker-160] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.0.5.v20130815/jetty-server-9.0.5.v20130815-sources.jar
+2016-07-15 15:02:08,242 [Worker-160] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.0.5.v20130815/jetty-server-9.0.5.v20130815-sources.jar
+2016-07-15 15:02:08,257 [Worker-160] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.jetty:jetty-server:9.0.5.v20130815
+2016-07-15 15:02:08,395 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:02:08,396 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-15 15:02:08,396 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-15 15:02:08,397 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:02:08,397 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 15:05:39,386 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:05:39,386 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 15:05:39,474 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 15:05:39,550 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:05:39,550 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 15:05:52,227 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:05:52,227 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-15 15:05:52,230 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-15 15:05:52,234 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-15 15:05:52,234 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-15 15:07:25,770 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2016-07-15 15:07:31,456 [Worker-170] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-07-15 15:07:31,456 [Worker-170] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install
+2016-07-15 15:08:32,772 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2016-07-15 15:08:32,781 [Worker-170] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-07-15 15:08:32,781 [Worker-170] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install
+2016-07-20 11:31:07,829 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:07,836 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-20 11:31:08,068 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-07-20 11:31:08,359 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:08,359 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-20 11:31:12,595 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-07-20 11:31:12,807 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:12,808 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-20 11:31:12,809 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-07-20 11:31:12,816 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:12,816 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-20 11:31:15,501 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:15,504 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-07-20 11:31:15,579 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 279 resources
+2016-07-20 11:31:15,667 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:31:15,667 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-07-20 11:31:19,446 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not available. Remote download required.
+2016-07-20 11:31:19,576 [main] ERROR c.g.t.t.d.PublishedGradleVersions - Cannot download published Gradle versions.
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1478) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:957) ~[na:1.8.0_31]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:892) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391) ~[na:1.8.0_31]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[na:1.8.0_31]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440) ~[na:1.8.0_31]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[na:1.8.0_31]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:150) [com.gradleware.tooling.utils_0.6.1.v201509101146.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102) [org.eclipse.buildship.core_1.0.5.v20150922-2202.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [na:1.8.0_31]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2663) [na:1.8.0_31]
+	at java.lang.Class.getConstructor0(Class.java:3067) [na:1.8.0_31]
+	at java.lang.Class.newInstance(Class.java:408) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:439) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [na:1.8.0_31]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55) [org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398) [org.eclipse.ui.console_3.6.100.v20150822-1912.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4024) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700) [org.eclipse.swt.cocoa.macosx.x86_64_3.104.1.v20150825-0743.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.0.v20150531-1948.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.101.v20150820-1432.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[na:1.8.0_31]
+	at sun.security.validator.Validator.validate(Validator.java:260) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[na:1.8.0_31]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[na:1.8.0_31]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460) ~[na:1.8.0_31]
+	... 95 common frames omitted
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[na:1.8.0_31]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[na:1.8.0_31]
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[na:1.8.0_31]
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[na:1.8.0_31]
+	... 101 common frames omitted
+2016-07-20 11:40:46,431 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/roaringbitmap/RoaringBitmap/0.6.17/RoaringBitmap-0.6.17-sources.jar
+2016-07-20 11:40:46,571 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/roaringbitmap/RoaringBitmap/0.6.17/RoaringBitmap-0.6.17-sources.jar
+2016-07-20 11:40:46,585 [Worker-8] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.roaringbitmap:RoaringBitmap:0.6.17
+2016-07-20 11:40:46,728 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:40:46,728 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-20 11:40:46,728 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-07-20 11:40:46,729 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-07-20 11:40:46,729 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-08-20 20:21:46,739 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:46,746 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2016-08-20 20:21:46,829 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-08-20 20:21:46,910 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:46,911 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-08-20 20:21:47,576 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-08-20 20:21:47,816 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:47,817 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-08-20 20:21:47,817 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-08-20 20:21:47,819 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:47,819 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-08-20 20:21:48,501 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-08-20 20:21:48,983 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:48,986 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 54 resources
+2016-08-20 20:21:49,521 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 283 resources
+2016-08-20 20:21:49,599 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:49,599 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-08-20 20:21:55,583 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:55,584 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-08-20 20:21:55,587 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-08-20 20:21:55,592 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-08-20 20:21:55,592 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-10-08 01:14:18,119 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-08 01:14:18,126 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-10-08 01:14:18,250 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-10-08 01:14:18,465 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-08 01:14:18,465 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-10-08 01:14:35,818 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-08 01:14:35,821 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-08 01:14:35,821 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-08 01:14:35,822 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-08 01:14:35,822 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-10-08 01:14:47,342 [Worker-8] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-10-08 01:14:47,343 [Worker-8] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-10-08 01:14:47,346 [Worker-8] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2166) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-10-08 01:23:50,261 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-10-08 01:23:50,262 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install
+2016-10-08 01:23:50,376 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not available. Remote download required.
+2016-10-08 20:42:04,756 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-10-11 22:52:17,695 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-10-11 22:52:18,438 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:18,443 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-10-11 22:52:18,453 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-10-11 22:52:18,496 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:18,496 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-10-11 22:52:21,713 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:21,719 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 52 resources
+2016-10-11 22:52:21,728 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 283 resources
+2016-10-11 22:52:21,733 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:21,733 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-10-11 22:52:22,768 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:22,770 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 52 resources
+2016-10-11 22:52:22,777 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 283 resources
+2016-10-11 22:52:22,782 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-11 22:52:22,782 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-11-12 04:17:24,197 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:24,205 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2016-11-12 04:17:24,291 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 278 resources
+2016-11-12 04:17:25,664 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:25,664 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-11-12 04:17:26,888 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-11-12 04:17:27,611 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:27,612 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-12 04:17:27,612 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-12 04:17:27,613 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:27,614 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-11-12 04:17:28,460 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.uiuc.zenvisage:zenvisage:0.0.1-SNAPSHOT @ /Users/chaoran/Desktop/zenvisage/zenvisage/pom.xml.
+2016-11-12 04:17:29,037 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:29,038 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-12 04:17:29,038 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-12 04:17:29,040 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-12 04:17:29,040 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/chaoran/Desktop/zenvisage/zenvisage/src/test/resources
+2016-11-12 04:17:30,157 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-11-12 04:17:30,189 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-11-12 04:17:30,226 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ZvServer references closed project zenvisage
+org.eclipse.core.runtime.CoreException: Launch configuration ZvServer references closed project zenvisage
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.0.v20150527-0946.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:229) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2166) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.0.v20150303-1130.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-11-12 04:19:33,065 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-11-12 04:19:33,065 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install
+2016-11-12 04:19:35,562 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-11-12 04:31:40,645 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-11-12 04:31:40,649 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install
+2016-11-12 04:31:40,857 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-11-12 04:32:49,574 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/chaoran/Desktop/zenvisage/zenvisage
+2016-11-12 04:32:49,574 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s /Applications/apache-maven-3.2.1/conf/settings.xml clean install

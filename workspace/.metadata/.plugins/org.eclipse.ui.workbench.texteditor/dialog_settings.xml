@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="System.out" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="System.out"/>
+			<item value="count"/>
+			<item value="insert"/>
+			<item value="doubleWithLeftChild"/>
+			<item value="double"/>
+			<item value="System"/>
+			<item value="nBiggerEqualTo"/>
+			<item value="search"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="265" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="186" key="DIALOG_HEIGHT"/>
+		<item value="866" key="DIALOG_X_ORIGIN"/>
+		<item value="42" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
