@@ -1,0 +1,4 @@
+/G
+public class Solution {
+
+}

@@ -1,0 +1,20 @@
+/*
+
+Theme Name: Best Child
+Template: mts_best
+Author: MyThemeShop
+Description: Best child theme created to manage customization.
+Version: 1.0
+
+*/
+
+/*
+
+Ref: https://codex.wordpress.org/Child_Themes
+Desc: Note that the previous method was to import the parent theme stylesheet using @import: this is no longer best practice. The correct method of enqueuing the parent theme stylesheet is to add a wp_enqueue_scripts action and use wp_enqueue_style() in your child theme's functions.php.
+
+@import url("../mts_best/style.css");
+
+*/
+
+.post-info .fn, .post-info .fn a { float:none;color:#919191;text-transform:none;font-weight:400; }

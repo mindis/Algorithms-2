@@ -1,0 +1,309 @@
+// version: 12.5.5
+
+					var arrScripts = document.getElementsByTagName('script');
+					var strScriptTag;
+					for (var i = arrScripts.length - 1; i >= 0; i--)
+					{
+						if(arrScripts[i].parentNode.nodeName == 'SPAN')
+						{
+						  strScriptTag = arrScripts[i];
+						  break;
+						}
+					}
+
+					var id = '';
+					var spanDiv;
+					var base = '';
+					if(strScriptTag)
+					{
+						 spanDiv = strScriptTag.parentNode;
+						 base = strScriptTag.getAttribute("src").split('/?')[0] + '/';
+						 id = strScriptTag.parentNode.getAttribute("id").split('-').join('_');
+					}
+						 
+					window['adinfoOver_' + id] = function(id) 
+					{
+						if(document.getElementById('adInfo-' + id))
+						{
+						  document.getElementById('adInfo-' + id).style.visibility = 'hidden';
+						}
+						
+						if(document.getElementById('adInfo-over-' + id))
+						{
+						  document.getElementById('adInfo-over-' + id).style.visibility = 'visible';		
+						}
+					}
+
+					window['adinfoOut_' + id] = function(id) 
+					{
+						if(document.getElementById('adInfo-'+id))
+						{
+						  document.getElementById('adInfo-'+id).style.visibility = 'visible';
+						}
+						  
+						if(document.getElementById('adInfo-over-'+id))
+						{
+						  document.getElementById('adInfo-over-'+id).style.visibility = 'hidden';
+						}
+					}
+
+					window['adinfoClick_' + id] = function(id)
+					{
+						var url = "http://dtmc.norton.com/adinfo/choice/prod/?type=general&cid=2474&cname=Symantec&cmagic=0bf727&clogo=symantec.png&purl=http%3A%2F%2Fwww.symantec.com%2Fcontent%2Fen%2Fus%2Fabout%2Fmedia%2Fprivacypolicy%2Fsymc-complete-online-privacy-statement.pdf&lang=en-us&loc=us&optout_options=";
+						var wf = "status=0,toolbar=0,location=0,menubar=0,directories=0,scrollbars=1,width=921,height=758";
+						var w = window['RAC'] || window;
+						w.open(url,"_blank",wf);
+					}
+	
+					window['adinfoInit_' + id] = function(spanDiv)
+					{		
+						var nodeTypes = ['DIV', 'OBJECT', 'SPAN', 'IFRAME', 'A', 'IMG'];
+					
+						function getStyle(window, el, prop) 
+						{
+							if (typeof window.getComputedStyle !== 'undefined')
+    						{
+    							return window.getComputedStyle(el);
+    						} else{
+    							return el.currentStyle[prop];
+    						}
+						}
+
+						function isNotVisible(el)
+						{
+							var flag = false;
+							var style = getStyle(window, el, '');
+							
+							if(style)
+							{
+								if(style.display === 'none' || style.visibility === 'hidden' || style.height === '0px')
+								{
+									flag = true;
+								}
+							}
+						
+							return flag;
+						}
+						
+						function findInnderDiv(div)
+						{		
+							var maxCount = 10;
+							for (var i = 0; i < maxCount; i++)
+							{
+								if(div.nodeName == 'DIV' || div.nodeName == 'SPAN')
+								{
+									if(div.childNodes.length > 0)
+									{
+										for (var j = 0; j < div.childNodes.length; j++)
+										{
+											var isValid = false;
+											for (var k = 0; k < nodeTypes.length; k++)
+											{
+												if(nodeTypes[k] == div.childNodes[j].nodeName && nodeTypes[k] !== 'IMG' && !isNotVisible(div.childNodes[j]))
+												{
+													div = div.childNodes[j];
+													isValid = true;
+													break;
+												}
+											}
+											
+											if(isValid)
+											{
+												break;
+											}
+										}
+									}
+								}
+								else
+								{
+									break;
+								}
+							}
+							
+							return div;
+						}
+						
+						function getOffset(adinfoDiv)
+						{		
+							var offset = 0;
+							var parent = {left:0};
+							var child = {left:0};
+							var style = {};
+							
+							if(adinfoDiv.nodeName == 'A')
+							{
+								if(adinfoDiv.childNodes.length > 0)
+								{
+									var div = adinfoDiv.childNodes[0];
+									if(div)
+									{
+									
+										try 
+										{
+											parent = adinfoDiv.getBoundingClientRect();
+											child = adinfoDiv.childNodes[0].getBoundingClientRect();
+										}
+										catch(err) 
+										{
+											parent = adinfoDiv.parentNode.getBoundingClientRect();
+											child = adinfoDiv.getBoundingClientRect();
+										}
+										
+									}
+								}
+							}
+							else
+							{
+								parent = adinfoDiv.parentNode.getBoundingClientRect();
+								child = adinfoDiv.getBoundingClientRect();
+								style = getStyle(window, adinfoDiv.parentNode, 'paddingLeft');
+
+							}
+						
+							if(300 < adinfoDiv.parentNode.offsetWidth)
+							{	
+								var padding = 0;
+								if(style.paddingLeft)
+								{
+									padding = parseInt(style.paddingLeft.replace('px', ''));
+								}
+								offset = Math.abs(parent.left - child.left) - padding;
+							}
+							
+							return offset;
+						}
+						
+								
+						function checkIfNodeIsValid(div)
+						{	
+							var isNodeValid = false;
+							for (var j = 0; j < nodeTypes.length; j++)
+							{
+								if(nodeTypes[j] == div.nodeName)
+								{
+									isNodeValid = true;
+
+									if((div.nodeName == 'IMG' || div.nodeName == 'IFRAME') && (div.offsetWidth < 30 && div.offsetHeight < 30) )
+									{
+										isNodeValid = false;
+									}
+									else if(isNotVisible(div))
+									{
+										isNodeValid = false;
+									}
+
+									if(!window['dmo'])
+									{
+										var height = parseInt(div.style.height.replace('px', ''));
+										if(div.nodeName == 'SPAN' && (height >= 0 && height < 25) || height == 1)
+										{
+											isNodeValid = false;
+										}
+									}
+
+									if(isNodeValid)
+									{
+										break;
+									}
+								}
+							}
+							
+							return isNodeValid;
+						}
+											
+						
+						
+						
+						
+						
+						if(spanDiv)
+						{
+							var id = spanDiv.getAttribute("id").split('-').join('_');
+						
+							if(spanDiv.previousSibling)
+							{
+								var adinfoDiv = null;
+							
+								var children = spanDiv.previousSibling.parentNode.childNodes;
+			
+								var isFound = false;
+								var maxCount = 40;
+								var couter = 1;
+								var adinfoDivAfter = null;
+								for (var i = children.length - 1; i >= 0; i--)
+								{
+						
+									if(isFound)
+									{
+										if(checkIfNodeIsValid(children[i]))
+										{
+											adinfoDiv = findInnderDiv(children[i]);
+											break;
+										}
+	
+						
+										if(couter > maxCount)
+										{
+											break;
+										}
+										else
+										{
+											couter++;
+										}
+									}
+									else if(children[i] == spanDiv.previousSibling)
+									{
+										isFound = true;
+										i++;
+									}
+									else if(children[i] !== spanDiv && checkIfNodeIsValid(children[i]))
+									{
+										adinfoDivAfter = findInnderDiv(children[i]);
+									}
+								}
+								
+								if(!adinfoDiv)
+								{
+									adinfoDiv = adinfoDivAfter;
+								}
+								
+					
+								if(adinfoDiv)
+								{
+									var spanTag = document.createElement("span");  
+									spanTag.id = 'menu-' + id;
+									spanTag.style.display = 'block';
+									spanTag.style.textAlign = 'left';
+						
+									if(window['dmo'])
+									{
+										spanTag.innerHTML = '<img style="position: absolute; z-index: 9999998; left: 300px; top:0px; margin-left: -20px; margin-top: 0px; padding: 0px; visibility: visible; cursor: pointer;" id="adInfo-' + id + '" alt="" src="' + base + 'public/img/icon-tr.png" onmouseover="adinfoOver_' + id + '(\'' + id + '\');" onmouseout="adinfoOut_' + id + '(\'' + id + '\');" onmouseup="adinfoClick_' + id + '();" />'+
+															 '<img style="position: absolute; z-index: 9999999; left: 300px; top:0px; margin-left: -80px; margin-top: 0px; padding: 0px; visibility: hidden; cursor: pointer;" id="adInfo-over-' + id + '" alt="" src="' + base + 'public/img/en-us/icon-tr-full.png" onmouseover="adinfoOver_' + id + '(\'' + id + '\');" onmouseout="adinfoOut_' + id + '(\'' + id + '\');" onmouseup="adinfoClick_' + id + '();" />';
+															 
+										adinfoDiv.parentNode.insertBefore(spanTag, adinfoDiv);
+									}
+									else
+									{
+										setTimeout(function()
+										{ 
+											var offset = getOffset(adinfoDiv);
+
+											var style0 = 'position: absolute; z-index: 9999998; margin-left: [MARGIN_LEFT]px; margin-top: 0px; padding: 0px; visibility: visible; cursor: pointer;';
+											style0 = style0.replace('[MARGIN_LEFT]', (offset + 280));		
+
+											var style1 = "position: absolute; z-index: 9999999; margin-left: [MARGIN_LEFT]px; margin-top: 0px; padding: 0px; visibility: hidden; cursor: pointer;";
+											style1 = style1.replace('[MARGIN_LEFT]', (offset + 220));							
+
+											spanTag.innerHTML = '<img style="' + style0 + '" id="adInfo-' + id + '" alt="" src="' + base + 'public/img/icon-tr.png" onmouseover="adinfoOver_' + id + '(\'' + id + '\');" onmouseout="adinfoOut_' + id + '(\'' + id + '\');" onmouseup="adinfoClick_' + id + '();" />'+
+																 '<img style="' + style1 + '" id="adInfo-over-' + id + '" alt="" src="' + base + 'public/img/en-us/icon-tr-full.png" onmouseover="adinfoOver_' + id + '(\'' + id + '\');" onmouseout="adinfoOut_' + id + '(\'' + id + '\');" onmouseup="adinfoClick_' + id + '();" />';
+											
+											adinfoDiv.parentNode.insertBefore(spanTag, adinfoDiv);
+										
+										}, 1000);
+									}
+								}	
+							}
+						}
+					}
+						
+					window['adinfoInit_' + id](spanDiv);	  

@@ -1,0 +1,120 @@
+body {
+  background-color: #f8f8f8;
+  line-height: 1.7;
+}
+.well-lg {
+  background-color: white;
+}
+.page-header .btn-group {
+  margin-top: 10px;
+}
+.taglist a {
+  margin-left: 3px;
+}
+.taglist a:first-child {
+  margin-left: 20px;
+}
+.entry-meta {
+  display: inline-block;
+}
+.block-markdown {
+  font-size: 1.6rem;
+}
+.question > :first-child {
+  margin-top: 0 !important;
+}
+.block-markdown h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-top: 1.275em;
+  margin-bottom: .85em;
+  line-height: 1.7;
+}
+.block-markdown h4 {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-top: 1.275em;
+  margin-bottom: .85em;
+  line-height: 1.7;
+}
+.block-markdown h5 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 1.275em;
+  margin-bottom: .85em;
+  line-height: 1.7;
+}
+.block-markdown blockquote {
+  color: #656565;
+  border: 1px solid #e5e5e5;
+  border-left: 6px solid #dcdcdc;
+  background-color: #f4f4f4;
+  margin: 0 0 .85em;
+  padding: 20px 15px 20px 35px;
+}
+.block-markdown img {
+  max-width: 100%;
+  display: block;
+}
+.block-markdown pre {
+  margin: 0 0 1.275em;
+  padding: .85em 1em;
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+.block-markdown hr {
+  height: 4px;
+  padding: 0;
+  margin: 1.7em 0;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  border: none;
+}
+.block-markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  margin-bottom: .85em;
+}
+.block-markdown table th[align="right"] {
+  text-align: right;
+}
+.block-markdown table th[align="center"] {
+  text-align: center;
+}
+.block-markdown table th,
+.block-markdown table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+/* Style pager */
+.col-sm-4.pages {
+  text-align: center;
+}
+.col-sm-4.next {
+  text-align: right;
+}
+.entry-meta {
+  color: #999;
+  font-size: 14px;
+}
+.toc {
+  display: table;
+  border: 1px solid #aaa;
+  background-color: #f9f9f9;
+  padding: 7px 25px 3px 7px;
+  margin-top: 50px;
+  font-size: 95%;
+}
+.toc h2 {
+  display: inline;
+  padding-left: 7px;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+.pager .glyphicon {
+  font-size: 0.8em;
+}
